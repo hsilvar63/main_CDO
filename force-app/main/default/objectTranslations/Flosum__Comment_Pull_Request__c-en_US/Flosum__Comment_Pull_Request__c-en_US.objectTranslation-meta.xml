@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Comment_Pull_Request__c-en_US</fullName>
+    <validationRules>
+        <errorMessage><!-- This peer review is already completed, so you cannot create/edit comments. You can only create/edit comments on pending peer reviews. --></errorMessage>
+        <name>Flosum__Read_only_Comments</name>
+    </validationRules>
+</CustomObjectTranslation>
