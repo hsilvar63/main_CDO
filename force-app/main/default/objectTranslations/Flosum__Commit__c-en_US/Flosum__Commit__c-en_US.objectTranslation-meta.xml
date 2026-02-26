@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Commit__c-en_US</fullName>
+    <webLinks>
+        <label><!-- Commit_Rollback --></label>
+        <name>Flosum__Commit_Rollback</name>
+    </webLinks>
+</CustomObjectTranslation>
