@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Flosum-Git</label>
+    <tabs>Flosum__Organisation__c</tabs>
+    <tabs>Flosum__Repository</tabs>
+    <tabs>Flosum__Commit__c</tabs>
+    <tabs>Flosum__Branch__c</tabs>
+    <tabs>Flosum__Patch__c</tabs>
+    <tabs>Flosum__Settings</tabs>
+    <tabs>flosum_git__Flosum_Git_Settings</tabs>
+    <tabs>flosum_git__Log__c</tabs>
+    <tabs>Flosum__Pull_Request_Reviewer__c</tabs>
+    <tabs>Flosum__Branch_Merge__c</tabs>
+    <tabs>Flosum__Env_var__c</tabs>
+</CustomApplication>
