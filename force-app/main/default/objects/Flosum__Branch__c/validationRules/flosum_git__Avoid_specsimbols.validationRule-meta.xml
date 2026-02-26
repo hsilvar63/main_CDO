@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>flosum_git__Avoid_specsimbols</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( REGEX( Flosum__Branch_Name__c , &apos;[^a-z^A-z^0-9]&apos;) )</errorConditionFormula>
+    <errorDisplayField>Flosum__Branch_Name__c</errorDisplayField>
+    <errorMessage>Specsimbols cannot be present in Name</errorMessage>
+</ValidationRule>
