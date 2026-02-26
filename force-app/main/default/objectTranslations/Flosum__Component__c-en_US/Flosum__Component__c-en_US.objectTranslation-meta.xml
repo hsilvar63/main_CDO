@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Component__c-en_US</fullName>
+    <recordTypes>
+        <label><!-- Branch --></label>
+        <name>Flosum__Branch</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Repository --></label>
+        <name>Flosum__Repository</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Repository or Branch can not be empty. --></errorMessage>
+        <name>Flosum__ValidateComponent</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AI_Code_Documentor --></label>
+        <name>Flosum_AI__AI_Code_Documentor</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AI_Security_Analyst --></label>
+        <name>Flosum_AI__AI_Security_Analyst</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Components --></label>
+        <name>Flosum__Add_Components</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete_Components --></label>
+        <name>Flosum__Delete_Components</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Search_Replace_Text --></label>
+        <name>Flosum__Search_Replace_Text</name>
+    </webLinks>
+</CustomObjectTranslation>

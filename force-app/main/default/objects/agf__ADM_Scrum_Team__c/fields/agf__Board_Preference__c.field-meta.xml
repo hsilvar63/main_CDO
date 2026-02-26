@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>agf__Board_Preference__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field defines if team follows Sprints or Kanban</description>
+    <inlineHelpText>Use this field to indicate if your team uses Sprint or Kanban. For Scrumban users, this field is used to indicate which board (Sprint or Kanban) is currently active and in use. For ex: Setting this field to Sprint will activate your work status mappings for the Sprint Board so that when a work card is moved across columns, the Status of that work is also changed accordingly. It will not update your Kanban Board if you choose Sprint and vice versa.</inlineHelpText>
+    <label>Board Preference</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sprint</fullName>
+                <default>true</default>
+                <label>Sprint</label>
+            </value>
+            <value>
+                <fullName>Kanban</fullName>
+                <default>false</default>
+                <label>Kanban</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
