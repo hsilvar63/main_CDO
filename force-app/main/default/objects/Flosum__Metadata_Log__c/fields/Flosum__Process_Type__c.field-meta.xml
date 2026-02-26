@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Process_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Determine the process for which the log has been created</description>
+    <label>Process Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Patch</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Patch</label>
+            </value>
+            <value>
+                <fullName>Deployment</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Deployment</label>
+            </value>
+            <value>
+                <fullName>Validate</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Validate</label>
+            </value>
+            <value>
+                <fullName>Retrieve</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Retrieve</label>
+            </value>
+            <value>
+                <fullName>Rollback (Validate)</fullName>
+                <default>false</default>
+                <label>Rollback (Validate)</label>
+            </value>
+            <value>
+                <fullName>Rollback (Deployment)</fullName>
+                <default>false</default>
+                <label>Rollback (Deployment)</label>
+            </value>
+            <value>
+                <fullName>Schedule Deployment</fullName>
+                <default>false</default>
+                <label>Schedule Deployment</label>
+            </value>
+            <value>
+                <fullName>Test Execution</fullName>
+                <default>false</default>
+                <label>Test Execution</label>
+            </value>
+            <value>
+                <fullName>Test Execution Job</fullName>
+                <default>false</default>
+                <label>Test Execution Job</label>
+            </value>
+            <value>
+                <fullName>Clean Org Data</fullName>
+                <default>false</default>
+                <label>Clean Org Data</label>
+            </value>
+            <value>
+                <fullName>Install Vlocity Initial</fullName>
+                <default>false</default>
+                <label>Install Vlocity Initial</label>
+            </value>
+            <value>
+                <fullName>Pack Retry (Heroku)</fullName>
+                <default>false</default>
+                <label>Pack Retry (Heroku)</label>
+            </value>
+            <value>
+                <fullName>Tracking Organization - Retrieve</fullName>
+                <default>false</default>
+                <label>Tracking Organization - Retrieve</label>
+            </value>
+            <value>
+                <fullName>AccelQ</fullName>
+                <default>false</default>
+                <label>AccelQ</label>
+            </value>
+            <value>
+                <fullName>Veeva Rollback (Deployment)</fullName>
+                <default>false</default>
+                <label>Veeva Rollback (Deployment)</label>
+            </value>
+            <value>
+                <fullName>Veeva Deployment</fullName>
+                <default>false</default>
+                <label>Veeva Deployment</label>
+            </value>
+            <value>
+                <fullName>Pause</fullName>
+                <default>false</default>
+                <label>Pause</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
