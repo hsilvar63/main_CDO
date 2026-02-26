@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Unlocked_Package</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Unlocked Package</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>/apex/{!$Setup.Flosum__Credentials__c.Flosum__Namespace__c}UnlockedPackage?pid={!Flosum__Branch__c.Id}&amp;type=Branch</url>
+</WebLink>

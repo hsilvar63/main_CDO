@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Metadata_Log__c-en_US</fullName>
+    <quickActions>
+        <label><!-- Rollback --></label>
+        <name>Flosum__Veeva_Rollback</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Validate --></label>
+        <name>Flosum__Validate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Veeva --></label>
+        <name>Flosum__Veeva</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Deploy --></label>
+        <name>Flosum__Deploy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Impact_Analysis_MetadataLog --></label>
+        <name>Flosum__Impact_Analysis_MetadataLog</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreDeploy_Fix_MetadataLog --></label>
+        <name>Flosum__PreDeploy_Fix_MetadataLog</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Quick_Deploy --></label>
+        <name>Flosum__Quick_Deploy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Retrieve_Logs --></label>
+        <name>Flosum__Retrieve_Logs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Rollback --></label>
+        <name>Flosum__Rollback</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Validate --></label>
+        <name>Flosum__Validate</name>
+    </webLinks>
+</CustomObjectTranslation>
