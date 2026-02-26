@@ -1,0 +1,1757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Metadata_Item__c-en_US</fullName>
+    <recordTypes>
+        <label><!-- AIApplication --></label>
+        <name>Flosum__AIApplication</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AIApplicationConfig --></label>
+        <name>Flosum__AIApplicationConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AIScoringModelDefinition --></label>
+        <name>Flosum__AIScoringModelDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AIUsecaseDefinition --></label>
+        <name>Flosum__AIUsecaseDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AccountPlanObjMeasCalcDef --></label>
+        <name>Flosum__AccountPlanObjMeasCalcDef</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AccountRelationshipShareRule --></label>
+        <name>Flosum__AccountRelationshipShareRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AccountingFieldMapping --></label>
+        <name>Flosum__AccountingFieldMapping</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AccountingModelConfig --></label>
+        <name>Flosum__AccountingModelConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ActionLinkGroupTemplate --></label>
+        <name>Flosum__ActionLinkGroupTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ActionPlanTemplate --></label>
+        <name>Flosum__ActionPlanTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ActionableListDefinition --></label>
+        <name>Flosum__ActionableListDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ActivationPlatform --></label>
+        <name>Flosum__ActivationPlatform</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ActivationPlatformActvAttr --></label>
+        <name>Flosum__ActivationPlatformActvAttr</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ActivationPlatformField --></label>
+        <name>Flosum__ActivationPlatformField</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ActvPfrmDataConnectorS3 --></label>
+        <name>Flosum__ActvPfrmDataConnectorS3</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ActvPlatformAdncIdentifier --></label>
+        <name>Flosum__ActvPlatformAdncIdentifier</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ActvPlatformFieldValue --></label>
+        <name>Flosum__ActvPlatformFieldValue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ActvPlatformOAuthConnector --></label>
+        <name>Flosum__ActvPlatformOAuthConnector</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AdvAccountForecastSet --></label>
+        <name>Flosum__AdvAccountForecastSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AffinityScoreDefinition --></label>
+        <name>Flosum__AffinityScoreDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AnalyticSnapshot --></label>
+        <name>Flosum__AnalyticSnapshot</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AnalyticsDashboard --></label>
+        <name>Flosum__AnalyticsDashboard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AnalyticsVisualization --></label>
+        <name>Flosum__AnalyticsVisualization</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AnalyticsWorkspace --></label>
+        <name>Flosum__AnalyticsWorkspace</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AnimationRule --></label>
+        <name>Flosum__AnimationRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ApexClass --></label>
+        <name>Flosum__ApexClass</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ApexComponent --></label>
+        <name>Flosum__ApexComponent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ApexEmailNotifications --></label>
+        <name>Flosum__ApexEmailNotifications</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ApexPage --></label>
+        <name>Flosum__ApexPage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ApexTestSuite --></label>
+        <name>Flosum__ApexTestSuite</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ApexTrigger --></label>
+        <name>Flosum__ApexTrigger</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AppFrameworkTemplateBundle --></label>
+        <name>Flosum__AppFrameworkTemplateBundle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AppMenu --></label>
+        <name>Flosum__AppMenu</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ApplicationSubtypeDefinition --></label>
+        <name>Flosum__ApplicationSubtypeDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AppointmentAssignmentPolicy --></label>
+        <name>Flosum__AppointmentAssignmentPolicy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AppointmentSchedulingPolicy --></label>
+        <name>Flosum__AppointmentSchedulingPolicy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ApprovalProcess --></label>
+        <name>Flosum__ApprovalProcess</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AssessmentQuestion --></label>
+        <name>Flosum__AssessmentQuestion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AssessmentQuestionSet --></label>
+        <name>Flosum__AssessmentQuestionSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AssignmentRule --></label>
+        <name>Flosum__AssignmentRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AssignmentRules --></label>
+        <name>Flosum__AssignmentRules</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Audience --></label>
+        <name>Flosum__Audience</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AuraDefinitionBundle --></label>
+        <name>Flosum__AuraDefinitionBundle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AuthProvider --></label>
+        <name>Flosum__AuthProvider</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AutoResponseRule --></label>
+        <name>Flosum__AutoResponseRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AutoResponseRules --></label>
+        <name>Flosum__AutoResponseRules</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BaseSharingRule --></label>
+        <name>Flosum__BaseSharingRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BatchCalcJobDefinition --></label>
+        <name>Flosum__BatchCalcJobDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BatchProcessJobDefinition --></label>
+        <name>Flosum__BatchProcessJobDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BlacklistedConsumer --></label>
+        <name>Flosum__BlacklistedConsumer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Bot --></label>
+        <name>Flosum__Bot</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BotBlock --></label>
+        <name>Flosum__BotBlock</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BotTemplate --></label>
+        <name>Flosum__BotTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BotVersion --></label>
+        <name>Flosum__BotVersion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BrandingSet --></label>
+        <name>Flosum__BrandingSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BriefcaseDefinition --></label>
+        <name>Flosum__BriefcaseDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BusinessProcess --></label>
+        <name>Flosum__BusinessProcess</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BusinessProcessGroup --></label>
+        <name>Flosum__BusinessProcessGroup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BusinessProcessTypeDefinition --></label>
+        <name>Flosum__BusinessProcessTypeDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CMSConnectSource --></label>
+        <name>Flosum__CMSConnectSource</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CallCenter --></label>
+        <name>Flosum__CallCenter</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CallCenterRoutingMap --></label>
+        <name>Flosum__CallCenterRoutingMap</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CallCoachingMediaProvider --></label>
+        <name>Flosum__CallCoachingMediaProvider</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CampaignInfluenceModel --></label>
+        <name>Flosum__CampaignInfluenceModel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CareBenefitVerifySettings --></label>
+        <name>Flosum__CareBenefitVerifySettings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CareLimitType --></label>
+        <name>Flosum__CareLimitType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CareProviderSearchConfig --></label>
+        <name>Flosum__CareProviderSearchConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CareRequestConfiguration --></label>
+        <name>Flosum__CareRequestConfiguration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CareSystemFieldMapping --></label>
+        <name>Flosum__CareSystemFieldMapping</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CaseSubjectParticle --></label>
+        <name>Flosum__CaseSubjectParticle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Certificate --></label>
+        <name>Flosum__Certificate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ChannelLayout --></label>
+        <name>Flosum__ChannelLayout</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ChatterExtension --></label>
+        <name>Flosum__ChatterExtension</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ChoiceList --></label>
+        <name>Flosum__ChoiceList</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ClaimFinancialSettings --></label>
+        <name>Flosum__ClaimFinancialSettings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ClauseCatgConfiguration --></label>
+        <name>Flosum__ClauseCatgConfiguration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CleanDataService --></label>
+        <name>Flosum__CleanDataService</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Commerce Cloud --></label>
+        <name>Flosum__Commerce_Cloud</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Community --></label>
+        <name>Flosum__Community</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CommunityTemplateDefinition --></label>
+        <name>Flosum__CommunityTemplateDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CommunityThemeDefinition --></label>
+        <name>Flosum__CommunityThemeDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CompactLayout --></label>
+        <name>Flosum__CompactLayout</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ConnectedApp --></label>
+        <name>Flosum__ConnectedApp</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ContentAsset --></label>
+        <name>Flosum__ContentAsset</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ContentTypeBundle --></label>
+        <name>Flosum__ContentTypeBundle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ContextDefinition --></label>
+        <name>Flosum__ContextDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ContextUseCaseMapping --></label>
+        <name>Flosum__ContextUseCaseMapping</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ContractType --></label>
+        <name>Flosum__ContractType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ConvIntelligenceSignalRule --></label>
+        <name>Flosum__ConvIntelligenceSignalRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ConversationChannelDefinition --></label>
+        <name>Flosum__ConversationChannelDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ConversationMessageDefinition --></label>
+        <name>Flosum__ConversationMessageDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ConversationVendorInfo --></label>
+        <name>Flosum__ConversationVendorInfo</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CorsWhitelistOrigin --></label>
+        <name>Flosum__CorsWhitelistOrigin</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CriteriaBasedSharingRule --></label>
+        <name>Flosum__CriteriaBasedSharingRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CspTrustedSite --></label>
+        <name>Flosum__CspTrustedSite</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomApplication --></label>
+        <name>Flosum__CustomApplication</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomApplicationComponent --></label>
+        <name>Flosum__CustomApplicationComponent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomFeedFilter --></label>
+        <name>Flosum__CustomFeedFilter</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomField --></label>
+        <name>Flosum__CustomField</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomFieldDisplay --></label>
+        <name>Flosum__CustomFieldDisplay</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomHelpMenuSection --></label>
+        <name>Flosum__CustomHelpMenuSection</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomIndex --></label>
+        <name>Flosum__CustomIndex</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomLabel --></label>
+        <name>Flosum__CustomLabel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomLabels --></label>
+        <name>Flosum__CustomLabels</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomMetadata --></label>
+        <name>Flosum__CustomMetadata</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomNotificationType --></label>
+        <name>Flosum__CustomNotificationType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomObject --></label>
+        <name>Flosum__CustomObject</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomObjectTranslation --></label>
+        <name>Flosum__CustomObjectTranslation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomPageWebLink --></label>
+        <name>Flosum__CustomPageWebLink</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomPermission --></label>
+        <name>Flosum__CustomPermission</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomSite --></label>
+        <name>Flosum__CustomSite</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomTab --></label>
+        <name>Flosum__CustomTab</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dashboard --></label>
+        <name>Flosum__Dashboard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DashboardFolder --></label>
+        <name>Flosum__DashboardFolder</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataCalcInsightTemplate --></label>
+        <name>Flosum__DataCalcInsightTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataCategoryGroup --></label>
+        <name>Flosum__DataCategoryGroup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataConnector --></label>
+        <name>Flosum__DataConnector</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataConnectorIngestApi --></label>
+        <name>Flosum__DataConnectorIngestApi</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataConnectorS3 --></label>
+        <name>Flosum__DataConnectorS3</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataKitObjectDependency --></label>
+        <name>Flosum__DataKitObjectDependency</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataKitObjectTemplate --></label>
+        <name>Flosum__DataKitObjectTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataObjectSearchIndexConf --></label>
+        <name>Flosum__DataObjectSearchIndexConf</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataPackageKitDefinition --></label>
+        <name>Flosum__DataPackageKitDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataPackageKitObject --></label>
+        <name>Flosum__DataPackageKitObject</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataSource --></label>
+        <name>Flosum__DataSource</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataSourceBundleDefinition --></label>
+        <name>Flosum__DataSourceBundleDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataSourceField --></label>
+        <name>Flosum__DataSourceField</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataSourceObject --></label>
+        <name>Flosum__DataSourceObject</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataSourceTenant --></label>
+        <name>Flosum__DataSourceTenant</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataSrcDataModelFieldMap --></label>
+        <name>Flosum__DataSrcDataModelFieldMap</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataStreamDefinition --></label>
+        <name>Flosum__DataStreamDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataStreamTemplate --></label>
+        <name>Flosum__DataStreamTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataWeaveResource --></label>
+        <name>Flosum__DataWeaveResource</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DecisionMatrixDefinition --></label>
+        <name>Flosum__DecisionMatrixDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DecisionTable --></label>
+        <name>Flosum__DecisionTable</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DecisionTableDatasetLink --></label>
+        <name>Flosum__DecisionTableDatasetLink</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DelegateGroup --></label>
+        <name>Flosum__DelegateGroup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DigitalExperience --></label>
+        <name>Flosum__DigitalExperience</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DigitalExperienceBundle --></label>
+        <name>Flosum__DigitalExperienceBundle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DigitalExperienceConfig --></label>
+        <name>Flosum__DigitalExperienceConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DisclosureDefinition --></label>
+        <name>Flosum__DisclosureDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DisclosureDefinitionVersion --></label>
+        <name>Flosum__DisclosureDefinitionVersion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DisclosureType --></label>
+        <name>Flosum__DisclosureType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DiscoveryAIModel --></label>
+        <name>Flosum__DiscoveryAIModel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DiscoveryGoal --></label>
+        <name>Flosum__DiscoveryGoal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DiscoveryStory --></label>
+        <name>Flosum__DiscoveryStory</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Document --></label>
+        <name>Flosum__Document</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DocumentCategory --></label>
+        <name>Flosum__DocumentCategory</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DocumentCategoryDocumentType --></label>
+        <name>Flosum__DocumentCategoryDocumentType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DocumentFolder --></label>
+        <name>Flosum__DocumentFolder</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DocumentTemplate --></label>
+        <name>Flosum__DocumentTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DocumentType --></label>
+        <name>Flosum__DocumentType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DuplicateRule --></label>
+        <name>Flosum__DuplicateRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ESignatureConfig --></label>
+        <name>Flosum__ESignatureConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ESignatureEnvelopeConfig --></label>
+        <name>Flosum__ESignatureEnvelopeConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EclairGeoData --></label>
+        <name>Flosum__EclairGeoData</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EmailFolder --></label>
+        <name>Flosum__EmailFolder</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EmailServicesFunction --></label>
+        <name>Flosum__EmailServicesFunction</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EmailTemplate --></label>
+        <name>Flosum__EmailTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EmailTemplateFolder --></label>
+        <name>Flosum__EmailTemplateFolder</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EmbeddedServiceBranding --></label>
+        <name>Flosum__EmbeddedServiceBranding</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EmbeddedServiceConfig --></label>
+        <name>Flosum__EmbeddedServiceConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EmbeddedServiceFieldService --></label>
+        <name>Flosum__EmbeddedServiceFieldService</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EmbeddedServiceFlowConfig --></label>
+        <name>Flosum__EmbeddedServiceFlowConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EmbeddedServiceLiveAgent --></label>
+        <name>Flosum__EmbeddedServiceLiveAgent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EmbeddedServiceMenuSettings --></label>
+        <name>Flosum__EmbeddedServiceMenuSettings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EnablementMeasureDefinition --></label>
+        <name>Flosum__EnablementMeasureDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EnablementProgramDefinition --></label>
+        <name>Flosum__EnablementProgramDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EnblProgramTaskSubCategory --></label>
+        <name>Flosum__EnblProgramTaskSubCategory</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EntitlementProcess --></label>
+        <name>Flosum__EntitlementProcess</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EntitlementTemplate --></label>
+        <name>Flosum__EntitlementTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EscalationRule --></label>
+        <name>Flosum__EscalationRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EscalationRules --></label>
+        <name>Flosum__EscalationRules</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EventRelayConfig --></label>
+        <name>Flosum__EventRelayConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExperienceBundle --></label>
+        <name>Flosum__ExperienceBundle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExplainabilityActionDefinition --></label>
+        <name>Flosum__ExplainabilityActionDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExplainabilityActionVersion --></label>
+        <name>Flosum__ExplainabilityActionVersion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExplainabilityMsgTemplate --></label>
+        <name>Flosum__ExplainabilityMsgTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExpressionSetDefinition --></label>
+        <name>Flosum__ExpressionSetDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExpressionSetDefinitionVersion --></label>
+        <name>Flosum__ExpressionSetDefinitionVersion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExpressionSetMessageToken --></label>
+        <name>Flosum__ExpressionSetMessageToken</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExpressionSetObjectAlias --></label>
+        <name>Flosum__ExpressionSetObjectAlias</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExternalAIModel --></label>
+        <name>Flosum__ExternalAIModel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExternalAuthIdentityProvider --></label>
+        <name>Flosum__ExternalAuthIdentityProvider</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExternalClientApplication --></label>
+        <name>Flosum__ExternalClientApplication</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExternalCredential --></label>
+        <name>Flosum__ExternalCredential</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExternalDataConnector --></label>
+        <name>Flosum__ExternalDataConnector</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExternalDataSource --></label>
+        <name>Flosum__ExternalDataSource</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExternalDataSrcDescriptor --></label>
+        <name>Flosum__ExternalDataSrcDescriptor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExternalDataTranObject --></label>
+        <name>Flosum__ExternalDataTranObject</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExternalServiceRegistration --></label>
+        <name>Flosum__ExternalServiceRegistration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExtlClntAppConfigurablePolicies --></label>
+        <name>Flosum__ExtlClntAppConfigurablePolicies</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExtlClntAppGlobalOauthSettings --></label>
+        <name>Flosum__ExtlClntAppGlobalOauthSettings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExtlClntAppOauthConfigurablePolicies --></label>
+        <name>Flosum__ExtlClntAppOauthConfigurablePolicies</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExtlClntAppOauthSettings --></label>
+        <name>Flosum__ExtlClntAppOauthSettings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExtlClntAppSamlConfigurablePolicies --></label>
+        <name>Flosum__ExtlClntAppSamlConfigurablePolicies</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FeatureParameterBoolean --></label>
+        <name>Flosum__FeatureParameterBoolean</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FeatureParameterDate --></label>
+        <name>Flosum__FeatureParameterDate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FeatureParameterInteger --></label>
+        <name>Flosum__FeatureParameterInteger</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FieldRestrictionRule --></label>
+        <name>Flosum__FieldRestrictionRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FieldSet --></label>
+        <name>Flosum__FieldSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FieldSrcTrgtRelationship --></label>
+        <name>Flosum__FieldSrcTrgtRelationship</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FlexiPage --></label>
+        <name>Flosum__FlexiPage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Flow --></label>
+        <name>Flosum__Flow</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FlowCategory --></label>
+        <name>Flosum__FlowCategory</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FlowDefinition --></label>
+        <name>Flosum__FlowDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FlowTest --></label>
+        <name>Flosum__FlowTest</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ForecastingFilter --></label>
+        <name>Flosum__ForecastingFilter</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ForecastingFilterCondition --></label>
+        <name>Flosum__ForecastingFilterCondition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ForecastingSourceDefinition --></label>
+        <name>Flosum__ForecastingSourceDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ForecastingType --></label>
+        <name>Flosum__ForecastingType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ForecastingTypeSource --></label>
+        <name>Flosum__ForecastingTypeSource</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FuelType --></label>
+        <name>Flosum__FuelType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FuelTypeSustnUom --></label>
+        <name>Flosum__FuelTypeSustnUom</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FunctionReference --></label>
+        <name>Flosum__FunctionReference</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FundraisingConfig --></label>
+        <name>Flosum__FundraisingConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GatewayProviderPaymentMethodType --></label>
+        <name>Flosum__GatewayProviderPaymentMethodType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GenAiFunction --></label>
+        <name>Flosum__GenAiFunction</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GenAiPlanner --></label>
+        <name>Flosum__GenAiPlanner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GenAiPlannerBundle --></label>
+        <name>Flosum__GenAiPlannerBundle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GenAiPlugin --></label>
+        <name>Flosum__GenAiPlugin</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GenAiPromptTemplate --></label>
+        <name>Flosum__GenAiPromptTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GenAiPromptTemplateActv --></label>
+        <name>Flosum__GenAiPromptTemplateActv</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GlobalPicklist --></label>
+        <name>Flosum__GlobalPicklist</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GlobalPicklistValue --></label>
+        <name>Flosum__GlobalPicklistValue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GlobalValueSet --></label>
+        <name>Flosum__GlobalValueSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GlobalValueSetTranslation --></label>
+        <name>Flosum__GlobalValueSetTranslation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Group --></label>
+        <name>Flosum__Group</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- HomePageComponent --></label>
+        <name>Flosum__HomePageComponent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- HomePageLayout --></label>
+        <name>Flosum__HomePageLayout</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IPAddressRange --></label>
+        <name>Flosum__IPAddressRange</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IdentityVerificationProcDef --></label>
+        <name>Flosum__IdentityVerificationProcDef</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IdentityVerificationProcDtl --></label>
+        <name>Flosum__IdentityVerificationProcDtl</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IdentityVerificationProcFld --></label>
+        <name>Flosum__IdentityVerificationProcFld</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IframeWhiteListUrlSettings --></label>
+        <name>Flosum__IframeWhiteListUrlSettings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- InboundCertificate --></label>
+        <name>Flosum__InboundCertificate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- InboundNetworkConnection --></label>
+        <name>Flosum__InboundNetworkConnection</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- InstalledPackage --></label>
+        <name>Flosum__InstalledPackage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IntegrationProviderDef --></label>
+        <name>Flosum__IntegrationProviderDef</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- InternalDataConnector --></label>
+        <name>Flosum__InternalDataConnector</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- InvocableActionExtension --></label>
+        <name>Flosum__InvocableActionExtension</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- KeywordList --></label>
+        <name>Flosum__KeywordList</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Layout --></label>
+        <name>Flosum__Layout</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LeadConvertSettings --></label>
+        <name>Flosum__LeadConvertSettings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LearningItemType --></label>
+        <name>Flosum__LearningItemType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Letterhead --></label>
+        <name>Flosum__Letterhead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LightningBolt --></label>
+        <name>Flosum__LightningBolt</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LightningComponentBundle --></label>
+        <name>Flosum__LightningComponentBundle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LightningExperienceTheme --></label>
+        <name>Flosum__LightningExperienceTheme</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LightningMessageChannel --></label>
+        <name>Flosum__LightningMessageChannel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LightningOnboardingConfig --></label>
+        <name>Flosum__LightningOnboardingConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LightningOutApp --></label>
+        <name>Flosum__LightningOutApp</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LightningTypeBundle --></label>
+        <name>Flosum__LightningTypeBundle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ListView --></label>
+        <name>Flosum__ListView</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LiveChatAgentConfig --></label>
+        <name>Flosum__LiveChatAgentConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LiveChatButton --></label>
+        <name>Flosum__LiveChatButton</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LiveChatDeployment --></label>
+        <name>Flosum__LiveChatDeployment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LiveChatSensitiveDataRule --></label>
+        <name>Flosum__LiveChatSensitiveDataRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LoyaltyProgramSetup --></label>
+        <name>Flosum__LoyaltyProgramSetup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MLDataDefinition --></label>
+        <name>Flosum__MLDataDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MLPredictionDefinition --></label>
+        <name>Flosum__MLPredictionDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ManagedContentType --></label>
+        <name>Flosum__ManagedContentType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ManagedTopics --></label>
+        <name>Flosum__ManagedTopics</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MarketSegmentDefinition --></label>
+        <name>Flosum__MarketSegmentDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MarketingAppExtension --></label>
+        <name>Flosum__MarketingAppExtension</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Marketing Cloud --></label>
+        <name>Flosum__Marketing_Cloud</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MatchingRule --></label>
+        <name>Flosum__MatchingRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MatchingRules --></label>
+        <name>Flosum__MatchingRules</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MessagingChannel --></label>
+        <name>Flosum__MessagingChannel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MfgProgramTemplate --></label>
+        <name>Flosum__MfgProgramTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MilestoneType --></label>
+        <name>Flosum__MilestoneType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MktCalcInsightObjectDef --></label>
+        <name>Flosum__MktCalcInsightObjectDef</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MktDataConnection --></label>
+        <name>Flosum__MktDataConnection</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MktDataTranObject --></label>
+        <name>Flosum__MktDataTranObject</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MlDomain --></label>
+        <name>Flosum__MlDomain</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MobSecurityCertPinConfig --></label>
+        <name>Flosum__MobSecurityCertPinConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MobileApplicationDetail --></label>
+        <name>Flosum__MobileApplicationDetail</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MobileSecurityAssignment --></label>
+        <name>Flosum__MobileSecurityAssignment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MobileSecurityPolicy --></label>
+        <name>Flosum__MobileSecurityPolicy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ModerationRule --></label>
+        <name>Flosum__ModerationRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MuleSoft --></label>
+        <name>Flosum__MuleSoft</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MutingPermissionSet --></label>
+        <name>Flosum__MutingPermissionSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MyDomainDiscoverableLogin --></label>
+        <name>Flosum__MyDomainDiscoverableLogin</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NamedCredential --></label>
+        <name>Flosum__NamedCredential</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NavigationMenu --></label>
+        <name>Flosum__NavigationMenu</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Network --></label>
+        <name>Flosum__Network</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NetworkBranding --></label>
+        <name>Flosum__NetworkBranding</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NotificationTypeConfig --></label>
+        <name>Flosum__NotificationTypeConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OauthCustomScope --></label>
+        <name>Flosum__OauthCustomScope</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OauthTokenExchangeHandler --></label>
+        <name>Flosum__OauthTokenExchangeHandler</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ObjectHierarchyRelationship --></label>
+        <name>Flosum__ObjectHierarchyRelationship</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ObjectSourceTargetMap --></label>
+        <name>Flosum__ObjectSourceTargetMap</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OcrSampleDocument --></label>
+        <name>Flosum__OcrSampleDocument</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OcrTemplate --></label>
+        <name>Flosum__OcrTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OmniDataTransform --></label>
+        <name>Flosum__OmniDataTransform</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OmniExtTrackingDef --></label>
+        <name>Flosum__OmniExtTrackingDef</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OmniIntegrationProcedure --></label>
+        <name>Flosum__OmniIntegrationProcedure</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OmniInteractionAccessConfig --></label>
+        <name>Flosum__OmniInteractionAccessConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OmniInteractionConfig --></label>
+        <name>Flosum__OmniInteractionConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OmniScript --></label>
+        <name>Flosum__OmniScript</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OmniSupervisorConfig --></label>
+        <name>Flosum__OmniSupervisorConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OmniTrackingGroup --></label>
+        <name>Flosum__OmniTrackingGroup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OmniUiCard --></label>
+        <name>Flosum__OmniUiCard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OutboundNetworkConnection --></label>
+        <name>Flosum__OutboundNetworkConnection</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ParticipantRole --></label>
+        <name>Flosum__ParticipantRole</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PathAssistant --></label>
+        <name>Flosum__PathAssistant</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PaymentGatewayProvider --></label>
+        <name>Flosum__PaymentGatewayProvider</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PermissionSetGroup --></label>
+        <name>Flosum__PermissionSetGroup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PermissionSet_ApexClass --></label>
+        <name>Flosum__PermissionSet_ApexClass</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PermissionSet_ApexPage --></label>
+        <name>Flosum__PermissionSet_ApexPage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PermissionSet_CustomObject --></label>
+        <name>Flosum__PermissionSet_CustomObject</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PermissionSet_Layout --></label>
+        <name>Flosum__PermissionSet_Layout</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PermissionSet_Other_Permissions --></label>
+        <name>Flosum__PermissionSet_Other_Permissions</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PermissionSet --></label>
+        <name>Flosum__PermissonSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PersonAccountOwnerPowerUser --></label>
+        <name>Flosum__PersonAccountOwnerPowerUser</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PipelineInspMetricConfig --></label>
+        <name>Flosum__PipelineInspMetricConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PlatformCachePartition --></label>
+        <name>Flosum__PlatformCachePartition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PlatformEventChannel --></label>
+        <name>Flosum__PlatformEventChannel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PlatformEventChannelMember --></label>
+        <name>Flosum__PlatformEventChannelMember</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PlatformEventSubscriberConfig --></label>
+        <name>Flosum__PlatformEventSubscriberConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Portal --></label>
+        <name>Flosum__Portal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PortalDelegablePermissionSet --></label>
+        <name>Flosum__PortalDelegablePermissionSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PostTemplate --></label>
+        <name>Flosum__PostTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PresenceDeclineReason --></label>
+        <name>Flosum__PresenceDeclineReason</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PresenceUserConfig --></label>
+        <name>Flosum__PresenceUserConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PricingActionParameters --></label>
+        <name>Flosum__PricingActionParameters</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PricingRecipe --></label>
+        <name>Flosum__PricingRecipe</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ProcessFlowMigration --></label>
+        <name>Flosum__ProcessFlowMigration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ProductAttributeSet --></label>
+        <name>Flosum__ProductAttributeSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ProductSpecificationRecType --></label>
+        <name>Flosum__ProductSpecificationRecType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ProductSpecificationType --></label>
+        <name>Flosum__ProductSpecificationType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Profile --></label>
+        <name>Flosum__Profile</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ProfilePasswordPolicy --></label>
+        <name>Flosum__ProfilePasswordPolicy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ProfileSessionSetting --></label>
+        <name>Flosum__ProfileSessionSetting</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Profile_ApexClass --></label>
+        <name>Flosum__Profile_ApexClass</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Profile_ApexPage --></label>
+        <name>Flosum__Profile_ApexPage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Profile_CustomObject --></label>
+        <name>Flosum__Profile_CustomObject</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Profile_Layout --></label>
+        <name>Flosum__Profile_Layout</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Profile_Other_Permissions --></label>
+        <name>Flosum__Profile_Other_Permissions</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prompt --></label>
+        <name>Flosum__Prompt</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PublicKeyCertificate --></label>
+        <name>Flosum__PublicKeyCertificate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PublicKeyCertificateSet --></label>
+        <name>Flosum__PublicKeyCertificateSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Queue --></label>
+        <name>Flosum__Queue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QueueRoutingConfig --></label>
+        <name>Flosum__QueueRoutingConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QuickAction --></label>
+        <name>Flosum__QuickAction</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RecAlrtDataSrcExpSetDef --></label>
+        <name>Flosum__RecAlrtDataSrcExpSetDef</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RecommendationStrategy --></label>
+        <name>Flosum__RecommendationStrategy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RecordActionDeployment --></label>
+        <name>Flosum__RecordActionDeployment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RecordAggregationDefinition --></label>
+        <name>Flosum__RecordAggregationDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RecordAlertCategory --></label>
+        <name>Flosum__RecordAlertCategory</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RecordAlertDataSource --></label>
+        <name>Flosum__RecordAlertDataSource</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RecordAlertTemplate --></label>
+        <name>Flosum__RecordAlertTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RecordType --></label>
+        <name>Flosum__RecordType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RedirectWhitelistUrl --></label>
+        <name>Flosum__RedirectWhitelistUrl</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ReferencedDashboard --></label>
+        <name>Flosum__ReferencedDashboard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RegisteredExternalService --></label>
+        <name>Flosum__RegisteredExternalService</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RelatedRecordAssocCriteria --></label>
+        <name>Flosum__RelatedRecordAssocCriteria</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RelationshipGraphDefinition --></label>
+        <name>Flosum__RelationshipGraphDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RemoteSiteSetting --></label>
+        <name>Flosum__RemoteSiteSetting</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Report --></label>
+        <name>Flosum__Report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ReportFolder --></label>
+        <name>Flosum__ReportFolder</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ReportType --></label>
+        <name>Flosum__ReportType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RestrictionRule --></label>
+        <name>Flosum__RestrictionRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Role --></label>
+        <name>Flosum__Role</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SalesWorkQueueSettings --></label>
+        <name>Flosum__SalesWorkQueueSettings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SamlSsoConfig --></label>
+        <name>Flosum__SamlSsoConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SchedulingObjective --></label>
+        <name>Flosum__SchedulingObjective</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SchedulingRule --></label>
+        <name>Flosum__SchedulingRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Scontrol --></label>
+        <name>Flosum__Scontrol</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SearchCustomization --></label>
+        <name>Flosum__SearchCustomization</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SearchOrgWideObjectConfig --></label>
+        <name>Flosum__SearchOrgWideObjectConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ServiceAISetupDefinition --></label>
+        <name>Flosum__ServiceAISetupDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ServiceAISetupField --></label>
+        <name>Flosum__ServiceAISetupField</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ServiceChannel --></label>
+        <name>Flosum__ServiceChannel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ServicePresenceStatus --></label>
+        <name>Flosum__ServicePresenceStatus</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ServiceProcess --></label>
+        <name>Flosum__ServiceProcess</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Settings --></label>
+        <name>Flosum__Settings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SharingCriteriaRule --></label>
+        <name>Flosum__SharingCriteriaRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SharingGuestRule --></label>
+        <name>Flosum__SharingGuestRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SharingOwnerRule --></label>
+        <name>Flosum__SharingOwnerRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SharingReason --></label>
+        <name>Flosum__SharingReason</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SharingSet --></label>
+        <name>Flosum__SharingSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SiteDotCom --></label>
+        <name>Flosum__SiteDotCom</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Skill --></label>
+        <name>Flosum__Skill</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- StandardValueSet --></label>
+        <name>Flosum__StandardValueSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- StandardValueSetTranslation --></label>
+        <name>Flosum__StandardValueSetTranslation</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Represents a static resource file, often a code library in a ZIP file. --></description>
+        <label><!-- StaticResource --></label>
+        <name>Flosum__StaticResource</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- StnryAssetEnvSrcCnfg --></label>
+        <name>Flosum__StnryAssetEnvSrcCnfg</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- StreamingAppDataConnector --></label>
+        <name>Flosum__StreamingAppDataConnector</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SustainabilityUom --></label>
+        <name>Flosum__SustainabilityUom</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SustnUomConversion --></label>
+        <name>Flosum__SustnUomConversion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SvcCatalogCategory --></label>
+        <name>Flosum__SvcCatalogCategory</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SvcCatalogFulfillmentFlow --></label>
+        <name>Flosum__SvcCatalogFulfillmentFlow</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SvcCatalogItemDef --></label>
+        <name>Flosum__SvcCatalogItemDef</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SynonymDictionary --></label>
+        <name>Flosum__SynonymDictionary</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Territory --></label>
+        <name>Flosum__Territory</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Territory2 --></label>
+        <name>Flosum__Territory2</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Territory2Model --></label>
+        <name>Flosum__Territory2Model</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Territory2Rule --></label>
+        <name>Flosum__Territory2Rule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Territory2Type --></label>
+        <name>Flosum__Territory2Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TimeSheetTemplate --></label>
+        <name>Flosum__TimeSheetTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TimelineObjectDefinition --></label>
+        <name>Flosum__TimelineObjectDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TopicsForObjects --></label>
+        <name>Flosum__TopicsForObjects</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TransactionSecurityPolicy --></label>
+        <name>Flosum__TransactionSecurityPolicy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Translations --></label>
+        <name>Flosum__Translations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UIObjectRelationConfig --></label>
+        <name>Flosum__UIObjectRelationConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UiFormatSpecificationSet --></label>
+        <name>Flosum__UiFormatSpecificationSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UiPlugin --></label>
+        <name>Flosum__UiPlugin</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UserAccessPolicy --></label>
+        <name>Flosum__UserAccessPolicy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UserAuthCertificate --></label>
+        <name>Flosum__UserAuthCertificate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UserCriteria --></label>
+        <name>Flosum__UserCriteria</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UserProvisioningConfig --></label>
+        <name>Flosum__UserProvisioningConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ValidationRule --></label>
+        <name>Flosum__ValidationRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VehicleAssetEmssnSrcCnfg --></label>
+        <name>Flosum__VehicleAssetEmssnSrcCnfg</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VirtualVisitConfig --></label>
+        <name>Flosum__VirtualVisitConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VisualizationPlugin --></label>
+        <name>Flosum__VisualizationPlugin</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WaveAnalyticAssetCollection --></label>
+        <name>Flosum__WaveAnalyticAssetCollection</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WaveApplication --></label>
+        <name>Flosum__WaveApplication</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WaveComponent --></label>
+        <name>Flosum__WaveComponent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WaveDashboard --></label>
+        <name>Flosum__WaveDashboard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WaveDataflow --></label>
+        <name>Flosum__WaveDataflow</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WaveDataset --></label>
+        <name>Flosum__WaveDataset</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WaveLens --></label>
+        <name>Flosum__WaveLens</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WaveRecipe --></label>
+        <name>Flosum__WaveRecipe</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WaveTemplateBundle --></label>
+        <name>Flosum__WaveTemplateBundle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WaveXmd --></label>
+        <name>Flosum__WaveXmd</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WebLink --></label>
+        <name>Flosum__WebLink</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WebStoreBundle --></label>
+        <name>Flosum__WebStoreBundle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WebStoreTemplate --></label>
+        <name>Flosum__WebStoreTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WorkSkillRouting --></label>
+        <name>Flosum__WorkSkillRouting</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Workflow --></label>
+        <name>Flosum__Workflow</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WorkflowAlert --></label>
+        <name>Flosum__WorkflowAlert</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WorkflowFieldUpdate --></label>
+        <name>Flosum__WorkflowFieldUpdate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WorkflowKnowledgePublish --></label>
+        <name>Flosum__WorkflowKnowledgePublish</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WorkflowOutboundMessage --></label>
+        <name>Flosum__WorkflowOutboundMessage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WorkflowRule --></label>
+        <name>Flosum__WorkflowRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WorkflowTask --></label>
+        <name>Flosum__WorkflowTask</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- XOrgHub --></label>
+        <name>Flosum__XOrgHub</name>
+    </recordTypes>
+</CustomObjectTranslation>
