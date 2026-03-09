@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Program_Enrollment__c-en_US</fullName>
+    <layouts>
+        <layout>HEDA Program Enrollment Layout</layout>
+        <sections>
+            <label><!-- Academic Details --></label>
+            <section>Academic Details</section>
+        </sections>
+        <sections>
+            <label><!-- Admission Details --></label>
+            <section>Admission Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

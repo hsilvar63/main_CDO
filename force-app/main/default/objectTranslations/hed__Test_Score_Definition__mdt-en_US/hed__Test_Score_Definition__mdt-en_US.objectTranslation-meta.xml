@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Test_Score_Definition__mdt-en_US</fullName>
+    <layouts>
+        <layout>EDA Test Score Definition Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Test Score Details --></label>
+            <section>Test Score Details</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

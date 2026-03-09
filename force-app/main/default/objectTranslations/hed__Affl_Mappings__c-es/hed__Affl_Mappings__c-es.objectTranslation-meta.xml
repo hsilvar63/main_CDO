@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Affl_Mappings__c-es</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Asignación de afiliación --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Asignaciones de afiliaciones --></value>
+    </caseValues>
+    <gender><!-- Feminine --></gender>
+</CustomObjectTranslation>

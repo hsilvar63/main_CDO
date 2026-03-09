@@ -63,6 +63,12 @@
                 <booleanValue>true</booleanValue>
             </value>
         </inputAssignments>
+        <inputAssignments>
+            <field>hed__Do_Not_Contact__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
         <object>Contact</object>
     </recordUpdates>
     <start>

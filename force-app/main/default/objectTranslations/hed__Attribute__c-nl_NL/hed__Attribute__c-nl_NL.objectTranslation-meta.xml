@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Attribute__c-nl_NL</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Attribute --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Attribute --></value>
+    </caseValues>
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>EDA Credential Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Procurement Details --></label>
+            <section>Procurement Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EDA Student Characteristic Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Attribute Name --></nameFieldLabel>
+    <recordTypes>
+        <description>Maakt het onderwijsinstellingen mogelijk om vergunningen, certificeringen of onderschrijvingen van stafleden of studenten te traceren.</description>
+        <label>Identificatiegegeven</label>
+        <name>hed__Credential</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Maakt het onderwijsinstellingen mogelijk om belangrijke studentenkenmerken bij te houden die mogelijk van invloed zijn op het onderwijs van studenten.</description>
+        <label>Studentenkenmerk</label>
+        <name>hed__Student_Characteristic</name>
+    </recordTypes>
+</CustomObjectTranslation>

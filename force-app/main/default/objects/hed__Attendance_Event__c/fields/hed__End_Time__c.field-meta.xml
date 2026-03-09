@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__End_Time__c</fullName>
+    <deprecated>false</deprecated>
+    <description>For a partial-day excused absence, the time the student returned.</description>
+    <inlineHelpText>For a partial-day excused absence, the time the student returned.</inlineHelpText>
+    <label>End Time</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Time</type>
+</CustomField>

@@ -66,4 +66,9 @@
         <default>false</default>
         <label>Payment Credit</label>
     </standardValue>
+    <standardValue>
+        <fullName>Commerce Delivery Service</fullName>
+        <default>false</default>
+        <label>Commerce Delivery Service</label>
+    </standardValue>
 </StandardValueSet>

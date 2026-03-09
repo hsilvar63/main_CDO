@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Test_Definition__mdt-en_US</fullName>
+    <layouts>
+        <layout>EDA Test Definition Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Issuer Details --></label>
+            <section>Issuer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Test Details --></label>
+            <section>Test Details</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -37,10 +37,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Deliverables__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Deliverables1__c</field>
             </layoutItems>
             <layoutItems>
@@ -50,6 +46,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CustomReportTypeField__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Estimated_Cost__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates whether this is a current or former Course Connection.</description>
+    <inlineHelpText>Indicates whether this is a current or former Course Connection.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Current</fullName>
+                <default>true</default>
+                <label>Current</label>
+            </value>
+            <value>
+                <fullName>Former</fullName>
+                <default>false</default>
+                <label>Former</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Enrolled</fullName>
+                <default>false</default>
+                <label>Enrolled</label>
+            </value>
+            <value>
+                <fullName>Failed</fullName>
+                <default>false</default>
+                <label>Failed</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>Withdrew</fullName>
+                <default>false</default>
+                <label>Withdrew</label>
+            </value>
+            <value>
+                <fullName>Audit</fullName>
+                <default>false</default>
+                <label>Audit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

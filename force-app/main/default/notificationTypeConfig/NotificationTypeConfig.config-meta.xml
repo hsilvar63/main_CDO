@@ -12,6 +12,13 @@
             <desktopEnabled>true</desktopEnabled>
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
+        <notificationType>admin_graph_api_migration</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
         <notificationType>ads_notification</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
@@ -364,6 +371,13 @@
     </notificationTypeSettings>
     <notificationTypeSettings>
         <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>rtf_payment_status</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
             <desktopEnabled>false</desktopEnabled>
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
@@ -394,6 +408,13 @@
             <mobileEnabled>true</mobileEnabled>
         </notificationChannels>
         <notificationType>stream_post</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>suites_agent_enablement</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
         <appSettings>
@@ -427,6 +448,13 @@
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
         <notificationType>task_reminder</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>user_graph_api_migration</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
         <notificationChannels>

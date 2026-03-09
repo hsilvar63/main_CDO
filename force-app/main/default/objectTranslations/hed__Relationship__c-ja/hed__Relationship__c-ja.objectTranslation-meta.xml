@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Relationship__c-ja</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>リレーション</value>
+    </caseValues>
+    <layouts>
+        <layout>HEDA Relationship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Information --></label>
+            <section>Relationship Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>リレーションキー</nameFieldLabel>
+    <validationRules>
+        <errorMessage>このリレーションで取引先責任者を変更するのではなく、このレコードを削除するか、必要に応じて終了日を追加して状況を [以前] に更新してから、新しい取引先責任者間の新しいリレーションレコードを作成してください。</errorMessage>
+        <name>hed__Contact_Do_Not_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>このリレーションで取引先責任者を変更するのではなく、このレコードを削除するか、必要に応じて終了日を追加して状況を [以前] に更新してから、新しい取引先責任者間の新しいリレーションレコードを作成してください。</errorMessage>
+        <name>hed__Related_Contact_Do_Not_Change</name>
+    </validationRules>
+</CustomObjectTranslation>

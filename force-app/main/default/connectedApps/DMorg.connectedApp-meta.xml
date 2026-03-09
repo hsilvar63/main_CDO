@@ -5,7 +5,7 @@
     <oauthConfig>
         <callbackUrl>https://flosumdevops--dataplier.visualforce.com/apex/dataplier__settings
 oob</callbackUrl>
-        <consumerKey>zms1K2egtsXb9KZubbBcYeA8ACa6kDcFLrfG3eKJE7EVlXOfoRiQznTJLPq7y4SLQlYMcMxvQ1sMrNNVY0bhR</consumerKey>
+        <consumerKey>3MVG9KAEr0ABaqiohxfQdw9yBxQwGvWr7OJZDd0y9BI.DFC.49F.k8NHlB9dwTwIGCsU0jBSEZJzzgaKk00.s</consumerKey>
         <isAdminApproved>false</isAdminApproved>
         <isClientCredentialEnabled>false</isClientCredentialEnabled>
         <isCodeCredentialEnabled>false</isCodeCredentialEnabled>

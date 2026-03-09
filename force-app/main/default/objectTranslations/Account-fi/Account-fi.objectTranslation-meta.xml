@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account-fi</fullName>
+    <layouts>
+        <layout>HEDA Household Layout</layout>
+        <sections>
+            <label>Osoite</label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label>Mukautetut linkit</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Kuvaus</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Kentät</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HEDA Organization Layout</layout>
+        <sections>
+            <label>Osoite</label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label>Mukautetut linkit</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Kuvaus</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Kentät</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description>Oppilaitoksessa tarjottu akateeminen ohjelma.</description>
+        <label>Akateeminen ohjelma</label>
+        <name>Academic_Program</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Hallintatili</description>
+        <label>Hallinnollinen</label>
+        <name>Administrative</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Yritysorganisaatio.</description>
+        <label>Yritysorganisaatio</label>
+        <name>Business_Organization</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Oppilaitos.</description>
+        <label>Oppilaitos</label>
+        <name>Educational_Institution</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Kotitalous, jossa on yksi tai useampi henkilö.</description>
+        <label>Kotitaloustili</label>
+        <name>HH_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Urheilujärjestö.</description>
+        <label>Urheilujärjestö</label>
+        <name>Sports_Organization</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Osasto oppilaitoksessa.</description>
+        <label>Yliopiston osasto</label>
+        <name>University_Department</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

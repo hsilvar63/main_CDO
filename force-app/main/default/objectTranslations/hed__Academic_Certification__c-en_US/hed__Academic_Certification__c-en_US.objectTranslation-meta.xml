@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Academic_Certification__c-en_US</fullName>
+    <layouts>
+        <layout>EDA Academic Certification Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- A certification related to the completion of specific courses. --></description>
+        <label><!-- Certificate --></label>
+        <name>hed__Certificate</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A certification related to the completion of a course of study. --></description>
+        <label><!-- Degree --></label>
+        <name>hed__Degree</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A certification related to the completion of a course of study, such as a high school diploma in the United States. --></description>
+        <label><!-- Diploma --></label>
+        <name>hed__Diploma</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Test__c-fr</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>Test</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tests</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>EDA Test Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du test</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
