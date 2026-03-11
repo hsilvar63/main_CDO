@@ -11733,11 +11733,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Project_Cert__c.Deliverables__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Project_Cert__c.Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -23893,10 +23888,6 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>standard-ActiveScratchOrg</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
         <tab>standard-AppLauncher</tab>
         <visibility>Visible</visibility>
     </tabSettings>
@@ -24041,15 +24032,7 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>standard-LearningItem</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
         <tab>standard-LightningBoltHome</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
-        <tab>standard-LightningInstrumentation</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
@@ -24062,10 +24045,6 @@
     </tabSettings>
     <tabSettings>
         <tab>standard-MobileHome</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
-        <tab>standard-NamespaceRegistry</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
@@ -24102,10 +24081,6 @@
     </tabSettings>
     <tabSettings>
         <tab>standard-Recommendation</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
-        <tab>standard-ScratchOrgInfo</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
