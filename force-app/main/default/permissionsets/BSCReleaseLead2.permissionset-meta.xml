@@ -11733,6 +11733,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Project_Cert__c.Deliverables__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Project_Cert__c.Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
