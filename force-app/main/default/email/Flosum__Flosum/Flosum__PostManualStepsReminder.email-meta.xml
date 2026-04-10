@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <available>true</available>
+    <description>Do not forget to complete Post Manual Steps</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PostManualStepsReminder</name>
+    <style>none</style>
+    <subject>Do not forget to complete Post Manual Steps</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
