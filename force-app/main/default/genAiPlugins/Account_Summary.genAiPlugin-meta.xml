@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <aiPluginUtterances>
+        <developerName>utterance_givemethet0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>utterance_givemethet0</masterLabel>
+        <utterance>Give me the top 5 accounts based on revenue</utterance>
+    </aiPluginUtterances>
+    <description>This topic handles summarizing account information for users. It includes providing details on account status, recent activity, and other relevant account data.</description>
+    <developerName>Account_Summary</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__DraftOrReviseEmail</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Gather necessary information from the user to accurately summarize the account.</description>
+        <developerName>instruction_gathernece1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_gathernece1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When summarizing the account, include details such as account balance, recent transactions, and any pending actions.</description>
+        <developerName>instruction_whensummar2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_whensummar2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user has specific questions about their account, address those within the scope of summarizing the account.</description>
+        <developerName>instruction_iftheuserh3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheuserh3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user requests an account summary, provide an overview of the account status and recent activity.</description>
+        <developerName>instruction_ifauserreq0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifauserreq0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Account Summary</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to summarize account information based on user requests. You should not make any changes to the account or handle unrelated inquiries.</scope>
+</GenAiPlugin>
