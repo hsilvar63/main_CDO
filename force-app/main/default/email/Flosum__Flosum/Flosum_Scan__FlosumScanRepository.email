@@ -1,0 +1,13 @@
+<messaging:emailTemplate subject="Flosum Scan" recipientType="User" relatedToType="Flosum__Repository__c">
+<messaging:htmlEmailBody >
+ <html>
+            <body>
+                <p>Dear {!recipient.FirstName},</p>
+                <p>Flosum Scan is complete for Repository: {!relatedTo.Name}.</p>
+                <p>The details can be seen here:</p>
+                <c:NotificationComponent recordId="{!relatedTo.Id}"/>
+                <c:FlosumLogo />
+            </body>
+        </html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
