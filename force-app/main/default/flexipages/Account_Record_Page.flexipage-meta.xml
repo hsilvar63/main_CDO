@@ -78,11 +78,24 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>flosum_backup:timeMachine</componentName>
-                <identifier>flosum_backup_timeMachine</identifier>
+                <componentName>timeMachine</componentName>
+                <identifier>c_timeMachine</identifier>
             </componentInstance>
         </itemInstances>
-        <name>Facet-52d4dc4c-82d9-4918-96ed-d33f52001f04</name>
+        <name>Facet-59c62e20-3830-4cc0-b70b-8853f1d59a8c</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>objects</name>
+                </componentInstanceProperties>
+                <componentName>relatedArchives</componentName>
+                <identifier>c_relatedArchives</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-cd321ada-acb9-4511-bcb8-9cdf47cd8c43</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -122,7 +135,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
-                    <value>Facet-52d4dc4c-82d9-4918-96ed-d33f52001f04</value>
+                    <value>Facet-59c62e20-3830-4cc0-b70b-8853f1d59a8c</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
@@ -130,6 +143,20 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-cd321ada-acb9-4511-bcb8-9cdf47cd8c43</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Related Archives</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab2</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>

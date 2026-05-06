@@ -209,10 +209,6 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>flosum_backup__Backup_Archive</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>DMorgVer2</name>
         <type>ConnectedApp</type>
     </appMenuItems>
@@ -223,5 +219,17 @@
     <appMenuItems>
         <name>standard__AgentforceStudio</name>
         <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>standard__AIWorkbench</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Backup_Archive</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>LabOrgFlosumApp</name>
+        <type>ExternalClientApplication</type>
     </appMenuItems>
 </AppMenu>
