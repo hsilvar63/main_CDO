@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>flosum_connect__Jira_Issue_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Jira Issue Type</label>
+    <referenceTo>flosum_connect__Jira_Issue_Type__c</referenceTo>
+    <relationshipLabel>Issue Type Fields</relationshipLabel>
+    <relationshipName>Issue_Type_Fields</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,32 @@
+<messaging:emailTemplate subject="{!IF(relatedTo.Flosum__Reply_Comment__c == 'none',  relatedTo.CreatedBy.FirstName + ' wrote comment for Peer Review', relatedTo.CreatedBy.FirstName + ' wrote reply comment for Peer Review')}" recipientType="User" relatedToType="Flosum__Comment_Pull_Request__c">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <p>Dear {!recipient.FirstName},</p>
+                
+                <apex:outputPanel rendered="{!relatedTo.Flosum__Reply_Comment__c == 'none' && relatedTo.Flosum__Destructive_Changes_Id__c == null}">
+                    <p>User {!relatedTo.CreatedBy.FirstName} wrote comment to file "{!relatedTo.Flosum__File_Name__c}" in line "{!FLOOR(relatedTo.Flosum__Line_Number__c)}".</p>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!relatedTo.Flosum__Reply_Comment__c == 'none' && relatedTo.Flosum__Destructive_Changes_Id__c != null}">
+                    <p>User {!relatedTo.CreatedBy.FirstName} wrote comment to destructive changes "{!relatedTo.Flosum__File_Name__c}".</p>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!relatedTo.Flosum__Reply_Comment__c != 'none' && relatedTo.Flosum__Destructive_Changes_Id__c == null}">
+                    <p>User {!relatedTo.CreatedBy.FirstName} wrote reply to comment:</p>
+                    <c:SourceComment recordId="{!relatedTo.Flosum__Reply_Comment__c}"/>
+                    <p>in file "{!relatedTo.Flosum__File_Name__c}" in line "{!FLOOR(relatedTo.Flosum__Line_Number__c)}".</p>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!relatedTo.Flosum__Reply_Comment__c != 'none' && relatedTo.Flosum__Destructive_Changes_Id__c != null}">
+                    <p>User {!relatedTo.CreatedBy.FirstName} wrote reply to comment:</p>
+                    <c:SourceComment recordId="{!relatedTo.Flosum__Reply_Comment__c}"/>
+                    <p>in file "{!relatedTo.Flosum__File_Name__c}".</p>
+                </apex:outputPanel>
+                <p>Comment:</p>
+                <p>{!relatedTo.Flosum__Text__c}</p>
+                <p>Link: </p>
+                <c:NotificationComponent recordId="{!relatedTo.Id}"/>
+                <p>Thanks!</p>
+                <c:FlosumLogo />
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>
