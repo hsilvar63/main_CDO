@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Case__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Case that represents the event being reported.</description>
+    <inlineHelpText>The Case that represents the event being reported.</inlineHelpText>
+    <label>Case</label>
+    <referenceTo>Case</referenceTo>
+    <relationshipLabel>Behavior Involvements</relationshipLabel>
+    <relationshipName>Behavior_Involvements</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

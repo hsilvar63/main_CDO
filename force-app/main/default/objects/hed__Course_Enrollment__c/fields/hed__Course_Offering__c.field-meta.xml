@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Course_Offering__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Course Offering the student or faculty member is involved with.</description>
+    <inlineHelpText>The Course Offering the student or faculty member is involved with.</inlineHelpText>
+    <label>Course Offering ID</label>
+    <referenceTo>hed__Course_Offering__c</referenceTo>
+    <relationshipLabel>Course Connection</relationshipLabel>
+    <relationshipName>Course_Enrollment</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

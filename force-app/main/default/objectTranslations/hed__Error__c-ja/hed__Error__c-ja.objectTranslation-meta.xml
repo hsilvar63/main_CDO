@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Error__c-ja</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>エラー</value>
+    </caseValues>
+    <layouts>
+        <layout>HEDA Error Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>エラー番号</nameFieldLabel>
+</CustomObjectTranslation>

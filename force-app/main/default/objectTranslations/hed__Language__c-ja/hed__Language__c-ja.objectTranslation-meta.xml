@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Language__c-ja</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>言語</value>
+    </caseValues>
+    <layouts>
+        <layout>HEDA Language Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>言語名</nameFieldLabel>
+</CustomObjectTranslation>

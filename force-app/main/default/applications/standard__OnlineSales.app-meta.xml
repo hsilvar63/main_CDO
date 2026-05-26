@@ -11,5 +11,8 @@
     <tabs>Flosum__Pull_Request_Reviewer__c</tabs>
     <tabs>Flosum__Branch_Merge__c</tabs>
     <tabs>Flosum__Env_var__c</tabs>
+    <tabs>standard-SalesforceContract</tabs>
+    <tabs>standard-SalesforceInvoice</tabs>
+    <tabs>standard-SalesforceProductCatalog</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Hierarchy_Settings__c-es_MX</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Configuración de jerarquía --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Configuraciones de jerarquías --></value>
+    </caseValues>
+    <gender><!-- Feminine --></gender>
+</CustomObjectTranslation>

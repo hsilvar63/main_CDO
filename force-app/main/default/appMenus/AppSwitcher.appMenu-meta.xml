@@ -49,10 +49,6 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__LightningInstrumentation</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>standard__LightningSales</name>
         <type>CustomApplication</type>
     </appMenuItems>
@@ -213,11 +209,15 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>DMorgVer2</name>
-        <type>ConnectedApp</type>
+        <name>hed__HEDA</name>
+        <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Flosum_Backup_Org_Auth</name>
+        <name>Education_Data_Architecture</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>DMUAT_APP</name>
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>

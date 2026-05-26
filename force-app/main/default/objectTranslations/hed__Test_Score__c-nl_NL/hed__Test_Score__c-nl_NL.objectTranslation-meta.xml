@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Test_Score__c-nl_NL</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Test Score --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Test Score --></value>
+    </caseValues>
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>EDA Test Score Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Test Score Name --></nameFieldLabel>
+</CustomObjectTranslation>

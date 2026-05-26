@@ -10,44 +10,8 @@
     <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Project_Cert_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Project_Cert__c</pageOrSobjectType>
-        <profile>Admin</profile>
-        <recordType>Project_Cert__c.Software_Development</recordType>
-        <type>Flexipage</type>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Project_Cert_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Project_Cert__c</pageOrSobjectType>
-        <profile>SolutionManager</profile>
-        <recordType>Project_Cert__c.Software_Development</recordType>
-        <type>Flexipage</type>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
         <content>Project_Cert_Record_Page</content>
         <formFactor>Large</formFactor>
-        <pageOrSobjectType>Project_Cert__c</pageOrSobjectType>
-        <profile>SolutionManager</profile>
-        <recordType>Project_Cert__c.Software_Development</recordType>
-        <type>Flexipage</type>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Project_Cert_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Project_Cert__c</pageOrSobjectType>
-        <profile>Admin</profile>
-        <recordType>Project_Cert__c.Software_Development</recordType>
-        <type>Flexipage</type>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Project_Cert_Record_Page</content>
-        <formFactor>Small</formFactor>
         <pageOrSobjectType>Project_Cert__c</pageOrSobjectType>
         <profile>Standard</profile>
         <recordType>Project_Cert__c.Software_Development</recordType>
@@ -55,8 +19,44 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
+        <content>Project_Cert_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Project_Cert__c</pageOrSobjectType>
+        <profile>Admin</profile>
+        <recordType>Project_Cert__c.Software_Development</recordType>
+        <type>Flexipage</type>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Project_Cert_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Project_Cert__c</pageOrSobjectType>
+        <profile>Admin</profile>
+        <recordType>Project_Cert__c.Software_Development</recordType>
+        <type>Flexipage</type>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Project_Cert_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Project_Cert__c</pageOrSobjectType>
+        <profile>SolutionManager</profile>
+        <recordType>Project_Cert__c.Software_Development</recordType>
+        <type>Flexipage</type>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
         <content>Project_Cert_Record_Page</content>
         <formFactor>Large</formFactor>
+        <pageOrSobjectType>Project_Cert__c</pageOrSobjectType>
+        <profile>SolutionManager</profile>
+        <recordType>Project_Cert__c.Software_Development</recordType>
+        <type>Flexipage</type>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Project_Cert_Record_Page</content>
+        <formFactor>Small</formFactor>
         <pageOrSobjectType>Project_Cert__c</pageOrSobjectType>
         <profile>Standard</profile>
         <recordType>Project_Cert__c.Software_Development</recordType>

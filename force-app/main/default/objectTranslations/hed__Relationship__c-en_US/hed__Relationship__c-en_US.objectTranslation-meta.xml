@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Relationship__c-en_US</fullName>
+    <layouts>
+        <layout>HEDA Relationship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Information --></label>
+            <section>Relationship Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Instead of changing the Contacts in this Relationship, either delete this record, or if appropriate, add an end date and update the status to Former. Then create a new Relationship record between the new Contacts. --></errorMessage>
+        <name>hed__Contact_Do_Not_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Instead of changing the Contacts in this Relationship, either delete this record, or if appropriate, add an end date and update the status to Former. Then create a new Relationship record between the new Contacts. --></errorMessage>
+        <name>hed__Related_Contact_Do_Not_Change</name>
+    </validationRules>
+</CustomObjectTranslation>

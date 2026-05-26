@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Term__c-ja</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>学期</value>
+    </caseValues>
+    <layouts>
+        <layout>HEDA Term Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>学期名</nameFieldLabel>
+</CustomObjectTranslation>

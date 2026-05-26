@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<UserEngagementSettings xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <canGovCloudUseAdoptionApps xsi:nil="true"></canGovCloudUseAdoptionApps>
+<UserEngagementSettings xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesScheduledSwitcherRunDaily>false</doesScheduledSwitcherRunDaily>
     <enableCustomHelpGlobalSection>false</enableCustomHelpGlobalSection>
     <enableHelpMenuShowFeedback>true</enableHelpMenuShowFeedback>

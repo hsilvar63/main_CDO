@@ -1,0 +1,163 @@
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    SCSS → Flosum Deployment Workflow                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────┐
+│  Developer   │
+│   (VS Code)  │
+└──────┬───────┘
+       │
+       │ 1. Edit SCSS file
+       ▼
+┌──────────────────────┐
+│ testScssComponent.   │
+│        scss          │◄─── Source file (variables, nesting, mixins)
+└──────┬───────────────┘
+       │
+       │ 2. Compile
+       │ npm run scss:build
+       ▼
+┌──────────────────────┐
+│ testScssComponent.   │
+│        css           │◄─── Generated file (standard CSS)
+└──────┬───────────────┘
+       │
+       │ 3. Verify CSS exists
+       ▼
+┌──────────────────────┐
+│  Git Stage Changes   │
+│                      │
+│  ✅ .js              │
+│  ✅ .html            │
+│  ✅ .css  ◄────────  │◄─── Only CSS goes to Salesforce
+│  ✅ .js-meta.xml     │
+│  ❌ .scss (ignored)  │
+└──────┬───────────────┘
+       │
+       │ 4. Push to Flosum
+       │ (via VS Code or Git)
+       ▼
+┌──────────────────────┐
+│   Flosum Repository  │
+│                      │
+│   Contains:          │
+│   • .js              │
+│   • .html            │
+│   • .css  ◄─────────┼◄─── CSS deployed to Salesforce
+│   • .js-meta.xml     │
+│                      │
+│   Optional:          │
+│   • .scss (for ref)  │
+└──────┬───────────────┘
+       │
+       │ 5. Create deployment
+       ▼
+┌──────────────────────┐
+│  Flosum Deployment   │
+│      Package         │
+└──────┬───────────────┘
+       │
+       │ 6. Deploy to org
+       ▼
+┌──────────────────────┐
+│  Salesforce Org      │
+│                      │
+│  LWC Component:      │
+│  • testScssComponent │
+│    ├─ .js            │
+│    ├─ .html          │
+│    ├─ .css ◄─────────┼◄─── Salesforce uses this
+│    └─ .js-meta.xml   │
+└──────┬───────────────┘
+       │
+       │ 7. Test on page
+       ▼
+┌──────────────────────┐
+│  Lightning Page      │
+│                      │
+│  ┌────────────────┐  │
+│  │  Component     │  │
+│  │  with Styles   │◄─┼◄─── Styles applied from CSS
+│  │  ✅ Working    │  │
+│  └────────────────┘  │
+└──────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════
+                            KEY POINTS
+═══════════════════════════════════════════════════════════════════════════
+
+┌─ DEVELOPER SIDE ─────────────────────────────────────────────────────────┐
+│                                                                           │
+│  Write SCSS:          testScssComponent.scss                             │
+│  ↓                                                                        │
+│  Compile:             npm run scss:build                                 │
+│  ↓                                                                        │
+│  Generated:           testScssComponent.css                              │
+│  ↓                                                                        │
+│  Stage both:          .scss (optional) + .css (required)                 │
+│  ↓                                                                        │
+│  Push to Flosum:      Only .css deploys to Salesforce                    │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌─ SALESFORCE SIDE ────────────────────────────────────────────────────────┐
+│                                                                           │
+│  Salesforce sees:     testScssComponent.css ONLY                         │
+│  Salesforce uses:     Standard CSS (no SCSS support)                     │
+│  Result:              Styled component on Lightning pages                │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════
+                         FILE TRACKING MATRIX
+═══════════════════════════════════════════════════════════════════════════
+
+File                    │ Developer │ Git Repo │ Flosum │ Salesforce
+────────────────────────┼───────────┼──────────┼────────┼────────────
+testScssComponent.js    │     ✅    │    ✅    │   ✅   │     ✅
+testScssComponent.html  │     ✅    │    ✅    │   ✅   │     ✅
+testScssComponent.css   │     ✅    │    ✅    │   ✅   │     ✅
+testScssComponent.scss  │     ✅    │ ✅(opt)  │ ✅(opt)│     ❌
+.js-meta.xml           │     ✅    │    ✅    │   ✅   │     ✅
+
+Legend:
+✅ = File present and used
+✅(opt) = File present but optional (for reference)
+❌ = File ignored/not deployed
+
+
+═══════════════════════════════════════════════════════════════════════════
+                        COMMON MISTAKE TO AVOID
+═══════════════════════════════════════════════════════════════════════════
+
+❌ WRONG: Push SCSS to Salesforce
+   testScssComponent.scss → Flosum → Salesforce
+   Result: Component has NO STYLES (Salesforce ignores SCSS)
+
+✅ CORRECT: Compile first, push CSS
+   testScssComponent.scss → Compile → testScssComponent.css → Flosum → Salesforce
+   Result: Component is properly styled
+
+
+═══════════════════════════════════════════════════════════════════════════
+                          VERIFICATION STEPS
+═══════════════════════════════════════════════════════════════════════════
+
+Before pushing to Flosum:
+  ☑ Run: npm run scss:build
+  ☑ Verify CSS file exists and is updated
+  ☑ Check .forceignore includes **/*.scss
+  ☑ Confirm git shows .css in staged changes
+
+After pushing to Flosum:
+  ☑ Check Flosum changeset includes .css
+  ☑ Verify .scss is not in deployment package (if excluded from repo)
+  ☑ Deploy to sandbox first for testing
+
+After deployment to org:
+  ☑ Add component to Lightning page
+  ☑ Verify styles are applied
+  ☑ Test responsive behavior
+  ☑ Check browser console for errors

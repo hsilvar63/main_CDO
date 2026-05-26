@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Affiliation__c-es_MX</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>Afiliación</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Afiliaciones</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>HEDA Affiliation Layout</layout>
+        <sections>
+            <label><!-- Affiliation Information --></label>
+            <section>Affiliation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Clave de afiliación</nameFieldLabel>
+</CustomObjectTranslation>

@@ -21,7 +21,6 @@
     </pathAssistantSteps>
     <pathAssistantSteps>
         <fieldNames>Budget__c</fieldNames>
-        <fieldNames>Deliverables__c</fieldNames>
         <fieldNames>Description__c</fieldNames>
         <fieldNames>Website__c</fieldNames>
         <info>&lt;p&gt;Please fill in these fields during this phase of the project&lt;/p&gt;</info>

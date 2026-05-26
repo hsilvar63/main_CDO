@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <businessProcess>Behavior Management</businessProcess>
+    <description>An event that’s being tracked by this Case.</description>
+    <fullName>Incident</fullName>
+    <label>Incident</label>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Email</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Phone</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Web</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <default>false</default>
+            <fullName>High</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Low</fullName>
+        </values>
+        <values>
+            <default>true</default>
+            <fullName>Medium</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Complex functionality</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Existing problem</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Instructions not clear</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>New problem</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>User didn%27t attend training</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Feature Request</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Problem</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Question</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>hed__Category__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Other</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>School Code of Conduct</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>School Violation</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>State Offense</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>hed__Location__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Off Campus</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>On Campus</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Other</fullName>
+        </values>
+    </picklistValues>
+</RecordType>

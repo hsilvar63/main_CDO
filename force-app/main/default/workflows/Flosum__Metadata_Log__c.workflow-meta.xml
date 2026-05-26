@@ -5,7 +5,7 @@
         <fullName>EmailAlertOnPatchDeployment</fullName>
         <protected>false</protected>
         <recipients>
-            <recipient>chatty.00d5j00000ad0rceab.td4jdhtsxpnp@chatter.salesforce.com</recipient>
+            <recipient>chatty.00dip0000008hdlmaa.td4jdhtsxpnp@chatter.salesforce.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -20,7 +20,7 @@
         <fullName>Flosum__EmailAlertOnPatchDeployment</fullName>
         <protected>false</protected>
         <recipients>
-            <recipient>chatty.00d5j00000ad0rceab.td4jdhtsxpnp@chatter.salesforce.com</recipient>
+            <recipient>chatty.00dip0000008hdlmaa.td4jdhtsxpnp@chatter.salesforce.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -39,7 +39,7 @@
         <fullName>Flosum__EmailAlertOnPatchValidate</fullName>
         <protected>false</protected>
         <recipients>
-            <recipient>chatty.00d5j00000ad0rceab.td4jdhtsxpnp@chatter.salesforce.com</recipient>
+            <recipient>chatty.00dip0000008hdlmaa.td4jdhtsxpnp@chatter.salesforce.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>
@@ -58,7 +58,7 @@
         <fullName>Flosum__EmailAlertOnTestExecution</fullName>
         <protected>false</protected>
         <recipients>
-            <recipient>chatty.00d5j00000ad0rceab.td4jdhtsxpnp@chatter.salesforce.com</recipient>
+            <recipient>chatty.00dip0000008hdlmaa.td4jdhtsxpnp@chatter.salesforce.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>

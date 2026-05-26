@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Relationship__c-nl_NL</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Relationship --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Relationship --></value>
+    </caseValues>
+    <gender><!-- Neuter --></gender>
+    <layouts>
+        <layout>HEDA Relationship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Information --></label>
+            <section>Relationship Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Relationship Key --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>In plaats van de contactpersonen in deze relatie te wijzigen, dient u deze record te verwijderen of, indien van toepassing, een einddatum toe te voegen en de status bij te werken naar Voormalig. Maak dan een nieuwe relatierecord tussen de nieuwe contactpersonen.</errorMessage>
+        <name>hed__Contact_Do_Not_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>In plaats van de contactpersonen in deze relatie te wijzigen, dient u deze record te verwijderen of, indien van toepassing, een einddatum toe te voegen en de status bij te werken naar Voormalig. Maak dan een nieuwe relatierecord tussen de nieuwe contactpersonen.</errorMessage>
+        <name>hed__Related_Contact_Do_Not_Change</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Plan_Requirement__c-fr</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>Exigence du plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Exigences du plan</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>HEDA Plan Requirement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de l&apos;exigence du plan</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

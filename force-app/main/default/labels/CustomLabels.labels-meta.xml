@@ -15,6 +15,20 @@
         <value>a065j000002pCyDAAU</value>
     </labels>
     <labels>
+        <fullName>TestLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TestLabel</shortDescription>
+        <value>TestValue for Label</value>
+    </labels>
+    <labels>
+        <fullName>TestLabel2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TestLabel2</shortDescription>
+        <value>TestValueforLabel2</value>
+    </labels>
+    <labels>
         <fullName>turnOffValidation</fullName>
         <language>en_US</language>
         <protected>false</protected>

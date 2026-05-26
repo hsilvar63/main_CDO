@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Education_History__c-fr</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>Parcours de formation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Parcours de formation</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>EDA Education History Layout</layout>
+        <sections>
+            <label><!-- Academic Details --></label>
+            <section>Academic Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Diploma, Degree, Certification Details --></label>
+            <section>Diploma, Degree, Certification Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du parcours de formation</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

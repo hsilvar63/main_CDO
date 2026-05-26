@@ -481,12 +481,6 @@
                 <identifier>Flosum_accelqTestResult</identifier>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>Flosum:accelqBranchPipelineField</componentName>
-                <identifier>Flosum_accelqBranchPipelineField</identifier>
-            </componentInstance>
-        </itemInstances>
         <name>Facet-b37970a5-8141-4049-b432-81a45fd5ee37</name>
         <type>Facet</type>
     </flexiPageRegions>

@@ -216,6 +216,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -228,12 +232,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKI</field>
-            <label>Data Quality Description</label>
+            <field>00NIp000000uiPp</field>
+            <label>Completed FAFSA</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKA</field>
-            <label>Data Quality Score</label>
+            <field>00NIp000000uiPq</field>
+            <label>Desired Campus</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPr</field>
+            <label>Desired Degree Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPs</field>
+            <label>Desired Start Term</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPt</field>
+            <label>Living Situation</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -274,11 +290,15 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00NJ4000004puKI</field>
-            <field>00NJ4000004puKA</field>
+            <field>00NIp000000uiPp</field>
+            <field>00NIp000000uiPq</field>
+            <field>00NIp000000uiPr</field>
+            <field>00NIp000000uiPs</field>
+            <field>00NIp000000uiPt</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -414,6 +434,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -426,12 +450,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKI</field>
-            <label>Data Quality Description</label>
+            <field>00NIp000000uiPp</field>
+            <label>Completed FAFSA</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKA</field>
-            <label>Data Quality Score</label>
+            <field>00NIp000000uiPq</field>
+            <label>Desired Campus</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPr</field>
+            <label>Desired Degree Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPs</field>
+            <label>Desired Start Term</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPt</field>
+            <label>Living Situation</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -472,11 +508,15 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00NJ4000004puKI</field>
-            <field>00NJ4000004puKA</field>
+            <field>00NIp000000uiPp</field>
+            <field>00NIp000000uiPq</field>
+            <field>00NIp000000uiPr</field>
+            <field>00NIp000000uiPs</field>
+            <field>00NIp000000uiPt</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -616,6 +656,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -628,12 +672,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKI</field>
-            <label>Data Quality Description</label>
+            <field>00NIp000000uiPp</field>
+            <label>Completed FAFSA</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKA</field>
-            <label>Data Quality Score</label>
+            <field>00NIp000000uiPq</field>
+            <label>Desired Campus</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPr</field>
+            <label>Desired Degree Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPs</field>
+            <label>Desired Start Term</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPt</field>
+            <label>Living Situation</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -675,11 +731,15 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00NJ4000004puKI</field>
-            <field>00NJ4000004puKA</field>
+            <field>00NIp000000uiPp</field>
+            <field>00NIp000000uiPq</field>
+            <field>00NIp000000uiPr</field>
+            <field>00NIp000000uiPs</field>
+            <field>00NIp000000uiPt</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -819,6 +879,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -831,12 +895,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKI</field>
-            <label>Data Quality Description</label>
+            <field>00NIp000000uiPp</field>
+            <label>Completed FAFSA</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKA</field>
-            <label>Data Quality Score</label>
+            <field>00NIp000000uiPq</field>
+            <label>Desired Campus</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPr</field>
+            <label>Desired Degree Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPs</field>
+            <label>Desired Start Term</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPt</field>
+            <label>Living Situation</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -878,11 +954,15 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00NJ4000004puKI</field>
-            <field>00NJ4000004puKA</field>
+            <field>00NIp000000uiPp</field>
+            <field>00NIp000000uiPq</field>
+            <field>00NIp000000uiPr</field>
+            <field>00NIp000000uiPs</field>
+            <field>00NIp000000uiPt</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -1018,6 +1098,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1030,12 +1114,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKI</field>
-            <label>Data Quality Description</label>
+            <field>00NIp000000uiPp</field>
+            <label>Completed FAFSA</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKA</field>
-            <label>Data Quality Score</label>
+            <field>00NIp000000uiPq</field>
+            <label>Desired Campus</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPr</field>
+            <label>Desired Degree Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPs</field>
+            <label>Desired Start Term</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPt</field>
+            <label>Living Situation</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -1076,11 +1172,15 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00NJ4000004puKI</field>
-            <field>00NJ4000004puKA</field>
+            <field>00NIp000000uiPp</field>
+            <field>00NIp000000uiPq</field>
+            <field>00NIp000000uiPr</field>
+            <field>00NIp000000uiPs</field>
+            <field>00NIp000000uiPt</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -1220,6 +1320,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1232,12 +1336,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKI</field>
-            <label>Data Quality Description</label>
+            <field>00NIp000000uiPp</field>
+            <label>Completed FAFSA</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKA</field>
-            <label>Data Quality Score</label>
+            <field>00NIp000000uiPq</field>
+            <label>Desired Campus</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPr</field>
+            <label>Desired Degree Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPs</field>
+            <label>Desired Start Term</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPt</field>
+            <label>Living Situation</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -1279,11 +1395,15 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00NJ4000004puKI</field>
-            <field>00NJ4000004puKA</field>
+            <field>00NIp000000uiPp</field>
+            <field>00NIp000000uiPq</field>
+            <field>00NIp000000uiPr</field>
+            <field>00NIp000000uiPs</field>
+            <field>00NIp000000uiPt</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -1419,6 +1539,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1431,12 +1555,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKI</field>
-            <label>Data Quality Description</label>
+            <field>00NIp000000uiPp</field>
+            <label>Completed FAFSA</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKA</field>
-            <label>Data Quality Score</label>
+            <field>00NIp000000uiPq</field>
+            <label>Desired Campus</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPr</field>
+            <label>Desired Degree Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPs</field>
+            <label>Desired Start Term</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPt</field>
+            <label>Living Situation</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -1477,11 +1613,15 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00NJ4000004puKI</field>
-            <field>00NJ4000004puKA</field>
+            <field>00NIp000000uiPp</field>
+            <field>00NIp000000uiPq</field>
+            <field>00NIp000000uiPr</field>
+            <field>00NIp000000uiPs</field>
+            <field>00NIp000000uiPt</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -1617,6 +1757,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1629,12 +1773,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKI</field>
-            <label>Data Quality Description</label>
+            <field>00NIp000000uiPp</field>
+            <label>Completed FAFSA</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKA</field>
-            <label>Data Quality Score</label>
+            <field>00NIp000000uiPq</field>
+            <label>Desired Campus</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPr</field>
+            <label>Desired Degree Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPs</field>
+            <label>Desired Start Term</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPt</field>
+            <label>Living Situation</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -1675,11 +1831,15 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00NJ4000004puKI</field>
-            <field>00NJ4000004puKA</field>
+            <field>00NIp000000uiPp</field>
+            <field>00NIp000000uiPq</field>
+            <field>00NIp000000uiPr</field>
+            <field>00NIp000000uiPs</field>
+            <field>00NIp000000uiPt</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -1815,6 +1975,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1827,12 +1991,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKI</field>
-            <label>Data Quality Description</label>
+            <field>00NIp000000uiPp</field>
+            <label>Completed FAFSA</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKA</field>
-            <label>Data Quality Score</label>
+            <field>00NIp000000uiPq</field>
+            <label>Desired Campus</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPr</field>
+            <label>Desired Degree Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPs</field>
+            <label>Desired Start Term</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPt</field>
+            <label>Living Situation</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -1873,11 +2049,15 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00NJ4000004puKI</field>
-            <field>00NJ4000004puKA</field>
+            <field>00NIp000000uiPp</field>
+            <field>00NIp000000uiPq</field>
+            <field>00NIp000000uiPr</field>
+            <field>00NIp000000uiPs</field>
+            <field>00NIp000000uiPt</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -2013,6 +2193,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -2025,12 +2209,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKI</field>
-            <label>Data Quality Description</label>
+            <field>00NIp000000uiPp</field>
+            <label>Completed FAFSA</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKA</field>
-            <label>Data Quality Score</label>
+            <field>00NIp000000uiPq</field>
+            <label>Desired Campus</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPr</field>
+            <label>Desired Degree Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPs</field>
+            <label>Desired Start Term</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPt</field>
+            <label>Living Situation</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -2071,11 +2267,15 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00NJ4000004puKI</field>
-            <field>00NJ4000004puKA</field>
+            <field>00NIp000000uiPp</field>
+            <field>00NIp000000uiPq</field>
+            <field>00NIp000000uiPr</field>
+            <field>00NIp000000uiPs</field>
+            <field>00NIp000000uiPt</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -2215,6 +2415,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -2227,12 +2431,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKI</field>
-            <label>Data Quality Description</label>
+            <field>00NIp000000uiPp</field>
+            <label>Completed FAFSA</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKA</field>
-            <label>Data Quality Score</label>
+            <field>00NIp000000uiPq</field>
+            <label>Desired Campus</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPr</field>
+            <label>Desired Degree Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPs</field>
+            <label>Desired Start Term</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPt</field>
+            <label>Living Situation</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -2274,11 +2490,15 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00NJ4000004puKI</field>
-            <field>00NJ4000004puKA</field>
+            <field>00NIp000000uiPp</field>
+            <field>00NIp000000uiPq</field>
+            <field>00NIp000000uiPr</field>
+            <field>00NIp000000uiPs</field>
+            <field>00NIp000000uiPt</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>
@@ -2418,6 +2638,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -2430,12 +2654,24 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKI</field>
-            <label>Data Quality Description</label>
+            <field>00NIp000000uiPp</field>
+            <label>Completed FAFSA</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NJ4000004puKA</field>
-            <label>Data Quality Score</label>
+            <field>00NIp000000uiPq</field>
+            <label>Desired Campus</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPr</field>
+            <label>Desired Degree Level</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPs</field>
+            <label>Desired Start Term</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NIp000000uiPt</field>
+            <label>Living Situation</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
@@ -2477,11 +2713,15 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00NJ4000004puKI</field>
-            <field>00NJ4000004puKA</field>
+            <field>00NIp000000uiPp</field>
+            <field>00NIp000000uiPq</field>
+            <field>00NIp000000uiPr</field>
+            <field>00NIp000000uiPs</field>
+            <field>00NIp000000uiPt</field>
             <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
             <field>OPPORTUNITY.PUSH_COUNT</field>
         </opportunityListFieldsUnselectedSettings>

@@ -1,0 +1,175 @@
+// testScssComponent.scss
+// Example SCSS file for Flosum testing
+
+// Variables
+$primary-color: #0176d3;
+$secondary-color: #16325c;
+$success-color: #4bca81;
+$error-color: #ea001e;
+$warning-color: #ffb75d;
+
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+
+$border-radius: 0.25rem;
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin card-style {
+  background: white;
+  border: 1px solid #d8dde6;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: $spacing-md;
+}
+
+@mixin button-base {
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Component Styles
+.container {
+  padding: $spacing-lg;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  color: $primary-color;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: $spacing-md;
+  
+  &--large {
+    font-size: 2rem;
+  }
+  
+  &--small {
+    font-size: 1.2rem;
+  }
+}
+
+.card {
+  @include card-style;
+  margin-bottom: $spacing-md;
+  
+  &__title {
+    color: $secondary-color;
+    font-size: 1.2rem;
+    margin-bottom: $spacing-sm;
+  }
+  
+  &__content {
+    color: #3e3e3c;
+    line-height: 1.6;
+  }
+  
+  &--highlighted {
+    border-left: 4px solid $primary-color;
+  }
+}
+
+.button {
+  @include button-base;
+  
+  &--primary {
+    background-color: $primary-color;
+    color: white;
+  }
+  
+  &--secondary {
+    background-color: $secondary-color;
+    color: white;
+  }
+  
+  &--success {
+    background-color: $success-color;
+    color: white;
+  }
+  
+  &--warning {
+    background-color: $warning-color;
+    color: $secondary-color;
+  }
+  
+  &--danger {
+    background-color: $error-color;
+    color: white;
+  }
+}
+
+.status-badge {
+  display: inline-block;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  
+  &--success {
+    background-color: rgba($success-color, 0.2);
+    color: darken($success-color, 10%);
+  }
+  
+  &--warning {
+    background-color: rgba($warning-color, 0.2);
+    color: darken($warning-color, 20%);
+  }
+  
+  &--error {
+    background-color: rgba($error-color, 0.2);
+    color: $error-color;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: $spacing-md;
+  
+  &__item {
+    @include card-style;
+    @include flex-center;
+    min-height: 150px;
+    
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .container {
+    padding: $spacing-sm;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

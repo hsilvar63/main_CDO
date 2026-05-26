@@ -5,7 +5,7 @@
         <fullName>Flosum__EmailAlertOnSnapshotCompletion</fullName>
         <protected>false</protected>
         <recipients>
-            <recipient>chatty.00d5j00000ad0rceab.td4jdhtsxpnp@chatter.salesforce.com</recipient>
+            <recipient>chatty.00dip0000008hdlmaa.td4jdhtsxpnp@chatter.salesforce.com</recipient>
             <type>user</type>
         </recipients>
         <recipients>

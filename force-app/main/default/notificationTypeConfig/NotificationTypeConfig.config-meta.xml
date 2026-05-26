@@ -5,7 +5,21 @@
             <desktopEnabled>true</desktopEnabled>
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
+        <notificationType>account_statement_generation</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
         <notificationType>actionablelist_async_save</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>admin_graph_api_migration</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
         <notificationChannels>
@@ -39,6 +53,20 @@
             <mobileEnabled>true</mobileEnabled>
         </notificationChannels>
         <notificationType>approval_request</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>bar_recover_activity_status</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>billing_case_creation</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
         <notificationChannels>
@@ -179,6 +207,13 @@
             <desktopEnabled>true</desktopEnabled>
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
+        <notificationType>ecm_bulk_template_install</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
         <notificationType>einstein_agent_notify</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
@@ -187,6 +222,13 @@
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
         <notificationType>event_reminder</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>fh_vld_job_run_completed</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
         <notificationChannels>
@@ -267,6 +309,13 @@
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
         <notificationType>mailapp_alert</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>malicious_file_detected</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
         <notificationChannels>
@@ -364,6 +413,20 @@
     </notificationTypeSettings>
     <notificationTypeSettings>
         <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>rra_insights_generation</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>rtf_payment_status</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
             <desktopEnabled>false</desktopEnabled>
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
@@ -394,6 +457,13 @@
             <mobileEnabled>true</mobileEnabled>
         </notificationChannels>
         <notificationType>stream_post</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>suites_agent_enablement</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
         <appSettings>
@@ -433,7 +503,21 @@
             <desktopEnabled>true</desktopEnabled>
             <mobileEnabled>false</mobileEnabled>
         </notificationChannels>
+        <notificationType>user_graph_api_migration</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
         <notificationType>voice_call_share</notificationType>
+    </notificationTypeSettings>
+    <notificationTypeSettings>
+        <notificationChannels>
+            <desktopEnabled>true</desktopEnabled>
+            <mobileEnabled>false</mobileEnabled>
+        </notificationChannels>
+        <notificationType>wa_mce_credential_expire</notificationType>
     </notificationTypeSettings>
     <notificationTypeSettings>
         <notificationChannels>

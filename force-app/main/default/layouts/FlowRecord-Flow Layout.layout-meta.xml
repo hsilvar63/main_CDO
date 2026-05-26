@@ -77,6 +77,18 @@
         <fields>AreMetricsLoggedToDataCloud</fields>
         <relatedList>FlowRecordVersions</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>FlowRecordVersion</fields>
+        <fields>ScheduledDate</fields>
+        <fields>Enqueued</fields>
+        <fields>Entries</fields>
+        <fields>Exits</fields>
+        <fields>Errors</fields>
+        <fields>ProgressStatus</fields>
+        <fields>ErrorDetail</fields>
+        <relatedList>FlowRecordVersionOccurrences</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
