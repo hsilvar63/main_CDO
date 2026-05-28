@@ -1,0 +1,13 @@
+<messaging:emailTemplate subject="Test run is complete for org {!relatedTo.Org__r.Name}" recipientType="User" relatedToType="Flosum__Test_Log__c">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <p>Dear {!recipient.FirstName},</p>
+                <p>Flosum has finished the test run and code coverage analysis on org {!relatedTo.Org__r.Name}.</p>
+                <p>The logs can be seen here:</p>
+                <c:NotificationComponent recordId="{!relatedTo.Id}"/>
+                <c:FlosumLogo />
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>
