@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>GUS</description>
+    <fullName>agf__GUS</fullName>
+    <label>GUS</label>
+    <picklistValues>
+        <picklist>agf__Approval_Status__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>GO</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>NO GO</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Pending</fullName>
+        </values>
+    </picklistValues>
+</RecordType>
