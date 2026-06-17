@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__User_Story_Filter__mdt-en_US</fullName>
+    <layouts>
+        <layout>User Story Filter Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Invalid operators for logic &apos;AND&apos; : &apos;equals&apos;, &apos;starts with&apos;, &apos;ends with&apos;. --></errorMessage>
+        <name>Flosum__Logic_AND_validate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invalid operators for logic &apos;OR&apos; : &apos;not equal&apos;. --></errorMessage>
+        <name>Flosum__Logic_OR_Validate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Values cannot be blank. --></errorMessage>
+        <name>Flosum__Values_validate</name>
+    </validationRules>
+</CustomObjectTranslation>

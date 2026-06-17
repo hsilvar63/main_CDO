@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <fullName>Flosum__Marketing_Cloud</fullName>
+    <label>Marketing Cloud</label>
+    <picklistValues>
+        <picklist>Flosum__External_Status__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>In Progress</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>In Queue</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Processed</fullName>
+        </values>
+    </picklistValues>
+</RecordType>
