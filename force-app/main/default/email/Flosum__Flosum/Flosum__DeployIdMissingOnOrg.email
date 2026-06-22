@@ -1,0 +1,13 @@
+<messaging:emailTemplate subject="Deployment ID does not Exist {!relatedTo.Branch__r.Flosum__Branch_Name__c}{!IF(relatedTo.Flosum__Succeed__c,' is successful ',' has failed ')}on org {!relatedTo.Organisation__r.Name}" recipientType="User" relatedToType="Flosum__Metadata_Log__c">
+<messaging:htmlEmailBody >
+        <html>
+            <body>
+                <p>Dear {!recipient.FirstName},</p>
+                <p>Deployment ID does not exist for {!relatedTo.Branch__r.Flosum__Branch_Name__c} in org {!relatedTo.Organisation__r.Name}. This deployment will need to be manually updated.</p>
+                <p>The logs can be seen here:</p>
+                <c:NotificationComponent recordId="{!relatedTo.Id}"/>
+                <c:FlosumLogo />
+            </body>
+        </html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
