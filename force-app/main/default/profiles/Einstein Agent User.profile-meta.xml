@@ -106,11 +106,6 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>standard__LightningInstrumentation</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
         <application>standard__LightningSales</application>
         <default>false</default>
         <visible>false</visible>
@@ -189,14 +184,6 @@
     <classAccesses>
         <apexClass>Dataplier__AsyncQueue</apexClass>
         <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>Dataplier__AuthFixController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>Dataplier__AuthFixControllerTest</apexClass>
-        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>Dataplier__AuthUtils</apexClass>
@@ -3408,18 +3395,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Query</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SQ_CustomizationTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SQ_MetadataLogHandler</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SQ_QualityGate</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -6940,16 +6915,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.Data_Quality_Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.Data_Quality_Score__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Description</field>
         <readable>true</readable>
@@ -7133,6 +7098,11 @@
         <editable>true</editable>
         <field>ApprovalWorkItem.FlowOrchestrationWorkItemId</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ApprovalWorkItem.ParentWorkItemId</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -7390,16 +7360,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.Data_Quality_Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.Data_Quality_Score__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Campaign.Description</field>
         <readable>true</readable>
@@ -7567,16 +7527,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Case.ContactId</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Data_Quality_Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Data_Quality_Score__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7825,11 +7775,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Account_Updated__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Contact.AssistantName</field>
         <readable>true</readable>
@@ -7847,16 +7792,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.BuyerAttributes</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Data_Quality_Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Data_Quality_Score__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -8290,16 +8225,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Contract.Data_Quality_Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contract.Data_Quality_Score__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Contract.Description</field>
         <readable>true</readable>
@@ -8451,6 +8376,546 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Filter__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Key_Fields__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__LimitFilterOption__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__LimitFilter__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Limit_Chunk_Bulk__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Masked_Fields__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Object_Fields__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Operation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Query__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__is_Custom_Where_Clause__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Child_Steps_Condition__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Child_Steps_Settings__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Data_Set_Option__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Execution_Condition__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Filter_Target_Records__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Filter__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Hierarchy_Levels__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Key_Data_Set__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Maximum_Deployed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Not_Populated_Lookups__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Operation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Parent_Id_Field__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Parent_Steps_Condition__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Parent_Steps_Settings__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Parent_Steps__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Second_Stage_Lookups__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__SelfLookups__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Sequence__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Step_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Sequence__c.Dataplier__Execution_Direction__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step_Log__c.Dataplier__Batch_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step_Log__c.Dataplier__Job_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step_Log__c.Dataplier__Logs__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step_Records__c.Dataplier__Number_Records__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step_Records__c.Dataplier__Records_Ids__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Child_Steps_Condition__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Child_Steps_Settings__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Condition__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Data_Set_Option__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Execution_Sequence_Step__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Filter_Target_Records__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Filter__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Hierarchy_Levels__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Key_Fields__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Limit_Chunk_Bulk__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Lookup_Fields__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Masked_Fields__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Maximum_Deployed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Not_Populated_Lookups__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Object_API_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Object_Fields__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Operation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Parent_Id_Field__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Parent_Steps_Condition__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Parent_Steps_Settings__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Parent_Steps__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Query__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Records_Failed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Records_Processed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Second_Stage_Lookups__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__SelfLookups__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Sequence__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Space_Required__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Total_batches__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution__c.Dataplier__Batch_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution__c.Dataplier__Batch_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution__c.Dataplier__Space_Required__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution__c.Dataplier__Started__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Execution__c.Dataplier__Total_Records__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Filter_Line__c.Dataplier__OperatorH__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Filter_Line__c.Dataplier__Operator__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Filter_Line__c.Dataplier__Query_V2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Filter_Line__c.Dataplier__Query__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Filter_Line__c.Dataplier__Sequence__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Filter_Line__c.Dataplier__Value__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Filter__c.Dataplier__Boolean_Logic__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Filter__c.Dataplier__Query_Expression_Child__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Filter__c.Dataplier__Query_Expression__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__IdCache__c.Dataplier__MappedIds__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__IdCache__c.Dataplier__SequenceId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Log__c.Dataplier__Body__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__AuthName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__Completed_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__ETA__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__Org__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__Space_required__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__Start_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Failed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Inserted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Migrated__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Object_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Order__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Sequence_Step__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Space_required__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Total__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Updated__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Object_State__c.Dataplier__orgId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Object_State__c.Dataplier__original_states__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Object_State__c.Dataplier__updated_states__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Organisation__c.Dataplier__HostName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Organisation__c.Dataplier__Lattest_Test_Execution_Result__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Organisation__c.Dataplier__Organisation_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Organisation__c.Dataplier__Organisation_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Organisation__c.Dataplier__User_Full_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Dataplier__Organisation__c.Dataplier__Username__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Entitlement.AssetId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -8527,16 +8992,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Entitlement.WorkOrdersPerEntitlement</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Event.Data_Quality_Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Event.Data_Quality_Score__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -8920,6 +9375,46 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Branch__c.flosum_git__Commit_Message__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Branch__c.flosum_git__IsRepoDeleted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Branch__c.flosum_git__Last_Merged_Branch__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Branch__c.flosum_git__SonareCoube_Issues__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Branch__c.flosum_git__Synchronization_Direction__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Branch__c.flosum_git__Synchronization_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Branch__c.flosum_git__Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Branch__c.flosum_git__isCommited__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Flosum__Build_Manifest__c.Flosum__Changed_By__c</field>
         <readable>true</readable>
@@ -9196,6 +9691,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Flosum__Commit__c.flosum_git__Is_From_Agent__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Flosum__Component_History__c.Flosum__Action_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -9297,6 +9797,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Flosum__Component_History__c.Flosum__isReviewed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Component_History__c.flosum_git__Is_From_Agent__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9422,6 +9927,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Flosum__Component__c.Flosum__Vlocity_Component__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Component__c.flosum_git__Deletion_By_Agent__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11451,6 +11961,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Flosum__Repository__c.flosum_git__Snapshot_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Repository__c.flosum_git__Synchronization_Direction__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Repository__c.flosum_git__Synchronization_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Flosum__Repository__c.flosum_git__total_cmp_of_snapshot_commited_to_repo__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Flosum__Review_Result__c.Flosum__Branch__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -12385,6 +12915,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Incident.MilestoneTimer</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Incident.ParentIncidentId</field>
         <readable>true</readable>
@@ -12570,16 +13105,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Lead.Data_Quality_Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Lead.Data_Quality_Score__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Description</field>
         <readable>true</readable>
@@ -12753,16 +13278,6 @@
         <editable>false</editable>
         <field>Opportunity.ContractId</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Data_Quality_Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Data_Quality_Score__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -13138,46 +13653,6 @@
         <editable>true</editable>
         <field>Project_Cert__c.Website__c</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Config__mdt.Issue_Type__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Config__mdt.Message__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Config__mdt.Rule__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Config__mdt.Sevirity__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Enable_Setting__mdt.Enable_Disable__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Threshold_Config__mdt.Frequency__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Threshold_Config__mdt.Severity__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Threshold_Config__mdt.Threshold_Type__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -13685,16 +14160,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Task.Data_Quality_Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Task.Data_Quality_Score__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Task.Description</field>
         <readable>true</readable>
@@ -14192,6 +14657,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>User.agf__Work_User_Interface__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>User.flosum_git__SSH_Key__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -22724,10 +23194,606 @@
         <field>flosum_connect__Jira_Webhook_Setting__c.flosum_connect__Webhook_Event__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>Account_Updates_Contact_Checkbox</flow>
-    </flowAccesses>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Azure_Error__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Azure__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__BitBucket_Error__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__BitBucket__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Commit_Components__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Commit_in_Progress__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Error__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__GitLab_Error__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__GitLab__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Git_Branch_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Git_Branch_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Github_Error__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Github__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__MR_inProgress__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Repository_Git__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__mergeBranch__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__oldMergeBranch__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__run_merge__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Component_Detail__c.flosum_git__Component_Path__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Component_Git__c.flosum_git__CRC32__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Component_Git__c.flosum_git__Component_Git_Resp__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Component_Git__c.flosum_git__Component_Version__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Component_Git__c.flosum_git__Component__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Connection__c.flosum_git__Application_Url__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Connection__c.flosum_git__Is_Bidirectional_Synchronization__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Connection__c.flosum_git__Is_Convert_to_Sfdx__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Connection__c.flosum_git__Is_Email_Notifications_Enabled__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Connection__c.flosum_git__Is_Enabled__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Connection__c.flosum_git__Sync_In_Progress__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Error_for_display__c.flosum_git__Branch_Git__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Error_for_display__c.flosum_git__Branch__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Error_for_display__c.flosum_git__Error_code__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Error_for_display__c.flosum_git__Error_fields__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Error_for_display__c.flosum_git__Error_message__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Error_for_display__c.flosum_git__Repository__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Attachment_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Attachment_SHA__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Azure_Sync__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Azure__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Bitbucket__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Bitbucket_responce__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Branch_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Component_Version__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Component__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Component_type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__GitLab__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__History_Git_External_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Path__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Repository_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Repository__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__UpsertField__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__bitbucketSync__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__githubSync__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__gitlabSync__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__History_Git__c.flosum_git__isLastVersion__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Log__c.flosum_git__Branch__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Log__c.flosum_git__Repository__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Log__c.flosum_git__Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Log__c.flosum_git__isSystem__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Azure__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__BitBucket_Error__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Bitbucket__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Error__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__GitLab_Error__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__GitLab__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Git_Repository_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Git_Repository_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Github_Error__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Github__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__SSH__mdt.flosum_git__Fingerpring__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__SSH__mdt.flosum_git__Keys__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Synchronize_Branch__c.flosum_git__Branch__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Synchronize_Branch__c.flosum_git__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Synchronize_Repository__c.flosum_git__Repository__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>flosum_git__Synchronize_Repository__c.flosum_git__Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Field__c.sf_tfs__Default_State__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Field__c.sf_tfs__Field_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Field__c.sf_tfs__allowedValues__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Field__c.sf_tfs__alwaysRequired__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Field__c.sf_tfs__defaultValue__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Field__c.sf_tfs__dependentFields__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Field__c.sf_tfs__helpText__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Field__c.sf_tfs__name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Field__c.sf_tfs__readOnly__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Field__c.sf_tfs__referenceName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Field__c.sf_tfs__type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Field__c.sf_tfs__url__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Flosum_To_TFS__c.sf_tfs__Keys__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Flosum_To_TFS__c.sf_tfs__Organization__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Flosum_To_TFS__c.sf_tfs__key__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Organization__c.sf_tfs__Default_Organization__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Organization__c.sf_tfs__OrganizationUsers__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Organization__c.sf_tfs__Organization_Users__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Organization__c.sf_tfs__Organization__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Organization__c.sf_tfs__isSelected__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Default_Project__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Default_Work_Item__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Fields__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Project__c.sf_tfs__IsDefault__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Processes_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Read__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Revision__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Project__c.sf_tfs__State__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Visibility__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Write__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Project__c.sf_tfs__isSelected__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Project__c.sf_tfs__url__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item_Field__c.sf_tfs__ExtId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item_Field__c.sf_tfs__States__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item_Field__c.sf_tfs__isSynced__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__Default_State__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__ExtId__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__Is_Story_Activated__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__Statuses__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__count__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__fields__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__isDisabled__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__is_Synced__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__referenceName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__xmlForm__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Create_a_Case</flow>
@@ -22762,9 +23828,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>AccountTeamMember-Account Team Member Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ActiveScratchOrg-Active Scratch Org Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
@@ -22837,6 +23900,71 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>DataUsePurpose-Data Use Purpose Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Data_Set__c-Dataplier__Data Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Data_Set__c-Dataplier__Data Set Layout</layout>
+        <recordType>Dataplier__Data_Set__c.Dataplier__DataSet</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Sequence_Step__c-Dataplier__Execution Sequence Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Sequence__c-Dataplier__Execution Sequence Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Sequence__c-Dataplier__Execution Sequence Layout</layout>
+        <recordType>Dataplier__Execution_Sequence__c.Dataplier__ExecutionSequence</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Step_Log__c-Dataplier__Execution Step Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Step_Records__c-Dataplier__Execution Step Records Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Step__c-Dataplier__Execution Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Step__c-Dataplier__Execution Step Layout</layout>
+        <recordType>Dataplier__Execution_Step__c.Dataplier__ExecutionStep</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution__c-Dataplier__Execution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution__c-Dataplier__Execution Layout</layout>
+        <recordType>Dataplier__Execution__c.Dataplier__Execution</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Filter_Line__c-Dataplier__Filter Line Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Filter__c-Dataplier__Filter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__IdCache__c-Dataplier__IdCache Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Log__c-Dataplier__Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Migration_Job__c-Dataplier__Migration Job Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Migration_Job__c-Dataplier__Migration Job Layout</layout>
+        <recordType>Dataplier__Migration_Job__c.Dataplier__Migration_Job</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Migration_Step__c-Dataplier__Migration Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Object_State__c-Dataplier__Object State Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Organisation__c-Dataplier__Org Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
@@ -23483,10 +24611,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ApplicationSubtypeDefinition</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__AppointmentAssignmentPolicy</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -23580,10 +24704,6 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__BusinessProcessGroup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__BusinessProcessTypeDefinition</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -23692,10 +24812,6 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__ContextDefinition</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ContextUseCaseMapping</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -23812,10 +24928,6 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__DataCategoryGroup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__DataConnector</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -23951,10 +25063,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__DocumentTemplate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__DocumentType</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -24051,23 +25159,11 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ExplainabilityActionDefinition</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ExplainabilityActionVersion</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__ExplainabilityMsgTemplate</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__ExpressionSetDefinition</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ExpressionSetDefinitionVersion</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -24655,14 +25751,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ProductSpecificationRecType</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ProductSpecificationType</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__Profile</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -24719,10 +25807,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__RecAlrtDataSrcExpSetDef</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__RecommendationStrategy</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -24736,14 +25820,6 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__RecordAlertCategory</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__RecordAlertDataSource</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__RecordAlertTemplate</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -25309,9 +26385,6 @@
         <layout>Macro-Macro Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>NamespaceRegistry-Namespace Registry Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -25353,15 +26426,6 @@
         <layout>QuickText-Quick Text Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>SQ_Config__mdt-SQ Config Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SQ_Enable_Setting__mdt-SQ Enable Setting Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SQ_Threshold_Config__mdt-SQ Threshold Config Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Scorecard-Scorecard Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -25369,9 +26433,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ScorecardMetric-Scorecard Metric Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ScratchOrgInfo-Scratch Org Info Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Seller-Seller Layout</layout>
@@ -25960,10 +27021,60 @@
     <layoutAssignments>
         <layout>flosum_connect__Jira_Webhook_Setting__c-flosum_connect__Jira Webhook Setting Layout</layout>
     </layoutAssignments>
-    <pageAccesses>
-        <apexPage>Dataplier__AuthFix</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
+    <layoutAssignments>
+        <layout>flosum_git__Branch_Git__c-flosum_git__Branch-Git Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Component_Detail__c-flosum_git__Component Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Component_Git__c-flosum_git__Component-Git Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Connection__c-flosum_git__Connection Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Error_for_display__c-flosum_git__Error Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__History_Git__c-flosum_git__History-Git Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Log__c-flosum_git__Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Repository_Connection__c-flosum_git__Repository Connection Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Repository_Git__c-flosum_git__Repository-Git Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__SSH__mdt-flosum_git__SSH Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Synchronize_Branch__c-flosum_git__Synchronize Branch Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Synchronize_Repository__c-flosum_git__Synchronize Repository Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_tfs__Field__c-sf_tfs__Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_tfs__Flosum_To_TFS__c-sf_tfs__Flosum To TFS Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_tfs__Organization__c-sf_tfs__Organization Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_tfs__Project__c-sf_tfs__Project Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_tfs__Work_Item_Field__c-sf_tfs__Work Item Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_tfs__Work_Item__c-sf_tfs__Work Item Layout</layout>
+    </layoutAssignments>
     <pageAccesses>
         <apexPage>Dataplier__DMPostInstallScript</apexPage>
         <enabled>false</enabled>
@@ -27218,6 +28329,31 @@
     </pageAccesses>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Dataplier__Data_Set__c.Dataplier__DataSet</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Dataplier__Execution_Sequence__c.Dataplier__ExecutionSequence</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Dataplier__Execution_Step__c.Dataplier__ExecutionStep</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Dataplier__Execution__c.Dataplier__Execution</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Dataplier__Migration_Job__c.Dataplier__Migration_Job</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Flosum__Branch__c.Flosum__Commerce_Cloud</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -27823,11 +28959,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ApplicationSubtypeDefinition</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__AppointmentAssignmentPolicy</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -27944,11 +29075,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__BusinessProcessGroup</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__BusinessProcessTypeDefinition</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -28084,11 +29210,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__ContextDefinition</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ContextUseCaseMapping</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -28234,11 +29355,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__DataCategoryGroup</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__DataConnector</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -28408,11 +29524,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__DocumentTemplate</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__DocumentType</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -28533,27 +29644,12 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ExplainabilityActionDefinition</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ExplainabilityActionVersion</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__ExplainabilityMsgTemplate</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__ExpressionSetDefinition</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ExpressionSetDefinitionVersion</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -29288,16 +30384,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ProductSpecificationRecType</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ProductSpecificationType</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__Profile</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -29368,11 +30454,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__RecAlrtDataSrcExpSetDef</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__RecommendationStrategy</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -29389,16 +30470,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__RecordAlertCategory</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__RecordAlertDataSource</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__RecordAlertTemplate</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -30097,6 +31168,22 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
+        <tab>Dataplier__Data_Set__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Dataplier__Execution_Sequence__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Dataplier__Execution__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Dataplier__Settings</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Flosum_Scan__Flosum_Scan</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -30397,6 +31484,38 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>flosum_git__Flosum_Git_Settings</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>flosum_git__Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sf_tfs__Admin_Settings</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sf_tfs__Field__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sf_tfs__Organization__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sf_tfs__Project__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sf_tfs__Work_Item_Field__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sf_tfs__Work_Item__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -30405,7 +31524,7 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-ActiveScratchOrg</tab>
+        <tab>standard-Advisements</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -30462,6 +31581,14 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Case</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-CausalInsightType</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-ChangeRequest</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -30553,11 +31680,43 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-FlowLogs</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Forecasting3</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-FulfmtRoutgSpecLocation</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-FulfmtRoutgSpecProduct</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-GRNItemProductionBatch</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-GRNItemSerializedProduct</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-GeolocationBasedAction</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-GlobalFlowResources</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-GoodsReceivedNote</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-GoodsReceivedNoteItem</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -30574,6 +31733,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Image</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Incident</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -30617,10 +31780,6 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-NamespaceRegistry</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>standard-Opportunity</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -30633,8 +31792,24 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-OrderSource</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OrgManagement</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-OtherUserProfile</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-PartnerUnsoldInvLedger</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-PartnerUnsoldInventory</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-PartyConsent</tab>
@@ -30701,6 +31876,14 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-PurchaseOrder</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-PurchaseOrderItem</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Recognition</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -30709,12 +31892,48 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-RegltCntntEngmtChannelType</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-RegltCntntProcessStatus</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-RegltCntntRendition</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-RegltCntntType</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Scorecard</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-ScratchOrgInfo</tab>
-        <visibility>Hidden</visibility>
+        <tab>standard-SecurityCenterConfig</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-SecurityCenterCustomMetrics</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-SecurityCenterNotification</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-SecurityCenterPolicies</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-SecurityHub</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-SecurityInvestigations</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Seller</tab>
@@ -30745,6 +31964,10 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-TenantSecurityInvestigation</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-TerritoryAccountScore</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -30755,6 +31978,10 @@
     <tabVisibilities>
         <tab>standard-TestSuite</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-UserDevopsPreference</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-UserProfile</tab>
