@@ -631,6 +631,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>Flosum__123test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Flosum__APIVersionSettingController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
