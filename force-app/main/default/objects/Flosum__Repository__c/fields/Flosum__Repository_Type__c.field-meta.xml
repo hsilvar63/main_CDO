@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Flosum__Repository_Type__c</fullName>
     <deprecated>false</deprecated>
+    <fullName>Flosum__Repository_Type__c</fullName>
     <label>Repository Type</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
@@ -12,24 +12,29 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Vlocity</fullName>
                 <default>false</default>
+                <fullName>Vlocity</fullName>
                 <label>Vlocity</label>
             </value>
             <value>
-                <fullName>Veeva Vault</fullName>
                 <default>false</default>
+                <fullName>Veeva Vault</fullName>
                 <label>Veeva Vault</label>
             </value>
             <value>
-                <fullName>Commerce Cloud</fullName>
                 <default>false</default>
+                <fullName>Commerce Cloud</fullName>
                 <label>Commerce Cloud</label>
             </value>
             <value>
-                <fullName>Marketing Cloud</fullName>
                 <default>false</default>
+                <fullName>Marketing Cloud</fullName>
                 <label>Marketing Cloud</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>MuleSoft</fullName>
+                <label>MuleSoft</label>
             </value>
         </valueSetDefinition>
     </valueSet>

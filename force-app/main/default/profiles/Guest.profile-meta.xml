@@ -61,6 +61,11 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
+        <application>standard__AIWorkbench</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>standard__AgentforceStudio</application>
         <default>false</default>
         <visible>false</visible>
@@ -2108,6 +2113,34 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Flosum__ModifyOrgPermissionControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Flosum__MulesoftAuthentication</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Flosum__MulesoftAuthenticationTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Flosum__MulesoftDeployController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Flosum__MulesoftDeployControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Flosum__MulesoftSnapshotController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Flosum__MulesoftSnapshotControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Flosum__MulesoftTestDataFactory</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -8917,6 +8950,46 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Flosum__Branch__c.flosum_git__Commit_Message__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Branch__c.flosum_git__IsRepoDeleted__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Branch__c.flosum_git__Last_Merged_Branch__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Branch__c.flosum_git__SonareCoube_Issues__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Branch__c.flosum_git__Synchronization_Direction__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Branch__c.flosum_git__Synchronization_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Branch__c.flosum_git__Time__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Branch__c.flosum_git__isCommited__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Flosum__Build_Manifest__c.Flosum__Changed_By__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -9192,6 +9265,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Flosum__Commit__c.flosum_git__Is_From_Agent__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Flosum__Component_History__c.Flosum__Action_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -9294,6 +9372,11 @@
         <editable>true</editable>
         <field>Flosum__Component_History__c.Flosum__isReviewed__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Component_History__c.flosum_git__Is_From_Agent__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -9418,6 +9501,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Flosum__Component__c.Flosum__Vlocity_Component__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Component__c.flosum_git__Deletion_By_Agent__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -9903,6 +9991,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Flosum__HerokuCredentials__c.Flosum__IsFullReview__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__HerokuCredentials__c.Flosum__Is_Use_Named_Credentials__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -11446,6 +11539,26 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Repository__c.flosum_git__Snapshot_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Repository__c.flosum_git__Synchronization_Direction__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Repository__c.flosum_git__Synchronization_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Repository__c.flosum_git__total_cmp_of_snapshot_commited_to_repo__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Flosum__Review_Result__c.Flosum__Branch__c</field>
         <readable>true</readable>
@@ -12253,6 +12366,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Flosum__Vlocity_Credentials__c.Flosum__Client_Secret__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Flosum__Vlocity_Credentials__c.Flosum__Is_Use_Named_Credentials__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -14188,6 +14306,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>User.agf__Work_User_Interface__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.flosum_git__SSH_Key__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -22720,6 +22843,606 @@
         <field>flosum_connect__Jira_Webhook_Setting__c.flosum_connect__Webhook_Event__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Azure_Error__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Azure__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__BitBucket_Error__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__BitBucket__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Commit_Components__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Commit_in_Progress__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Error__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__GitLab_Error__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__GitLab__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Git_Branch_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Git_Branch_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Github_Error__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Github__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__MR_inProgress__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__Repository_Git__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__mergeBranch__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__oldMergeBranch__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Branch_Git__c.flosum_git__run_merge__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Component_Detail__c.flosum_git__Component_Path__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Component_Git__c.flosum_git__CRC32__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Component_Git__c.flosum_git__Component_Git_Resp__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Component_Git__c.flosum_git__Component_Version__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Component_Git__c.flosum_git__Component__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Connection__c.flosum_git__Application_Url__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Connection__c.flosum_git__Is_Bidirectional_Synchronization__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Connection__c.flosum_git__Is_Convert_to_Sfdx__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Connection__c.flosum_git__Is_Email_Notifications_Enabled__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Connection__c.flosum_git__Is_Enabled__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Connection__c.flosum_git__Sync_In_Progress__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Error_for_display__c.flosum_git__Branch_Git__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Error_for_display__c.flosum_git__Branch__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Error_for_display__c.flosum_git__Error_code__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Error_for_display__c.flosum_git__Error_fields__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Error_for_display__c.flosum_git__Error_message__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Error_for_display__c.flosum_git__Repository__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Attachment_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Attachment_SHA__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Azure_Sync__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Azure__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Bitbucket__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Bitbucket_responce__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Branch_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Component_Version__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Component__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Component_type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__GitLab__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__History_Git_External_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Path__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Repository_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__Repository__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__UpsertField__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__bitbucketSync__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__githubSync__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__gitlabSync__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__History_Git__c.flosum_git__isLastVersion__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Log__c.flosum_git__Branch__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Log__c.flosum_git__Repository__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Log__c.flosum_git__Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Log__c.flosum_git__isSystem__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Azure__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__BitBucket_Error__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Bitbucket__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Error__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__GitLab_Error__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__GitLab__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Git_Repository_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Git_Repository_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Github_Error__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Repository_Git__c.flosum_git__Github__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__SSH__mdt.flosum_git__Fingerpring__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__SSH__mdt.flosum_git__Keys__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Synchronize_Branch__c.flosum_git__Branch__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Synchronize_Branch__c.flosum_git__Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Synchronize_Repository__c.flosum_git__Repository__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>flosum_git__Synchronize_Repository__c.flosum_git__Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Field__c.sf_tfs__Default_State__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Field__c.sf_tfs__Field_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Field__c.sf_tfs__allowedValues__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Field__c.sf_tfs__alwaysRequired__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Field__c.sf_tfs__defaultValue__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Field__c.sf_tfs__dependentFields__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Field__c.sf_tfs__helpText__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Field__c.sf_tfs__name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Field__c.sf_tfs__readOnly__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Field__c.sf_tfs__referenceName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Field__c.sf_tfs__type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Field__c.sf_tfs__url__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Flosum_To_TFS__c.sf_tfs__Keys__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Flosum_To_TFS__c.sf_tfs__Organization__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Flosum_To_TFS__c.sf_tfs__key__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Organization__c.sf_tfs__Default_Organization__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Organization__c.sf_tfs__OrganizationUsers__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Organization__c.sf_tfs__Organization_Users__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Organization__c.sf_tfs__Organization__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Organization__c.sf_tfs__isSelected__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Default_Project__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Default_Work_Item__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Fields__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Project__c.sf_tfs__IsDefault__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Processes_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Read__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Revision__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Project__c.sf_tfs__State__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Visibility__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Project__c.sf_tfs__Write__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Project__c.sf_tfs__isSelected__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Project__c.sf_tfs__url__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item_Field__c.sf_tfs__ExtId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item_Field__c.sf_tfs__States__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item_Field__c.sf_tfs__isSynced__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__Default_State__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__ExtId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__Is_Story_Activated__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__Statuses__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__count__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__fields__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__isDisabled__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__is_Synced__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__referenceName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>sf_tfs__Work_Item__c.sf_tfs__xmlForm__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>Account_Updates_Contact_Checkbox</flow>
@@ -22889,6 +23612,10 @@
     <layoutAssignments>
         <layout>Flosum__Branch__c-Flosum__Branch Layout</layout>
         <recordType>Flosum__Branch__c.Flosum__Locked</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Flosum__Branch__c-Flosum__Branch Layout</layout>
+        <recordType>Flosum__Branch__c.Flosum__MuleSoft</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Branch__c-Flosum__Commerce Cloud Layout</layout>
@@ -23364,6 +24091,10 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__AIUsecaseDefinition</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
+        <recordType>Flosum__Metadata_Item__c.Flosum__AccountPlanObjMeasCalcDef</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -24307,6 +25038,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
+        <recordType>Flosum__Metadata_Item__c.Flosum__InvocableActionExtension</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__KeywordList</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -24344,6 +25079,10 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__LightningOnboardingConfig</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
+        <recordType>Flosum__Metadata_Item__c.Flosum__LightningOutApp</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -24456,6 +25195,10 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__ModerationRule</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
+        <recordType>Flosum__Metadata_Item__c.Flosum__MuleSoft</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -25124,6 +25867,10 @@
         <recordType>Flosum__Organisation__c.Flosum__Default</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Flosum__Organisation__c-Flosum__Organisation Layout</layout>
+        <recordType>Flosum__Organisation__c.Flosum__MuleSoft</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Flosum__Organisation__c-Flosum__Veeva Organisation Layout</layout>
         <recordType>Flosum__Organisation__c.Flosum__Veeva</recordType>
     </layoutAssignments>
@@ -25229,6 +25976,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Snapshot__c-Flosum__Snapshot Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Flosum__Snapshot__c-Flosum__Snapshot Layout</layout>
+        <recordType>Flosum__Snapshot__c.Flosum__MuleSoft</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Story_Deployment_Manifest__c-Flosum__Story Deployment Manifest Layout</layout>
@@ -25955,6 +26706,60 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>flosum_connect__Jira_Webhook_Setting__c-flosum_connect__Jira Webhook Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Branch_Git__c-flosum_git__Branch-Git Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Component_Detail__c-flosum_git__Component Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Component_Git__c-flosum_git__Component-Git Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Connection__c-flosum_git__Connection Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Error_for_display__c-flosum_git__Error Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__History_Git__c-flosum_git__History-Git Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Log__c-flosum_git__Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Repository_Connection__c-flosum_git__Repository Connection Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Repository_Git__c-flosum_git__Repository-Git Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__SSH__mdt-flosum_git__SSH Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Synchronize_Branch__c-flosum_git__Synchronize Branch Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>flosum_git__Synchronize_Repository__c-flosum_git__Synchronize Repository Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_tfs__Field__c-sf_tfs__Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_tfs__Flosum_To_TFS__c-sf_tfs__Flosum To TFS Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_tfs__Organization__c-sf_tfs__Organization Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_tfs__Project__c-sf_tfs__Project Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_tfs__Work_Item_Field__c-sf_tfs__Work Item Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>sf_tfs__Work_Item__c-sf_tfs__Work Item Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
@@ -26897,6 +27702,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>Flosum__MulesoftSnapshot</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>Flosum__MultiMetaAddManifest</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -27774,6 +28583,11 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Flosum__Branch__c.Flosum__MuleSoft</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Flosum__Branch__c.Flosum__Veeva</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -28215,6 +29029,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__AIUsecaseDefinition</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Flosum__Metadata_Item__c.Flosum__AccountPlanObjMeasCalcDef</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -29394,6 +30213,11 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Flosum__Metadata_Item__c.Flosum__InvocableActionExtension</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__KeywordList</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -29440,6 +30264,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__LightningOnboardingConfig</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Flosum__Metadata_Item__c.Flosum__LightningOutApp</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -29580,6 +30409,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__ModerationRule</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Flosum__Metadata_Item__c.Flosum__MuleSoft</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -30394,6 +31228,11 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Flosum__Organisation__c.Flosum__MuleSoft</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Flosum__Organisation__c.Flosum__Veeva</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -30430,6 +31269,11 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Snapshot__c.Flosum__Marketing_Cloud</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Flosum__Snapshot__c.Flosum__MuleSoft</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -30930,6 +31774,38 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>flosum_connect__Jira_Project__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>flosum_git__Flosum_Git_Settings</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>flosum_git__Log__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sf_tfs__Admin_Settings</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sf_tfs__Field__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sf_tfs__Organization__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sf_tfs__Project__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sf_tfs__Work_Item_Field__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>sf_tfs__Work_Item__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

@@ -2,83 +2,91 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Flosum__Organisation__c-en_US</fullName>
     <quickActions>
-        <label><!-- Enable for DORA metrics --></label>
+        <label></label>
         <name>FlosumMetrics__Enable_for_DORA_metrics</name>
     </quickActions>
     <recordTypes>
-        <label><!-- Commerce Cloud --></label>
+        <label></label>
         <name>Flosum__Commerce_Cloud</name>
     </recordTypes>
     <recordTypes>
-        <label><!-- Default --></label>
+        <label></label>
         <name>Flosum__Default</name>
     </recordTypes>
     <recordTypes>
-        <label><!-- Marketing Cloud --></label>
+        <label></label>
         <name>Flosum__Marketing_Cloud</name>
     </recordTypes>
     <recordTypes>
-        <label><!-- Veeva --></label>
+        <label></label>
+        <name>Flosum__MuleSoft</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
         <name>Flosum__Veeva</name>
     </recordTypes>
     <webLinks>
-        <label><!-- Clean_Org_Data_Vlocity --></label>
+        <label></label>
         <name>Flosum__Clean_Org_Data_Vlocity</name>
     </webLinks>
     <webLinks>
-        <label><!-- Create_Local_Flosum_Snapshot --></label>
+        <label></label>
         <name>Flosum__Create_Local_Flosum_Snapshot</name>
     </webLinks>
     <webLinks>
-        <label><!-- Create_Scratch_Org --></label>
+        <label></label>
         <name>Flosum__Create_Scratch_Org</name>
     </webLinks>
     <webLinks>
-        <label><!-- Create_Snapshot --></label>
+        <label></label>
         <name>Flosum__Create_Snapshot</name>
     </webLinks>
     <webLinks>
-        <label><!-- Create_Snapshot_Commerce_Cloud --></label>
+        <label></label>
         <name>Flosum__Create_Snapshot_Commerce_Cloud</name>
     </webLinks>
     <webLinks>
-        <label><!-- Create_Snapshot_From_Unlocked_Package --></label>
+        <label></label>
         <name>Flosum__Create_Snapshot_From_Unlocked_Package</name>
     </webLinks>
     <webLinks>
-        <label><!-- Create_Snapshot_Marketing_Cloud --></label>
+        <label></label>
         <name>Flosum__Create_Snapshot_Marketing_Cloud</name>
     </webLinks>
     <webLinks>
-        <label><!-- Create_Snapshot_Vlocity --></label>
+        <label></label>
+        <name>Flosum__Create_Snapshot_Mulesoft</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
         <name>Flosum__Create_Snapshot_Vlocity</name>
     </webLinks>
     <webLinks>
-        <label><!-- Data_Masking --></label>
+        <label></label>
         <name>Flosum__Data_Masking</name>
     </webLinks>
     <webLinks>
-        <label><!-- Install_Vlocity_Initial_Vlocity --></label>
+        <label></label>
         <name>Flosum__Install_Vlocity_Initial_Vlocity</name>
     </webLinks>
     <webLinks>
-        <label><!-- Lightning_Test --></label>
+        <label></label>
         <name>Flosum__Lightning_Test</name>
     </webLinks>
     <webLinks>
-        <label><!-- Redirect_to_Lightning_Test --></label>
+        <label></label>
         <name>Flosum__Redirect_to_Lightning_Test</name>
     </webLinks>
     <webLinks>
-        <label><!-- Retrieve_latest_changes --></label>
+        <label></label>
         <name>Flosum__Retrieve_latest_changes</name>
     </webLinks>
     <webLinks>
-        <label><!-- Schedule_Snapshot --></label>
+        <label></label>
         <name>Flosum__Schedule_Snapshot</name>
     </webLinks>
     <webLinks>
-        <label><!-- Schedule_Test_Class_Execution --></label>
+        <label></label>
         <name>Flosum__Schedule_Test_Class_Execution</name>
     </webLinks>
 </CustomObjectTranslation>
