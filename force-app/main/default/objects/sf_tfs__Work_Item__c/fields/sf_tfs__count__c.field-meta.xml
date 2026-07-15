@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_tfs__count__c</fullName>
+    <deprecated>false</deprecated>
+    <label>count</label>
+    <summaryFilterItems>
+        <field>sf_tfs__Work_Item_Field__c.sf_tfs__isSynced__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>sf_tfs__Work_Item_Field__c.sf_tfs__Work_Item__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
