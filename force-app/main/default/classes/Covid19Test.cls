@@ -3,7 +3,7 @@ public class Covid19Test {
     @isTest
     public static void treatPatientTest(){
         //create the instance of the class
-        Covid19 jaipur = new Covid19(10);
+        Covid19 jaipur = new Covid19(9);
         
         //check if the count is 10 or not
         Integer treated = jaipur.getTreated();
