@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Tracks how the Class Percentile was determined. For example, using exact decile, quintile, or quartile.</description>
+    <fullName>hed__Class_Rank_Scale__c</fullName>
+    <inlineHelpText>Tracks how the Class Percentile was determined. For example, using exact decile, quintile, or quartile.</inlineHelpText>
+    <label>Class Rank Scale</label>
+    <required>false</required>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Exact</fullName>
+                <label>Exact</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Decile</fullName>
+                <label>Decile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Quintile</fullName>
+                <label>Quintile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Quartile</fullName>
+                <label>Quartile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>None</fullName>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
