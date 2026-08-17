@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__AccelQ_Test_Result__c</fullName>
+    <deprecated>false</deprecated>
+    <label>AccelQ Test Result</label>
+    <referenceTo>Flosum__AccelQ_Test_Result__c</referenceTo>
+    <relationshipLabel>AccelQ One Test Results</relationshipLabel>
+    <relationshipName>AccelQ_One_Test_Results</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

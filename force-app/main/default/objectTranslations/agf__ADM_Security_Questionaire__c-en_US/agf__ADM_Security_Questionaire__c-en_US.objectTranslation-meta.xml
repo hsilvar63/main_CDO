@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>agf__ADM_Security_Questionaire__c-en_US</fullName>
+    <layouts>
+        <layout>Security Questionaire Layout</layout>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Security Review Details --></label>
+            <section>Security Review Details</section>
+        </sections>
+        <sections>
+            <label><!-- Security review --></label>
+            <section>Security review</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>
