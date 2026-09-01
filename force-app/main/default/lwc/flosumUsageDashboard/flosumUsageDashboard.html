@@ -1,0 +1,1255 @@
+<template>
+  <div class="dashboard-root">
+
+    <!-- ── HEADER ──────────────────────────────────────────────────── -->
+    <div class="dash-header">
+      <div class="header-brand">
+        <span class="brand-label">FLOSUM</span>
+        <span class="header-title">Product Usage Dashboard</span>
+      </div>
+
+      <div class="header-controls">
+        <!-- Product selector -->
+        <div class="control-group">
+          <span class="control-label">Product</span>
+          <div class="btn-group">
+            <template for:each={productButtons} for:item="p">
+              <button key={p.key} data-key={p.key}
+                      class={p.cssClass}
+                      onclick={handleProductSelect}>{p.label}</button>
+            </template>
+          </div>
+        </div>
+
+        <!-- Time range selector -->
+        <div class="control-group">
+          <span class="control-label">Window</span>
+          <div class="btn-group">
+            <template for:each={timeRangeButtons} for:item="t">
+              <button key={t.id} data-days={t.days}
+                      class={t.cssClass}
+                      onclick={handleTimeSelect}>{t.label}</button>
+            </template>
+          </div>
+        </div>
+
+        <!-- Refresh button -->
+        <button class="refresh-btn" onclick={handleRefresh} title="Refresh data">
+          ↻ Refresh
+        </button>
+      </div>
+
+      <!-- Backup & Archive subtab nav — second row, only when that product is active -->
+      <template if:true={isBackupArchive}>
+        <div class="bk-subtab-nav">
+          <template for:each={backupSubtabs} for:item="t">
+            <button key={t.key} data-tab={t.key}
+                    class={t.cssClass}
+                    onclick={handleBackupTabSelect}>{t.label}</button>
+          </template>
+        </div>
+      </template>
+    </div>
+
+    <!-- ── LOADING STATE ─────────────────────────────────────────── -->
+    <template if:true={isLoading}>
+      <div class="loading-overlay">
+        <lightning-spinner alternative-text="Loading PostHog data..." size="medium"></lightning-spinner>
+        <p class="loading-text">Querying PostHog — this may take up to 30s…</p>
+      </div>
+    </template>
+
+    <!-- ── ERROR STATE ───────────────────────────────────────────── -->
+    <template if:true={error}>
+      <div class="error-banner">
+        <strong>⚠ Error loading data:</strong> {error}
+      </div>
+    </template>
+
+    <!-- ── WHO USES WHAT ───────────────────────────────────────────── -->
+    <template if:true={isCrossProduct}>
+
+      <!-- Sub-tab nav -->
+      <div class="cp-subtab-nav">
+        <template for:each={cpSubtabs} for:item="t">
+          <button key={t.key} data-tab={t.key} class={t.cssClass}
+                  onclick={handleCpSubtabSelect}>{t.label}</button>
+        </template>
+      </div>
+
+      <!-- ── TAB 1: PRODUCT ADOPTION ─────────────────────────────── -->
+      <template if:true={isCpProductAdoptionTab}>
+        <template if:true={cpLoading}>
+          <div class="loading-overlay">
+            <lightning-spinner alternative-text="Loading…" size="medium"></lightning-spinner>
+            <p class="loading-text">Querying all products — this may take up to 30s…</p>
+          </div>
+        </template>
+        <template if:false={cpLoading}>
+          <!-- KPI CARDS -->
+          <div class="cp-kpi-row">
+            <div class="cp-kpi-card">
+              <span class="cp-kpi-num">{cpStats.total}</span>
+              <span class="cp-kpi-label">Total Accounts</span>
+            </div>
+            <div class="cp-kpi-card cp-kpi-card--native">
+              <span class="cp-kpi-num">{cpStats.nativeN}</span>
+              <span class="cp-kpi-pct">{cpStats.nativePct}</span>
+              <span class="cp-kpi-label">Native DevOps</span>
+            </div>
+            <div class="cp-kpi-card cp-kpi-card--cloud">
+              <span class="cp-kpi-num">{cpStats.cloudN}</span>
+              <span class="cp-kpi-pct">{cpStats.cloudPct}</span>
+              <span class="cp-kpi-label">Cloud DevOps</span>
+            </div>
+            <div class="cp-kpi-card cp-kpi-card--ba">
+              <span class="cp-kpi-num">{cpStats.baN}</span>
+              <span class="cp-kpi-pct">{cpStats.baPct}</span>
+              <span class="cp-kpi-label">Backup &amp; Archive</span>
+            </div>
+            <div class="cp-kpi-card cp-kpi-card--dm">
+              <span class="cp-kpi-num">{cpStats.dmN}</span>
+              <span class="cp-kpi-pct">{cpStats.dmPct}</span>
+              <span class="cp-kpi-label">Data Migrator</span>
+            </div>
+            <div class="cp-kpi-card cp-kpi-card--multi">
+              <span class="cp-kpi-num">{cpStats.multiN}</span>
+              <span class="cp-kpi-pct">{cpStats.multiPct}</span>
+              <span class="cp-kpi-label">Multi-Product</span>
+            </div>
+          </div>
+          <!-- TABLE — click row to drill into User Activity -->
+          <div class="table-section">
+            <div class="table-controls">
+              <div class="search-wrap">
+                <input type="text" class="search-input" placeholder="🔍  Search accounts…"
+                       value={cpSearchTerm} oninput={handleCpSearch} />
+              </div>
+              <span class="cp-click-hint">Click an account to see its user breakdown →</span>
+              <span class="row-count">{crossProductDisplayRows.length} accounts</span>
+            </div>
+            <div class="table-wrap">
+              <table class="data-table cp-adoption-table">
+                <thead>
+                  <tr>
+                    <th data-field="account"            onclick={handleCpSort}>Account</th>
+                    <th data-field="product_count"      onclick={handleCpSort} class="num-cell"># Products</th>
+                    <th data-field="native_users"       onclick={handleCpSort} class="cp-prod-header cp-prod-header--native">Native DevOps</th>
+                    <th data-field="cloud_devops_users" onclick={handleCpSort} class="cp-prod-header cp-prod-header--cloud">Cloud DevOps</th>
+                    <th data-field="ba_users"           onclick={handleCpSort} class="cp-prod-header cp-prod-header--ba">Backup &amp; Archive</th>
+                    <th data-field="dm_users"           onclick={handleCpSort} class="cp-prod-header cp-prod-header--dm">Data Migrator</th>
+                    <th data-field="total_events"       onclick={handleCpSort} class="num-cell">Total Events</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <template for:each={crossProductDisplayRows} for:item="r">
+                    <tr key={r.account} class={r.rowClass} data-account={r.account}
+                        onclick={handleCpAccountClick} style="cursor:pointer">
+                      <td class="account-cell cp-acct-link">{r.account}</td>
+                      <td class="num-cell">
+                        <span class={r.product_count_class}>{r.product_count}</span>
+                      </td>
+                      <td class="cp-cell">
+                        <template if:true={r.has_native}>
+                          <span class="cp-pill cp-pill--native">{r.native_display}</span>
+                        </template>
+                        <template if:false={r.has_native}>
+                          <span class="cp-none">—</span>
+                        </template>
+                      </td>
+                      <td class="cp-cell">
+                        <template if:true={r.has_cloud_devops}>
+                          <span class="cp-pill cp-pill--cloud">{r.cloud_devops_display}</span>
+                        </template>
+                        <template if:false={r.has_cloud_devops}>
+                          <span class="cp-none">—</span>
+                        </template>
+                      </td>
+                      <td class="cp-cell">
+                        <template if:true={r.has_ba}>
+                          <span class="cp-pill cp-pill--ba">{r.ba_display}</span>
+                        </template>
+                        <template if:false={r.has_ba}>
+                          <span class="cp-none">—</span>
+                        </template>
+                      </td>
+                      <td class="cp-cell">
+                        <template if:true={r.has_dm}>
+                          <span class="cp-pill cp-pill--dm">{r.dm_display}</span>
+                        </template>
+                        <template if:false={r.has_dm}>
+                          <span class="cp-none">—</span>
+                        </template>
+                      </td>
+                      <td class="num-cell">{r.total_events_display}</td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </template>
+      </template>
+
+      <!-- ── TAB 2: USER ACTIVITY ────────────────────────────────── -->
+      <template if:true={isCpUserActivityTab}>
+        <template if:true={cpFocusedAccount}>
+          <div class="cp-user-header">
+            <span class="cp-user-account-label">{cpFocusedAccount}</span>
+            <span class="cp-user-subtitle">— User breakdown by product</span>
+            <button class="cp-back-btn" onclick={handleCpClearFocus}>← Back to Product Adoption</button>
+          </div>
+          <template if:true={cpUserDetailLoading}>
+            <div class="backup-loading">
+              <lightning-spinner alternative-text="Loading users…" size="small"></lightning-spinner>
+              <span class="backup-loading-text">Loading user data…</span>
+            </div>
+          </template>
+          <template if:false={cpUserDetailLoading}>
+            <div class="table-section">
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>User</th>
+                      <th class="cp-prod-header cp-prod-header--native">Native DevOps</th>
+                      <th class="cp-prod-header cp-prod-header--cloud">Cloud DevOps</th>
+                      <th class="cp-prod-header cp-prod-header--ba">Backup &amp; Archive</th>
+                      <th class="cp-prod-header cp-prod-header--dm">Data Migrator</th>
+                      <th class="num-cell">Total Events</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <template for:each={cpUserDetailDisplayRows} for:item="r">
+                      <tr key={r.user} class={r.rowClass}>
+                        <td class="cp-user-cell">{r.user}</td>
+                        <td class="cp-cell">{r.native_cell}</td>
+                        <td class="cp-cell">{r.cloud_devops_cell}</td>
+                        <td class="cp-cell">{r.ba_cell}</td>
+                        <td class="cp-cell">{r.dm_cell}</td>
+                        <td class="num-cell">{r.total_events_display}</td>
+                      </tr>
+                    </template>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </template>
+        </template>
+        <template if:false={cpFocusedAccount}>
+          <div class="cp-empty-state">
+            <p>← Click any account in <strong>Product Adoption</strong> to view its user breakdown here.</p>
+          </div>
+        </template>
+      </template>
+
+      <!-- ── TAB 3: NEW TENANTS ──────────────────────────────────── -->
+      <template if:true={isCpNewTenantsTab}>
+        <template if:true={newTenantsLoading}>
+          <div class="loading-overlay">
+            <lightning-spinner alternative-text="Loading tenants…" size="medium"></lightning-spinner>
+            <p class="loading-text">Querying tenant registrations…</p>
+          </div>
+        </template>
+        <template if:false={newTenantsLoading}>
+          <!-- Error / diagnostic messages -->
+          <template if:true={ntError}>
+            <div class="cp-error-banner">⚠ {ntError}</div>
+          </template>
+          <template if:true={ntDiagnostic}>
+            <div class="cp-diagnostic-banner">ℹ {ntDiagnostic}</div>
+          </template>
+          <!-- KPI summary -->
+          <div class="cp-kpi-row">
+            <div class="cp-kpi-card">
+              <span class="cp-kpi-num">{ntTotalTenants}</span>
+              <span class="cp-kpi-label">New Tenants</span>
+            </div>
+            <div class="cp-kpi-card">
+              <span class="cp-kpi-num">{ntTopCountry}</span>
+              <span class="cp-kpi-label">Top Country</span>
+            </div>
+          </div>
+
+          <div class="cp-nt-layout">
+            <!-- Registration table -->
+            <div class="cp-nt-main">
+              <h4 class="cp-section-title">Registrations</h4>
+              <div class="table-controls">
+                <div class="search-wrap">
+                  <input type="text" class="search-input" placeholder="🔍  Search account, user, domain…"
+                         value={ntSearchTerm} oninput={handleNtSearch} />
+                </div>
+                <span class="row-count">{newTenantsDisplayRows.length} records</span>
+              </div>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th data-field="first_seen" onclick={handleNtSort}>Date</th>
+                      <th data-field="account"    onclick={handleNtSort}>Account</th>
+                      <th data-field="user"       onclick={handleNtSort}>User</th>
+                      <th data-field="domain"     onclick={handleNtSort}>Domain</th>
+                      <th data-field="country"    onclick={handleNtSort}>Country</th>
+                      <th data-field="city"       onclick={handleNtSort}>City</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <template for:each={newTenantsDisplayRows} for:item="r">
+                      <tr key={r.user} class={r.rowClass}>
+                        <td class="date-cell">{r.first_seen}</td>
+                        <td class="account-cell">{r.account}</td>
+                        <td class="cp-user-cell">{r.user}</td>
+                        <td>{r.domain}</td>
+                        <td>{r.country}</td>
+                        <td>{r.city}</td>
+                      </tr>
+                    </template>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Region breakdown -->
+            <div class="cp-nt-region">
+              <h4 class="cp-section-title">By Country</h4>
+              <div class="cp-region-list">
+                <template for:each={newTenantsRegionRows} for:item="r">
+                  <div key={r.country} class="cp-region-row">
+                    <span class="cp-region-country">{r.country}</span>
+                    <span class="cp-region-count">{r.count}</span>
+                  </div>
+                </template>
+              </div>
+            </div>
+          </div>
+        </template>
+      </template>
+
+    </template>
+
+    <!-- ── MAIN CONTENT (hidden while loading) ───────────────────── -->
+    <template if:false={isLoading}>
+      <template if:false={isCrossProduct}>
+
+      <!-- STAT CARDS -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-value">{totalAccounts}</div>
+          <div class="stat-label">Accounts</div>
+        </div>
+        <div class="stat-card enterprise-card">
+          <div class="stat-value">{enterpriseCount}</div>
+          <div class="stat-label">Enterprise (30+ users)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">{growthCount}</div>
+          <div class="stat-label">Growth (11–29)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">{totalUsersFormatted}</div>
+          <div class="stat-label">Total Users</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">{totalEventsFormatted}</div>
+          <div class="stat-label">Total Events</div>
+        </div>
+      </div>
+
+      <!-- CHARTS ROW -->
+      <div class="charts-row">
+        <!-- Donut: cohort distribution -->
+        <div class="chart-card donut-card">
+          <h3 class="chart-title">Account Cohorts</h3>
+          <div class="donut-wrap">
+            <canvas class="donut-canvas" width="220" height="220"></canvas>
+            <div class="donut-legend">
+              <template for:each={cohortLegend} for:item="c">
+                <div key={c.label} class="legend-row">
+                  <span class="legend-dot" style={c.dotStyle}></span>
+                  <span class="legend-label">{c.label}</span>
+                  <span class="legend-count">{c.count}</span>
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bar: top 10 by events (non-backup products) -->
+        <template if:false={isBackupArchive}>
+          <div class="chart-card bar-card">
+            <h3 class="chart-title">Top 10 Accounts by Events</h3>
+            <canvas class="bar-canvas" width="540" height="220"></canvas>
+          </div>
+        </template>
+
+        <!-- Bar: top 10 by active backup subtab metric + breakdown donut -->
+        <template if:true={isBackupArchive}>
+          <div class="chart-card bar-card">
+            <h3 class="chart-title">{backupChartTitle}</h3>
+            <canvas class="bk-top10-canvas" width="540" height="220"
+                    onclick={handleBkChartClick} style="cursor:pointer"></canvas>
+            <template if:true={hasComplianceSignalFilter}>
+              <div class="chart-signal-filter-bar">
+                <span class="chart-signal-filter-label">Filtered: {activeComplianceSignalLabel}</span>
+                <button class="chart-signal-filter-clear" onclick={clearComplianceSignalFilter}>✕ Clear</button>
+              </div>
+            </template>
+          </div>
+          <div class="chart-card donut-card">
+            <h3 class="chart-title">{backupBreakdownTitle}</h3>
+            <div class="donut-wrap">
+              <canvas class="bk-breakdown-canvas" width="220" height="220"
+                      onclick={handleBkDonutClick} style="cursor:pointer"></canvas>
+              <div class="donut-legend">
+                <template for:each={backupBreakdownLegend} for:item="c">
+                  <div key={c.label} class={c.rowClass}>
+                    <span class="legend-dot" style={c.dotStyle}></span>
+                    <span class="legend-label">{c.label}</span>
+                    <span class="legend-count">{c.display}</span>
+                  </div>
+                </template>
+              </div>
+            </div>
+            <template if:true={isBackupOrgInventoryTab}>
+              <p class="donut-click-hint">Click a slice to see all orgs of that type</p>
+            </template>
+            <template if:true={isBackupCustomerComplianceTab}>
+              <p class="donut-click-hint">Click a slice to filter by urgency</p>
+              <template if:true={hasComplianceUrgencyFilter}>
+                <button class="donut-urgency-clear-btn" onclick={clearComplianceUrgencyFilter}>
+                  ✕ Clear — showing {backupComplianceUrgencyFilter}
+                </button>
+              </template>
+            </template>
+          </div>
+        </template>
+      </div>
+
+      <!-- TREND CHARTS -->
+      <template if:true={hasTrendData}>
+        <div class="trends-section">
+          <div class="chart-card trends-card">
+            <div class="chart-card-header">
+              <h3 class="chart-title">{deployTrendTitle}</h3>
+              <button class="expand-btn" data-chart="deploy" onclick={handleExpandChart} title="Expand">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 4.5V1H4.5M8.5 1H12V4.5M12 8.5V12H8.5M4.5 12H1V8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <canvas class="deploy-trend-canvas" width="520" height="190"></canvas>
+          </div>
+          <div class="chart-card trends-card">
+            <div class="chart-card-header">
+              <h3 class="chart-title">Feature Usage Trends — Top 5 by Volume · weekly</h3>
+              <button class="expand-btn" data-chart="feature" onclick={handleExpandChart} title="Expand">⤢</button>
+            </div>
+            <canvas class="feature-trend-canvas" width="520" height="190"></canvas>
+          </div>
+        </div>
+      </template>
+
+      <!-- TABLE SECTION — hidden for Backup & Archive (replaced below) -->
+      <template if:false={isBackupArchive}>
+        <div class="table-section">
+          <div class="table-controls">
+            <div class="search-wrap">
+              <input type="text" class="search-input" placeholder="🔍  Search accounts…"
+                     value={searchTerm} oninput={handleSearch} />
+            </div>
+            <div class="cohort-tabs">
+              <template for:each={cohortTabList} for:item="t">
+                <button key={t.label} data-cohort={t.label}
+                        class={t.cssClass}
+                        onclick={handleCohortFilter}>
+                  {t.label}
+                  <span class="tab-count">{t.count}</span>
+                </button>
+              </template>
+            </div>
+            <span class="row-count">{rowCount} accounts</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th data-field="account" onclick={handleSort} class={sortClassAccount}>Account {sortIconAccount}</th>
+                  <th data-field="cohort" onclick={handleSort} class={sortClassCohort}>Cohort {sortIconCohort}</th>
+                  <th data-field="users" onclick={handleSort} class={sortClassUsers}>Users {sortIconUsers}</th>
+                  <th data-field="orgs" title="Production orgs / Sandbox orgs">Orgs</th>
+                  <template if:true={isNativeApps}>
+                    <th data-field="deploys" onclick={handleSort} class={sortClassDeploys}>Deploys {sortIconDeploys}</th>
+                    <th data-field="deploys_per_user" onclick={handleSort} class={sortClassDpu}>DPU {sortIconDpu}</th>
+                    <th data-field="licenses_used" onclick={handleSort} class={sortClassLicensesUsed}>Lic. Used {sortIconLicensesUsed}</th>
+                    <th data-field="licenses_total" onclick={handleSort} class={sortClassLicensesTotal}>Lic. Total {sortIconLicensesTotal}</th>
+                    <th data-field="package_version">Version</th>
+                  </template>
+                  <template if:true={isCloudDevops}>
+                    <th data-field="deploys" onclick={handleSort} class={sortClassDeploys}>Deploys {sortIconDeploys}</th>
+                    <th data-field="commits" onclick={handleSort} class={sortClassCommits}>Commits {sortIconCommits}</th>
+                    <th data-field="pipeline_runs" onclick={handleSort} class={sortClassPipelineRuns}>Pipelines {sortIconPipelineRuns}</th>
+                  </template>
+                  <template if:true={isDataMigrator}>
+                    <th data-field="migrations" onclick={handleSort} class={sortClassMigrations}>Migrations {sortIconMigrations}</th>
+                    <th data-field="retrieves" onclick={handleSort} class={sortClassRetrieves}>Retrieves {sortIconRetrieves}</th>
+                  </template>
+                  <th data-field="total_events" onclick={handleSort} class={sortClassEvents}>Total Events {sortIconEvents}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <template for:each={tableRows} for:item="r">
+                  <tr key={r.account} class={r.rowClass}>
+                    <td class="account-cell">
+                      <button class="account-link-btn" data-account={r.account} onclick={handleRowClick}>{r.account}</button>
+                    </td>
+                    <td><span class={r.cohortBadgeClass}>{r.cohort}</span></td>
+                    <td class="num-cell">{r.users}</td>
+                    <td class="num-cell orgs-cell">{r.orgsDisplay}</td>
+                    <template if:true={isNativeApps}>
+                      <td class="num-cell">{r.deploys}</td>
+                      <td class="num-cell">{r.deploys_per_user}</td>
+                      <td class="num-cell">{r.licenses_used}</td>
+                      <td class="num-cell">{r.licenses_total}</td>
+                      <td class="version-cell">{r.package_version}</td>
+                    </template>
+                    <template if:true={isCloudDevops}>
+                      <td class="num-cell">{r.deploys}</td>
+                      <td class="num-cell">{r.commits}</td>
+                      <td class="num-cell">{r.pipeline_runs}</td>
+                    </template>
+                    <template if:true={isDataMigrator}>
+                      <td class="num-cell">{r.migrations}</td>
+                      <td class="num-cell">{r.retrieves}</td>
+                    </template>
+                    <td class="num-cell">{r.totalEventsFormatted}</td>
+                  </tr>
+                </template>
+              </tbody>
+            </table>
+            <template if:true={isEmpty}>
+              <div class="empty-state">No accounts match your filters.</div>
+            </template>
+          </div>
+        </div>
+      </template>
+
+      <!-- BACKUP & ARCHIVE TABLE SECTION ─────────────────────────────── -->
+      <template if:true={isBackupArchive}>
+        <div class="backup-section">
+
+          <!-- Org summary loading -->
+          <template if:true={backupSummaryLoading}>
+            <div class="backup-loading">
+              <lightning-spinner alternative-text="Loading org data..." size="small"></lightning-spinner>
+              <span class="backup-loading-text">Loading org &amp; storage data…</span>
+            </div>
+          </template>
+
+          <template if:false={backupSummaryLoading}>
+            <!-- Controls: search + page size + info -->
+            <div class="bk-controls">
+              <div class="bk-search-wrap">
+                <input type="text"
+                       class="bk-search-input"
+                       placeholder="🔍  Search accounts…"
+                       value={backupSearchTerm}
+                       oninput={handleBackupSearchInput}
+                       onfocus={handleBackupSearchFocus}
+                       onblur={handleBackupSearchBlur} />
+                <template if:true={backupSearchTerm}>
+                  <button class="bk-clear-btn" onclick={handleBackupClearSearch} title="Clear search">✕</button>
+                </template>
+                <template if:true={backupHasSuggestions}>
+                  <div class="bk-suggestions">
+                    <template for:each={backupSearchSuggestions} for:item="s">
+                      <div key={s.account}
+                           class="bk-suggestion"
+                           data-account={s.account}
+                           onmousedown={handleBackupSuggestionSelect}>{s.account}</div>
+                    </template>
+                  </div>
+                </template>
+              </div>
+
+              <div class="bk-page-size-group">
+                <span class="bk-pg-label">Rows</span>
+                <template for:each={backupPageSizeOptions} for:item="o">
+                  <button key={o.value} data-size={o.value}
+                          class={o.cssClass}
+                          onclick={handleBackupPageSize}>{o.label}</button>
+                </template>
+              </div>
+
+              <span class="bk-page-info">{backupPageInfo}</span>
+            </div>
+
+            <!-- Org Inventory table -->
+            <template if:true={isBackupOrgInventoryTab}>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th data-field="account"      onclick={handleBackupSort} class={bkSortClassAccount}>Account {bkSortIconAccount}</th>
+                      <th>Cohort</th>
+                      <th data-field="prod_orgs"    onclick={handleBackupSort} class={bkSortClassProdOrgs}>Prod Orgs {bkSortIconProdOrgs}</th>
+                      <th data-field="sandbox_orgs" onclick={handleBackupSort} class={bkSortClassSandboxOrgs}>Sandbox Orgs {bkSortIconSandboxOrgs}</th>
+                      <th data-field="total_orgs"   onclick={handleBackupSort} class={bkSortClassTotalOrgs}>Total Orgs {bkSortIconTotalOrgs}</th>
+                      <th data-field="backups"       onclick={handleBackupSort} class={bkSortClassBackups}>Backups {bkSortIconBackups}</th>
+                      <th data-field="archives"      onclick={handleBackupSort} class={bkSortClassArchives}>Archives {bkSortIconArchives}</th>
+                      <th data-field="restores"      onclick={handleBackupSort} class={bkSortClassRestores}>Restores {bkSortIconRestores}</th>
+                      <th data-field="exports"       onclick={handleBackupSort} class={bkSortClassExports}>Exports {bkSortIconExports}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <template for:each={backupPaginatedRows} for:item="r">
+                      <tr key={r.account} class={r.rowClass}>
+                        <td class="account-cell">
+                          <button class="account-link-btn" data-account={r.account} onclick={handleBkRowClick}>{r.account}</button>
+                        </td>
+                        <td><span class={r.cohortBadgeClass}>{r.cohort}</span></td>
+                        <td class="num-cell">{r.prod_orgs}<template if:true={r.prod_trend_up}><span class="trend-up">↑</span></template><template if:true={r.prod_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell">{r.sandbox_orgs}<template if:true={r.sandbox_trend_up}><span class="trend-up">↑</span></template><template if:true={r.sandbox_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell bk-total-cell">{r.total_orgs}<template if:true={r.total_trend_up}><span class="trend-up">↑</span></template><template if:true={r.total_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell">{r.backups}</td>
+                        <td class="num-cell">{r.archives}</td>
+                        <td class="num-cell">{r.restores}</td>
+                        <td class="num-cell">{r.exports}</td>
+                      </tr>
+                    </template>
+                  </tbody>
+                </table>
+              </div>
+            </template>
+
+            <!-- Storage table -->
+            <template if:true={isBackupStorageTab}>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th data-field="account"          onclick={handleBackupSort} class={bkSortClassAccount}>Account {bkSortIconAccount}</th>
+                      <th>Cohort</th>
+                      <th data-field="prod_orgs"        onclick={handleBackupSort} class={bkSortClassProdOrgs}>Prod Orgs {bkSortIconProdOrgs}</th>
+                      <th data-field="sandbox_orgs"     onclick={handleBackupSort} class={bkSortClassSandboxOrgs}>Sandbox Orgs {bkSortIconSandboxOrgs}</th>
+                      <th data-field="total_backup_mb"  onclick={handleBackupSort} class={bkSortClassBackupMb}>Backup (GB) {bkSortIconBackupMb}</th>
+                      <th data-field="total_archive_mb" onclick={handleBackupSort} class={bkSortClassArchiveMb}>Archive (GB) {bkSortIconArchiveMb}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <template for:each={backupPaginatedRows} for:item="r">
+                      <tr key={r.account} class={r.rowClass}>
+                        <td class="account-cell">
+                          <button class="account-link-btn" data-account={r.account} onclick={handleBkRowClick}>{r.account}</button>
+                        </td>
+                        <td><span class={r.cohortBadgeClass}>{r.cohort}</span></td>
+                        <td class="num-cell">{r.prod_orgs}<template if:true={r.prod_trend_up}><span class="trend-up">↑</span></template><template if:true={r.prod_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell">{r.sandbox_orgs}<template if:true={r.sandbox_trend_up}><span class="trend-up">↑</span></template><template if:true={r.sandbox_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell">{r.backup_gb}<template if:true={r.backup_trend_up}><span class="trend-up">↑</span></template><template if:true={r.backup_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell bk-total-cell">{r.archive_gb}<template if:true={r.archive_trend_up}><span class="trend-up">↑</span></template><template if:true={r.archive_trend_down}><span class="trend-down">↓</span></template></td>
+                      </tr>
+                    </template>
+                  </tbody>
+                </table>
+              </div>
+            </template>
+
+            <!-- Exceptions table -->
+            <template if:true={isBackupExceptionsTab}>
+              <div class="table-wrap">
+                <table class="data-table exceptions-table">
+                  <thead>
+                    <tr>
+                      <th data-field="account"             onclick={handleBackupSort} class={bkSortClassAccount}>Account {bkSortIconAccount}</th>
+                      <th>Cohort</th>
+                      <!-- Backup -->
+                      <th data-field="backup_exceptions"      onclick={handleBackupSort} class={bkSortClassBackupEx}  title="Backup Exceptions">Bk Exc {bkSortIconBackupEx}</th>
+                      <th data-field="total_backups"          onclick={handleBackupSort} class={bkSortClassTotalBk}  title="Total Backups">Bk Total {bkSortIconTotalBk}</th>
+                      <th data-field="backup_fail_rate_num"   onclick={handleBackupSort} class={bkSortClassBkRate}   title="Backup failure rate">Bk % {bkSortIconBkRate}</th>
+                      <!-- Archive -->
+                      <th data-field="archive_exceptions"     onclick={handleBackupSort} class={bkSortClassArchiveEx} title="Archive Exceptions">Ar Exc {bkSortIconArchiveEx}</th>
+                      <th data-field="total_archives"         onclick={handleBackupSort} class={bkSortClassTotalAr}   title="Total Archives">Ar Total {bkSortIconTotalAr}</th>
+                      <th data-field="archive_fail_rate_num"  onclick={handleBackupSort} class={bkSortClassArRate}    title="Archive failure rate">Ar % {bkSortIconArRate}</th>
+                      <!-- Restore -->
+                      <th data-field="restore_exceptions"     onclick={handleBackupSort} class={bkSortClassRestoreEx} title="Restore Exceptions">Re Exc {bkSortIconRestoreEx}</th>
+                      <th data-field="total_restores"         onclick={handleBackupSort} class={bkSortClassTotalRe}   title="Total Restores">Re Total {bkSortIconTotalRe}</th>
+                      <th data-field="restore_fail_rate_num"  onclick={handleBackupSort} class={bkSortClassReRate}    title="Restore failure rate">Re % {bkSortIconReRate}</th>
+                      <!-- Export -->
+                      <th data-field="export_exceptions"      onclick={handleBackupSort} class={bkSortClassExportEx}  title="Export Exceptions">Ex Exc {bkSortIconExportEx}</th>
+                      <th data-field="total_exports"          onclick={handleBackupSort} class={bkSortClassTotalEx2}  title="Total Exports">Ex Total {bkSortIconTotalEx2}</th>
+                      <th data-field="export_fail_rate_num"   onclick={handleBackupSort} class={bkSortClassExRate}    title="Export failure rate">Ex % {bkSortIconExRate}</th>
+                      <!-- Search -->
+                      <th data-field="search_exceptions"      onclick={handleBackupSort} class={bkSortClassSearchEx}  title="Search Exceptions">Sr Exc {bkSortIconSearchEx}</th>
+                      <th data-field="total_searches"         onclick={handleBackupSort} class={bkSortClassTotalSr}   title="Total Searches">Sr Total {bkSortIconTotalSr}</th>
+                      <th data-field="search_fail_rate_num"   onclick={handleBackupSort} class={bkSortClassSrRate}    title="Search failure rate">Sr % {bkSortIconSrRate}</th>
+                      <!-- Total -->
+                      <th data-field="total_exceptions"    onclick={handleBackupSort} class={bkSortClassTotalEx}    title="Total Exceptions across all operations">Total Exc {bkSortIconTotalEx}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <template for:each={backupPaginatedRows} for:item="r">
+                      <tr key={r.account} class={r.rowClass}>
+                        <td class="account-cell">
+                          <button class="account-link-btn" data-account={r.account} onclick={handleBkRowClick}>{r.account}</button>
+                        </td>
+                        <td><span class={r.cohortBadgeClass}>{r.cohort}</span></td>
+                        <td class={r.backup_exc_class}>{r.backup_exceptions}</td>
+                        <td class="num-cell">{r.total_backups}</td>
+                        <td class={r.backup_rate_class}>{r.backup_fail_rate}</td>
+                        <td class={r.archive_exc_class}>{r.archive_exceptions}</td>
+                        <td class="num-cell">{r.total_archives}</td>
+                        <td class={r.archive_rate_class}>{r.archive_fail_rate}</td>
+                        <td class={r.restore_exc_class}>{r.restore_exceptions}</td>
+                        <td class="num-cell">{r.total_restores}</td>
+                        <td class={r.restore_rate_class}>{r.restore_fail_rate}</td>
+                        <td class={r.export_exc_class}>{r.export_exceptions}</td>
+                        <td class="num-cell">{r.total_exports}</td>
+                        <td class={r.export_rate_class}>{r.export_fail_rate}</td>
+                        <td class={r.search_exc_class}>{r.search_exceptions}</td>
+                        <td class="num-cell">{r.total_searches}</td>
+                        <td class={r.search_rate_class}>{r.search_fail_rate}</td>
+                        <td class={r.total_exc_class}>{r.total_exceptions}<template if:true={r.exc_trend_up}><span class="trend-up">↑</span></template><template if:true={r.exc_trend_down}><span class="trend-down">↓</span></template></td>
+                      </tr>
+                    </template>
+                  </tbody>
+                </table>
+              </div>
+            </template>
+
+            <!-- Active Users table -->
+            <template if:true={isBackupActiveUsersTab}>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th data-field="account"       onclick={handleBackupSort} class={bkSortClassAccount}>Account {bkSortIconAccount}</th>
+                      <th>Cohort</th>
+                      <th data-field="active_users"  onclick={handleBackupSort} class={bkSortClassActiveUsers}>Active Users {bkSortIconActiveUsers}</th>
+                      <th data-field="last_activity" onclick={handleBackupSort} class={bkSortClassLastActivity}>Last Activity {bkSortIconLastActivity}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <template for:each={backupPaginatedRows} for:item="r">
+                      <tr key={r.account} class={r.rowClass}>
+                        <td class="account-cell">
+                          <button class="account-link-btn" data-account={r.account} onclick={handleBkRowClick}>{r.account}</button>
+                        </td>
+                        <td><span class={r.cohortBadgeClass}>{r.cohort}</span></td>
+                        <td class="num-cell bk-total-cell">{r.active_users}<template if:true={r.users_trend_up}><span class="trend-up">↑</span></template><template if:true={r.users_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class={r.last_act_class}>{r.last_activity}</td>
+                      </tr>
+                    </template>
+                  </tbody>
+                </table>
+              </div>
+            </template>
+
+            <!-- Total Ops table -->
+            <template if:true={isBackupOpsTab}>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th data-field="account"          onclick={handleBackupSort} class={bkSortClassAccount}>Account {bkSortIconAccount}</th>
+                      <th>Cohort</th>
+                      <th data-field="prod_orgs"        onclick={handleBackupSort} class={bkSortClassProdOrgs}>Prod Orgs {bkSortIconProdOrgs}</th>
+                      <th data-field="sandbox_orgs"     onclick={handleBackupSort} class={bkSortClassSandboxOrgs}>Sandbox Orgs {bkSortIconSandboxOrgs}</th>
+                      <th data-field="total_orgs"       onclick={handleBackupSort} class={bkSortClassTotalOrgs}>Total Orgs {bkSortIconTotalOrgs}</th>
+                      <th data-field="total_backup_mb"  onclick={handleBackupSort} class={bkSortClassBackupMb}>Backup (GB) {bkSortIconBackupMb}</th>
+                      <th data-field="total_archive_mb" onclick={handleBackupSort} class={bkSortClassArchiveMb}>Archive (GB) {bkSortIconArchiveMb}</th>
+                      <th data-field="backups"           onclick={handleBackupSort} class={bkSortClassBackups}>Backups {bkSortIconBackups}</th>
+                      <th data-field="archives"          onclick={handleBackupSort} class={bkSortClassArchives}>Archives {bkSortIconArchives}</th>
+                      <th data-field="restores"          onclick={handleBackupSort} class={bkSortClassRestores}>Restores {bkSortIconRestores}</th>
+                      <th data-field="exports"           onclick={handleBackupSort} class={bkSortClassExports}>Exports {bkSortIconExports}</th>
+                      <th data-field="total_ops"         onclick={handleBackupSort} class={bkSortClassTotalOps}>Total Ops {bkSortIconTotalOps}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <template for:each={backupPaginatedRows} for:item="r">
+                      <tr key={r.account} class={r.rowClass}>
+                        <td class="account-cell">
+                          <button class="account-link-btn" data-account={r.account} onclick={handleBkRowClick}>{r.account}</button>
+                        </td>
+                        <td><span class={r.cohortBadgeClass}>{r.cohort}</span></td>
+                        <td class="num-cell">{r.prod_orgs}<template if:true={r.prod_trend_up}><span class="trend-up">↑</span></template><template if:true={r.prod_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell">{r.sandbox_orgs}<template if:true={r.sandbox_trend_up}><span class="trend-up">↑</span></template><template if:true={r.sandbox_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell">{r.total_orgs}<template if:true={r.total_trend_up}><span class="trend-up">↑</span></template><template if:true={r.total_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell">{r.backup_gb}<template if:true={r.backup_trend_up}><span class="trend-up">↑</span></template><template if:true={r.backup_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell">{r.archive_gb}<template if:true={r.archive_trend_up}><span class="trend-up">↑</span></template><template if:true={r.archive_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell">{r.backups}<template if:true={r.backups_trend_up}><span class="trend-up">↑</span></template><template if:true={r.backups_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell">{r.archives}<template if:true={r.archives_trend_up}><span class="trend-up">↑</span></template><template if:true={r.archives_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell">{r.restores}<template if:true={r.restores_trend_up}><span class="trend-up">↑</span></template><template if:true={r.restores_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell">{r.exports}<template if:true={r.exports_trend_up}><span class="trend-up">↑</span></template><template if:true={r.exports_trend_down}><span class="trend-down">↓</span></template></td>
+                        <td class="num-cell bk-total-cell">{r.total_ops_fmt}<template if:true={r.ops_trend_up}><span class="trend-up">↑</span></template><template if:true={r.ops_trend_down}><span class="trend-down">↓</span></template></td>
+                      </tr>
+                    </template>
+                  </tbody>
+                </table>
+              </div>
+            </template>
+
+            <!-- Customer Compliance table -->
+            <template if:true={isBackupCustomerComplianceTab}>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th data-field="account"        onclick={handleBackupSort} class={bkSortClassAccount}>Account {bkSortIconAccount}</th>
+                      <th data-field="license_tier"   onclick={handleBackupSort} class={bkSortClassLicenseType}>License Type {bkSortIconLicenseType}</th>
+                      <th data-field="urgency_order"  onclick={handleBackupSort} class={bkSortClassUrgency}>Urgency {bkSortIconUrgency}</th>
+                      <th>Contact Reason</th>
+                      <th data-field="prod_orgs"      onclick={handleBackupSort} class={bkSortClassProdOrgs}>Prod Orgs {bkSortIconProdOrgs}</th>
+                      <th data-field="sandbox_orgs"   onclick={handleBackupSort} class={bkSortClassSandboxOrgs}>Sandbox Orgs {bkSortIconSandboxOrgs}</th>
+                      <th data-field="total_exceptions" onclick={handleBackupSort} class={bkSortClassTotalExC} title="Total exceptions across all operations">Total Exc {bkSortIconTotalExC}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <template for:each={backupPaginatedRows} for:item="r">
+                      <tr key={r.account} class={r.rowClass}>
+                        <td class="account-cell">
+                          <button class="account-link-btn" data-account={r.account} onclick={handleBkRowClick}>{r.account}</button>
+                        </td>
+                        <td><span class={r.license_type_class}>{r.license_type}</span></td>
+                        <td><span class={r.urgencyClass}>{r.urgency}</span></td>
+                        <td class="health-reason-cell">{r.contact_reason}</td>
+                        <td class="num-cell">{r.prod_orgs}</td>
+                        <td class="num-cell">{r.sandbox_orgs}</td>
+                        <td class="num-cell">{r.total_exceptions}</td>
+                      </tr>
+                    </template>
+                  </tbody>
+                </table>
+              </div>
+            </template>
+
+            <!-- Trend legend -->
+            <p class="trend-legend"><span class="trend-up">↑</span> increase &nbsp;·&nbsp; <span class="trend-down">↓</span> decrease &nbsp;·&nbsp; compared to the previous 30 days</p>
+
+            <!-- Pagination bar -->
+            <div class="bk-pagination">
+              <button class="bk-pag-btn" disabled={backupPrevDisabled} onclick={handleBackupPrevPage}>← Prev</button>
+              <span class="bk-pag-pages">{backupCurrentPage} / {backupTotalPages}</span>
+              <button class="bk-pag-btn" disabled={backupNextDisabled} onclick={handleBackupNextPage}>Next →</button>
+            </div>
+          </template>
+
+        </div>
+      </template>
+
+      </template>
+      <!-- end if:false={isCrossProduct} -->
+    </template>
+    <!-- end if:false isLoading -->
+
+  </div>
+
+  <!-- ── TREND CHART MODAL ──────────────────────────────────────── -->
+  <template if:true={isModalOpen}>
+    <div class="modal-overlay" onclick={handleModalOverlayClick}>
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3 class="modal-title">{modalTitle}</h3>
+          <button class="modal-close-btn" onclick={handleCloseModal}>✕ Close</button>
+        </div>
+        <canvas class="modal-trend-canvas" width="960" height="380"></canvas>
+      </div>
+    </div>
+  </template>
+
+  <!-- ── ORG DETAIL POPUP ─────────────────────────────────────────── -->
+  <template if:true={orgDetailOpen}>
+    <div class="modal-overlay" onclick={handleOrgDetailOverlayClick}>
+      <div class="org-detail-modal" onclick={handleOrgDetailCardClick}>
+        <div class="org-detail-header">
+          <h3 class="org-detail-title">{orgDetailTitle}</h3>
+          <button class="modal-close-btn" onclick={closeBkOrgDetail}>✕ Close</button>
+        </div>
+
+        <template if:true={orgDetailLoading}>
+          <div class="org-detail-loading">
+            <lightning-spinner alternative-text="Loading org data..." size="small"></lightning-spinner>
+          </div>
+        </template>
+
+        <template if:false={orgDetailLoading}>
+          <div class="org-detail-body">
+
+            <!-- Exceptions: per-org exception counts + failure rates -->
+            <template if:true={isBackupExceptionsTab}>
+              <table class="data-table exceptions-table">
+                <thead>
+                  <tr>
+                    <th>Organization</th>
+                    <th>Type</th>
+                    <th class="num-cell" title="Backup Exceptions">Bk Exc</th>
+                    <th class="num-cell" title="Total Backups">Bk Total</th>
+                    <th class="num-cell" title="Backup Failure Rate">Bk %</th>
+                    <th class="num-cell" title="Archive Exceptions">Ar Exc</th>
+                    <th class="num-cell" title="Total Archives">Ar Total</th>
+                    <th class="num-cell" title="Archive Failure Rate">Ar %</th>
+                    <th class="num-cell" title="Restore Exceptions">Re Exc</th>
+                    <th class="num-cell" title="Total Restores">Re Total</th>
+                    <th class="num-cell" title="Restore Failure Rate">Re %</th>
+                    <th class="num-cell" title="Export Exceptions">Ex Exc</th>
+                    <th class="num-cell" title="Total Exports">Ex Total</th>
+                    <th class="num-cell" title="Export Failure Rate">Ex %</th>
+                    <th class="num-cell" title="Search Exceptions">Sr Exc</th>
+                    <th class="num-cell" title="Total Searches">Sr Total</th>
+                    <th class="num-cell" title="Search Failure Rate">Sr %</th>
+                    <th class="num-cell" title="Total Exceptions">Total Exc</th>
+                    <th title="Most recent exception date">Last Exception</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <template for:each={orgExDetailDisplayRows} for:item="r">
+                    <tr key={r.org_name} class={r.rowClass}>
+                      <td class="org-name-cell">{r.org_name}</td>
+                      <td>
+                        <span class={r.typeClass}>{r.org_type}</span>
+                        <template if:true={r.is_zombie}>
+                          <span class="zombie-badge">⚠ Disconnected?</span>
+                          <lightning-helptext content="All backup attempts have failed with no other operations recorded. The Salesforce org may have been deleted or refreshed without being removed from Flosum. Advise the customer to remove this org from their Flosum connected orgs list."></lightning-helptext>
+                        </template>
+                      </td>
+                      <td class={r.backup_exc_class}>{r.backup_exceptions}</td>
+                      <td class="num-cell">{r.total_backups}</td>
+                      <td class={r.backup_rate_class}>{r.backup_fail_rate}</td>
+                      <td class={r.archive_exc_class}>{r.archive_exceptions}</td>
+                      <td class="num-cell">{r.total_archives}</td>
+                      <td class={r.archive_rate_class}>{r.archive_fail_rate}</td>
+                      <td class={r.restore_exc_class}>{r.restore_exceptions}</td>
+                      <td class="num-cell">{r.total_restores}</td>
+                      <td class={r.restore_rate_class}>{r.restore_fail_rate}</td>
+                      <td class={r.export_exc_class}>{r.export_exceptions}</td>
+                      <td class="num-cell">{r.total_exports}</td>
+                      <td class={r.export_rate_class}>{r.export_fail_rate}</td>
+                      <td class={r.search_exc_class}>{r.search_exceptions}</td>
+                      <td class="num-cell">{r.total_searches}</td>
+                      <td class={r.search_rate_class}>{r.search_fail_rate}</td>
+                      <td class={r.total_exc_class}>{r.total_exceptions}</td>
+                      <td class={r.last_exc_class}>{r.last_exception}</td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </template>
+
+            <!-- Active Users: per-user breakdown -->
+            <template if:true={isBackupActiveUsersTab}>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th class="num-cell">Backups</th>
+                    <th class="num-cell">Archives</th>
+                    <th class="num-cell">Restores</th>
+                    <th class="num-cell">Exports</th>
+                    <th class="num-cell">Searches</th>
+                    <th class="num-cell">Total Ops</th>
+                    <th>Last Activity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <template for:each={userDetailDisplayRows} for:item="r">
+                    <tr key={r.distinct_id} class={r.rowClass}>
+                      <td class="org-name-cell">{r.user}</td>
+                      <td class="num-cell">{r.backups}</td>
+                      <td class="num-cell">{r.archives}</td>
+                      <td class="num-cell">{r.restores}</td>
+                      <td class="num-cell">{r.exports}</td>
+                      <td class="num-cell">{r.searches}</td>
+                      <td class="num-cell bk-total-cell">{r.total_ops}</td>
+                      <td class={r.last_act_class}>{r.last_activity}</td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </template>
+
+            <!-- Customer Health: per-org SF data + file storage breakdown + last backup date -->
+            <template if:true={isBackupCustomerComplianceTab}>
+              <p class="compliance-popup-legend">
+                Last Backup highlighted for Production orgs:
+                <span class="stale-legend stale-legend--critical">60+ days</span>
+                <span class="stale-legend stale-legend--warning">30–60 days</span>
+              </p>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Organization</th>
+                    <th>Type</th>
+                    <th>Edition</th>
+                    <th class="num-cell" title="Salesforce data storage used">Data Used (GB)</th>
+                    <th class="num-cell" title="Salesforce data storage available">Data Avail (GB)</th>
+                    <th class="num-cell" title="Salesforce file storage used">File Used (GB)</th>
+                    <th class="num-cell" title="Salesforce file storage available">File Avail (GB)</th>
+                    <th>Connected Date</th>
+                    <th title="Date of the last successful Backup event. Red = 60+ days stale, amber = 30–60 days (Production only).">Last Backup</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <template for:each={orgDetailDisplayRows} for:item="r">
+                    <tr key={r.org_name} class={r.rowClass}>
+                      <td class="org-name-cell">{r.org_name}</td>
+                      <td>
+                        <span class={r.typeClass}>{r.org_type}</span>
+                        <template if:true={r.is_zombie}>
+                          <span class="zombie-badge">⚠ Disconnected?</span>
+                          <lightning-helptext content="All backup attempts have failed with no other operations recorded. The Salesforce org may have been deleted or refreshed without being removed from Flosum. Advise the customer to remove this org from their Flosum connected orgs list."></lightning-helptext>
+                        </template>
+                      </td>
+                      <td class="edition-cell">{r.sf_edition}</td>
+                      <td class="num-cell">{r.sf_data_used_gb}</td>
+                      <td class="num-cell">{r.sf_data_avail_gb}</td>
+                      <td class="num-cell">{r.sf_file_used_gb}</td>
+                      <td class="num-cell">{r.sf_file_avail_gb}</td>
+                      <td class="date-cell">{r.connected_date}</td>
+                      <td class={r.last_backup_class}>{r.last_backup_date}</td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </template>
+
+            <!-- Org Inventory: type + edition + ops per org + connected date + last operation -->
+            <template if:true={isBackupOrgInventoryTab}>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Organization</th>
+                    <th>Type</th>
+                    <th>Edition</th>
+                    <th class="num-cell">Backups</th>
+                    <th class="num-cell">Archives</th>
+                    <th class="num-cell">Restores</th>
+                    <th class="num-cell">Exports</th>
+                    <th>Connected Date</th>
+                    <th>Last Operation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <template for:each={orgDetailDisplayRows} for:item="r">
+                    <tr key={r.org_name} class={r.rowClass}>
+                      <td class="org-name-cell">{r.org_name}</td>
+                      <td>
+                        <span class={r.typeClass}>{r.org_type}</span>
+                        <template if:true={r.is_zombie}>
+                          <span class="zombie-badge">⚠ Disconnected?</span>
+                          <lightning-helptext content="All backup attempts have failed with no other operations recorded. The Salesforce org may have been deleted or refreshed without being removed from Flosum. Advise the customer to remove this org from their Flosum connected orgs list."></lightning-helptext>
+                        </template>
+                      </td>
+                      <td class="edition-cell">{r.sf_edition}</td>
+                      <td class="num-cell">{r.backups}</td>
+                      <td class="num-cell">{r.archives}</td>
+                      <td class="num-cell">{r.restores}</td>
+                      <td class="num-cell">{r.exports}</td>
+                      <td class="date-cell">{r.connected_date}</td>
+                      <td class={r.last_op_class}>{r.last_op}</td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </template>
+
+            <!-- Storage: backup+archive storage in GB + connected date + last operation -->
+            <template if:true={isBackupStorageTab}>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Organization</th>
+                    <th>Type</th>
+                    <th class="num-cell">Backup (GB)</th>
+                    <th class="num-cell">Archive (GB)</th>
+                    <th>Connected Date</th>
+                    <th>Last Operation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <template for:each={orgDetailDisplayRows} for:item="r">
+                    <tr key={r.org_name} class={r.rowClass}>
+                      <td class="org-name-cell">{r.org_name}</td>
+                      <td>
+                        <span class={r.typeClass}>{r.org_type}</span>
+                        <template if:true={r.is_zombie}>
+                          <span class="zombie-badge">⚠ Disconnected?</span>
+                          <lightning-helptext content="All backup attempts have failed with no other operations recorded. The Salesforce org may have been deleted or refreshed without being removed from Flosum. Advise the customer to remove this org from their Flosum connected orgs list."></lightning-helptext>
+                        </template>
+                      </td>
+                      <td class="num-cell">{r.backup_gb}</td>
+                      <td class="num-cell bk-total-cell">{r.archive_gb}</td>
+                      <td class="date-cell">{r.connected_date}</td>
+                      <td class={r.last_op_class}>{r.last_op}</td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </template>
+
+            <!-- Total Ops: all ops + backup/archive storage in GB + connected date + last operation -->
+            <template if:true={isBackupOpsTab}>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Organization</th>
+                    <th>Type</th>
+                    <th class="num-cell">Backups</th>
+                    <th class="num-cell">Archives</th>
+                    <th class="num-cell">Restores</th>
+                    <th class="num-cell">Exports</th>
+                    <th class="num-cell">Backup (GB)</th>
+                    <th class="num-cell">Archive (GB)</th>
+                    <th>Connected Date</th>
+                    <th>Last Operation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <template for:each={orgDetailDisplayRows} for:item="r">
+                    <tr key={r.org_name} class={r.rowClass}>
+                      <td class="org-name-cell">{r.org_name}</td>
+                      <td>
+                        <span class={r.typeClass}>{r.org_type}</span>
+                        <template if:true={r.is_zombie}>
+                          <span class="zombie-badge">⚠ Disconnected?</span>
+                          <lightning-helptext content="All backup attempts have failed with no other operations recorded. The Salesforce org may have been deleted or refreshed without being removed from Flosum. Advise the customer to remove this org from their Flosum connected orgs list."></lightning-helptext>
+                        </template>
+                      </td>
+                      <td class="num-cell">{r.backups}</td>
+                      <td class="num-cell">{r.archives}</td>
+                      <td class="num-cell">{r.restores}</td>
+                      <td class="num-cell">{r.exports}</td>
+                      <td class="num-cell">{r.backup_gb}</td>
+                      <td class="num-cell bk-total-cell">{r.archive_gb}</td>
+                      <td class="date-cell">{r.connected_date}</td>
+                      <td class={r.last_op_class}>{r.last_op}</td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </template>
+
+          </div>
+        </template>
+      </div>
+    </div>
+  </template>
+
+  <!-- ── DONUT ORG TYPE DETAIL POPUP ──────────────────────────────── -->
+  <template if:true={donutOrgDetailOpen}>
+    <div class="modal-overlay" onclick={handleBkDonutOrgDetailOverlayClick}>
+      <div class="org-detail-modal" onclick={handleOrgDetailCardClick}>
+        <div class="org-detail-header">
+          <h3 class="org-detail-title">{donutOrgDetailTitle}</h3>
+          <button class="modal-close-btn" onclick={closeBkDonutOrgDetail}>✕ Close</button>
+        </div>
+        <template if:true={donutOrgDetailLoading}>
+          <div class="org-detail-loading">
+            <lightning-spinner alternative-text="Loading org data..." size="small"></lightning-spinner>
+          </div>
+        </template>
+        <template if:false={donutOrgDetailLoading}>
+          <div class="org-detail-body">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Account</th>
+                  <th>Organization</th>
+                  <th>Type</th>
+                  <th>Edition</th>
+                  <th class="num-cell">Backups</th>
+                  <th class="num-cell">Archives</th>
+                  <th class="num-cell">Restores</th>
+                  <th class="num-cell">Exports</th>
+                  <th class="num-cell">Backup (GB)</th>
+                  <th class="num-cell">Archive (GB)</th>
+                  <th>Connected Date</th>
+                  <th>Last Operation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <template for:each={donutOrgDetailDisplayRows} for:item="r">
+                  <tr key={r.rowKey} class={r.rowClass}>
+                    <td class="org-name-cell">{r.account_name}</td>
+                    <td class="org-name-cell">{r.org_name}</td>
+                    <td>
+                      <span class={r.typeClass}>{r.org_type}</span>
+                      <template if:true={r.is_zombie}>
+                        <span class="zombie-badge">⚠ Disconnected?</span>
+                        <lightning-helptext content="All backup attempts have failed with no other operations recorded. The Salesforce org may have been deleted or refreshed without being removed from Flosum. Advise the customer to remove this org from their Flosum connected orgs list."></lightning-helptext>
+                      </template>
+                    </td>
+                    <td class="edition-cell">{r.sf_edition}</td>
+                    <td class="num-cell">{r.backups}</td>
+                    <td class="num-cell">{r.archives}</td>
+                    <td class="num-cell">{r.restores}</td>
+                    <td class="num-cell">{r.exports}</td>
+                    <td class="num-cell">{r.backup_gb}</td>
+                    <td class="num-cell bk-total-cell">{r.archive_gb}</td>
+                    <td class="date-cell">{r.connected_date}</td>
+                    <td class={r.last_op_class}>{r.last_op}</td>
+                  </tr>
+                </template>
+              </tbody>
+            </table>
+          </div>
+        </template>
+      </div>
+    </div>
+  </template>
+
+  <!-- ── COMPLIANCE SIGNAL POPUP ──────────────────────────────────── -->
+  <template if:true={complianceSignalPopupOpen}>
+    <div class="modal-overlay" onclick={handleComplianceSignalPopupOverlayClick}>
+      <div class="org-detail-modal" onclick={handleOrgDetailCardClick}>
+        <div class="org-detail-header">
+          <h3 class="org-detail-title">{complianceSignalPopupTitle}</h3>
+          <button class="modal-close-btn" onclick={closeComplianceSignalPopup}>✕ Close</button>
+        </div>
+        <div class="org-detail-body">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Account</th>
+                <th>License Type</th>
+                <th>Urgency</th>
+                <th>Contact Reason</th>
+                <th class="num-cell">Prod Orgs</th>
+                <th class="num-cell">Sandbox Orgs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <template for:each={complianceSignalPopupDisplayRows} for:item="r">
+                <tr key={r.account} class={r.rowClass}>
+                  <td class="account-cell">{r.account}</td>
+                  <td><span class={r.license_type_class}>{r.license_type}</span></td>
+                  <td><span class={r.urgencyClass}>{r.urgency}</span></td>
+                  <td class="health-reason-cell">{r.contact_reason}</td>
+                  <td class="num-cell">{r.prod_orgs}</td>
+                  <td class="num-cell">{r.sandbox_orgs}</td>
+                </tr>
+              </template>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- ── ACCOUNT DETAIL MODAL ────────────────────────────────────── -->
+  <template if:true={isAccountModalOpen}>
+    <div class="modal-overlay" onclick={handleCloseAccountModal}>
+      <div class="acct-modal-card" onclick={handleAccountModalCardClick}>
+        <div class="acct-modal-header">
+          <h3 class="acct-modal-title">{acctModalAccount}</h3>
+          <button class="modal-close-btn" onclick={handleCloseAccountModal}>✕ Close</button>
+        </div>
+        <div class="acct-modal-body">
+          <c-flosum-account-dashboard
+            account-name={acctModalAccount}
+            default-product={acctModalProduct}>
+          </c-flosum-account-dashboard>
+        </div>
+      </div>
+    </div>
+  </template>
+
+</template>

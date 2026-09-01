@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Total_Items__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( Flosum__Patch__c != null,   IF( Flosum__Patch__r.RecordType.Name = &apos;Repository&apos;, Flosum__Patch__r.Flosum__Total_Items_in_Patch_Repository__c ,  IF(Flosum__Patch__r.RecordType.Name = &apos;PatchManifest&apos;,  Flosum__Patch__r.Flosum__Total_Items__c , Flosum__Patch__r.Flosum__Total_Items_in_Patch__c)),  Flosum__Snapshot__r.Flosum__No_of_Metadata_Items__c )</formula>
+    <label>Total Items</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
