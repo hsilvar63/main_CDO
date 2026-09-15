@@ -21,7 +21,7 @@ public class Fitness {
              Decimal hr = timeInMinutes /60;
         
         	Decimal pace= distanceInKm / hr;
-        	//System.debug('This is from apex calss'+bmi);
+        	//System.debug('This is from apex calss'+bmi); test sync
         	return pace;
         }
        
