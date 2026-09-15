@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Download_Components</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Download Components</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>/apex/{!$Setup.Flosum__Credentials__c.Flosum__Namespace__c}DownloadComponents?id={!Flosum__Branch__c.Id}</url>
+</WebLink>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Is_Branch_Value_String__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If value in Branch field is string.</description>
+    <inlineHelpText>If the value stored in the Branches field is a string or id select this.</inlineHelpText>
+    <label>Is Branch Value String</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

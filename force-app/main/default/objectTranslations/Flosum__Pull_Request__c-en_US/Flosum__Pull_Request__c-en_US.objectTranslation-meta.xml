@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Pull_Request__c-en_US</fullName>
+    <layouts>
+        <layout>Pull Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Close --></label>
+        <name>Flosum__Close</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Review --></label>
+        <name>Flosum__Review</name>
+    </webLinks>
+</CustomObjectTranslation>

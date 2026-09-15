@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <description>OrgComparisonAlert</description>
+        <fullName>TrustCenter__OrgComparisonAlert</fullName>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Flosum__Flosum/TrustCenter__OrgComparisonTemplate</template>
+    </alerts>
+</Workflow>

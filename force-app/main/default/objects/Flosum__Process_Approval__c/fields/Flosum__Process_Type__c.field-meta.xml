@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Process_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Process Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Merge Branches</fullName>
+                <default>false</default>
+                <label>Merge Branches</label>
+            </value>
+            <value>
+                <fullName>Branch to Repository Сommit</fullName>
+                <default>false</default>
+                <label>Branch to Repository Сommit</label>
+            </value>
+            <value>
+                <fullName>Snapshot to Repository Сommit</fullName>
+                <default>false</default>
+                <label>Snapshot to Repository Сommit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

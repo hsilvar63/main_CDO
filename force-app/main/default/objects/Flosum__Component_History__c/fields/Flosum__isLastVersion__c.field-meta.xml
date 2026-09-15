@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__isLastVersion__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>IF( Flosum__Component__r.Flosum__Version__c =  Flosum__Version__c , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>isLastVersion</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

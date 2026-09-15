@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>nshukla@flosum.com</contactEmail>
+    <label>FlosumApphsr</label>
+    <oauthConfig>
+        <callbackUrl>https://flosumdevops--flosum.vf.force.com/apex/flosum__registerorganizations
+https://flosumdevops--flosum.vf.force.com/apex/flosum__editrepositorysettings
+https://flosumdevops--flosum.vf.force.com/apex/flosum__appsetting
+https://flosumdevops--flosum.vf.force.com/apex/flosum__createvlocitysnapshot
+https://flosumdevops--flosum.vf.force.com/apex/flosum__vlocitycleanorgdata
+https://flosumdevops--flosum.vf.force.com/apex/flosum__vlocityinstallvlocityinitial
+https://flosumdevops--flosum.vf.force.com/apex/flosum__componentvlocitydeployment
+https://flosumdevops--flosum.vf.force.com/apex/flosum__componentbranchdeploy
+oob</callbackUrl>
+        <consumerKey>2P6HUrNtFwy9vUcMEiBw7APJmmOCoxGENeFV91OPX9C4yaqZOWBgaLC36lSoSpBgh2r62VxttYfGZI66sYg5k</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>Chatter</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+        <scopes>CustomPermissions</scopes>
+        <scopes>Wave</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

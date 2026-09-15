@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>agf__QA_ExecutionBug__c-en_US</fullName>
+    <validationRules>
+        <errorMessage><!-- Execution cannot be null --></errorMessage>
+        <name>agf__Execution_cannot_be_null</name>
+    </validationRules>
+</CustomObjectTranslation>

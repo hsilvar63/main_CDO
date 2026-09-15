@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__All</fullName>
+    <columns>NAME</columns>
+    <columns>Flosum__Agile_Field_API_Name__c</columns>
+    <columns>Flosum__Operator__c</columns>
+    <columns>Flosum__Branch_Field_API_Name__c</columns>
+    <columns>Flosum__Literal_Value__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

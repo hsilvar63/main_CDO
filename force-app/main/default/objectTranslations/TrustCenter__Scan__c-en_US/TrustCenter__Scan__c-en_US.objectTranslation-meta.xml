@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrustCenter__Scan__c-en_US</fullName>
+    <layouts>
+        <layout>Scan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Permissions --></label>
+            <section>Permissions</section>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <section>Users</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>
