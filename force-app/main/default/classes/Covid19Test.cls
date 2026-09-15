@@ -13,7 +13,7 @@ public class Covid19Test {
         //create the instance of the class
         Covid19 hyd = new Covid19(112);
         
-        //check if the count is 112 or not
+        //check if the count is 112 or not test sync
         treated = hyd.getTreated();
         System.assertEquals(112,treated,'Treated count does not Match');
         
