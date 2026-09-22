@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Result__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( AND( ISPICKVAL(Flosum__Status__c, &apos;Completed&apos;)  ,  Flosum__Tests_Failed__c = 0,  Flosum__Error_Message__c = &apos;&apos; ) , IMAGE(&apos;/resource/&apos;+$Setup.Flosum__Credentials__c.Flosum__Namespace__c+&apos;IconsUtility/Passed.png&apos;, &apos;No issues&apos;, 30, 150) , 
+IF( NOT(ISPICKVAL(Flosum__Status__c, &apos;Completed&apos;) ), IMAGE(&apos;/resource/&apos;+$Setup.Flosum__Credentials__c.Flosum__Namespace__c+&apos;IconsUtility/Progress.png&apos;, &apos;In progress&apos;, 30, 150), 
+IMAGE(&apos;/resource/&apos;+$Setup.Flosum__Credentials__c.Flosum__Namespace__c+&apos;IconsUtility/Failed.png&apos;, &apos;Issues found&apos;, 30, 150)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Result</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

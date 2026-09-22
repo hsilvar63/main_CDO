@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Organization_ID__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>You can find the Organization ID on the tab Orgs -&gt; choose Org -&gt; go to Details tab -&gt; copy Organization ID and paste to this field.
+If you do not specify an Organization ID, then an object from this organization will be used.</inlineHelpText>
+    <label>Organization ID</label>
+    <length>18</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

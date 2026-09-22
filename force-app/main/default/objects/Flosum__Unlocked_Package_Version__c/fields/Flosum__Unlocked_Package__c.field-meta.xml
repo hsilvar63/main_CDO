@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Unlocked_Package__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Unlocked Package</label>
+    <referenceTo>Flosum__Unlocked_Package__c</referenceTo>
+    <relationshipLabel>Unlocked Package Versions</relationshipLabel>
+    <relationshipName>Unlocked_Package_Versions</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

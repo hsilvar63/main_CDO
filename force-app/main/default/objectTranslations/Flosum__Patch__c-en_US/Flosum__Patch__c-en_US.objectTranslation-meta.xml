@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Patch__c-en_US</fullName>
+    <layouts>
+        <layout>Patch Manifest Layout</layout>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Jira Issue --></label>
+        <name>flosum_connect__Create_Jira_Issue</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Search for Jira ticket --></label>
+        <name>flosum_connect__Search_for_Jira_ticket</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- PatchManifest --></label>
+        <name>Flosum__PatchManifest</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Repository --></label>
+        <name>Flosum__Repository</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Snapshot --></label>
+        <name>Flosum__Snapshot</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Deploy --></label>
+        <name>Flosum__Deploy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Impact_Analysis --></label>
+        <name>Flosum__Impact_Analysis</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Lightning_Test --></label>
+        <name>Flosum__Lightning_Test</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge_Patches --></label>
+        <name>Flosum__Merge_Patches</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Rollback --></label>
+        <name>Flosum__Rollback</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Schedule_Deployment --></label>
+        <name>Flosum__Schedule_Deployment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Transfer --></label>
+        <name>Flosum__Transfer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Unlocked_Package --></label>
+        <name>Flosum__Unlocked_Package</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Validate --></label>
+        <name>Flosum__Validate</name>
+    </webLinks>
+</CustomObjectTranslation>

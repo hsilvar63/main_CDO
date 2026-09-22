@@ -1,0 +1,11 @@
+<messaging:emailTemplate subject="Org has been successfully registered" recipientType="User" relatedToType="Flosum__Organisation__c">
+<messaging:htmlEmailBody >
+        <html>
+            <body>
+                <p>Dear {!recipient.FirstName},</p>
+                <p>The org {!relatedTo.Name} has been successfully registered in Flosum.</p>
+                <c:FlosumLogo />
+            </body>
+        </html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

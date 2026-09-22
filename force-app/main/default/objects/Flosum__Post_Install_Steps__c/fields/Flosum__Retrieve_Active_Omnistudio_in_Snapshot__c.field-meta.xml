@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Retrieve_Active_Omnistudio_in_Snapshot__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Display Retrieve Active Omnistudio Components when creating a snapshot</description>
+    <inlineHelpText>Display Retrieve Active Omnistudio Components when creating a snapshot</inlineHelpText>
+    <label>Retrieve Active Omnistudio in Snapshot</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

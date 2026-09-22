@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Unlocked_Package__c-en_US</fullName>
+    <layouts>
+        <layout>Unlocked Package Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Create_New_Version --></label>
+        <name>Flosum__Create_New_Version</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_SFDX_Project_JSON --></label>
+        <name>Flosum__Edit_SFDX_Project_JSON</name>
+    </webLinks>
+</CustomObjectTranslation>

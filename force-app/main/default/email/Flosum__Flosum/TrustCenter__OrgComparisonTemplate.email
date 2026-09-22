@@ -1,0 +1,19 @@
+<messaging:emailTemplate subject="Flosum: Org Comparison Results are Available" recipientType="User">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <p>Hello {!recipient.FirstName},</p>
+                
+                <p>The Org Comparison results have been successfully downloaded to your system in a .zip file.<br></br>
+                To view the comparison results, please follow these steps:<br></br></p>
+                <ol type="1">
+                    <li>Locate the downloaded .zip file on your system.</li>
+                    <li>Extract the contents of the .zip file.</li>
+                    <li>Within the extracted files, you will find delta files of type .xlsx. Open the .xlsx files to view the comparison details.</li>
+                </ol>
+                <p>Thank you.</p>
+                <Flosum:FlosumLogo />
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

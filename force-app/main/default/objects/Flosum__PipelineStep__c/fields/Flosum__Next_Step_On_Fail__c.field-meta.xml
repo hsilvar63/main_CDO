@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Next_Step_On_Fail__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(Flosum__Next_Step_Id_On_Fail__r.Flosum__Number__c=0, &quot;Stop&quot;, &quot;Step &quot; &amp; TEXT( Flosum__Next_Step_Id_On_Fail__r.Flosum__Number__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Next Step On Fail</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
