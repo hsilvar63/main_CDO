@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <label>Deployment</label>
+    <protected>false</protected>
+    <values>
+        <field>Flosum__Consider_Logs_Older_Than__c</field>
+        <value xsi:type="xsd:double">48.0</value>
+    </values>
+    <values>
+        <field>Flosum__Do_Not_Consider_Logs_Older_Than_Days__c</field>
+        <value xsi:type="xsd:double">20.0</value>
+    </values>
+    <values>
+        <field>Flosum__Ignore_Pipelines__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

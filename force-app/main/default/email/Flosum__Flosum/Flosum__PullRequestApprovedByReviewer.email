@@ -1,0 +1,11 @@
+<messaging:emailTemplate subject="Pull Request Approved By The Reviewer" recipientType="User" relatedToType="Flosum__Pull_Request_Reviewer__c">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <p>Dear {!relatedTo.Owner.FirstName},</p>
+                <p>Pull Request({!relatedTo.Pull_Request__r.Name}) has been approved by the user({!relatedTo.User__r.Name}).</p>
+                <c:FlosumLogo />
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

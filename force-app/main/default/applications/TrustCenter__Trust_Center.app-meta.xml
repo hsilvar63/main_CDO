@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Trust Center</label>
+    <navType>Standard</navType>
+    <tabs>TrustCenter__Organizations</tabs>
+    <tabs>TrustCenter__Audit_Trails</tabs>
+    <tabs>TrustCenter__Remediation_Tasks</tabs>
+    <tabs>TrustCenter__Templates</tabs>
+    <tabs>TrustCenter__Metadata_Reports</tabs>
+    <tabs>TrustCenter__Data_Masking</tabs>
+    <tabs>TrustCenter__Settings</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>TrustCenter__Security_Center_UtilityBar</utilityBar>
+</CustomApplication>
