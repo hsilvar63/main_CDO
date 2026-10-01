@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__MultiService_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>MultiService_Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GIT</fullName>
+                <default>false</default>
+                <label>GIT</label>
+            </value>
+            <value>
+                <fullName>REVIEW</fullName>
+                <default>false</default>
+                <label>REVIEW</label>
+            </value>
+            <value>
+                <fullName>DEPLOYMENT</fullName>
+                <default>false</default>
+                <label>DEPLOYMENT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

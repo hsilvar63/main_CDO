@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Snapshot__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Snapshot Vlocity</label>
+    <referenceTo>Flosum__Snapshot_Vlocity__c</referenceTo>
+    <relationshipLabel>Metadata Items Vlocity</relationshipLabel>
+    <relationshipName>Snapshot</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Pull_Request__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Peer Review</label>
+    <referenceTo>Flosum__Pull_Request__c</referenceTo>
+    <relationshipLabel>Peer Reviewers</relationshipLabel>
+    <relationshipName>Pull_Request_Reviewers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

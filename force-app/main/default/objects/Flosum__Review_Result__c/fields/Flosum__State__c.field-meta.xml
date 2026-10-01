@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__State__c</fullName>
+    <deprecated>false</deprecated>
+    <label>State</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>QUEUED</fullName>
+                <default>false</default>
+                <label>QUEUED</label>
+            </value>
+            <value>
+                <fullName>IN PROGRESS</fullName>
+                <default>false</default>
+                <label>IN PROGRESS</label>
+            </value>
+            <value>
+                <fullName>COMPLETED</fullName>
+                <default>false</default>
+                <label>COMPLETED</label>
+            </value>
+            <value>
+                <fullName>CANCELED</fullName>
+                <default>false</default>
+                <label>CANCELED</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

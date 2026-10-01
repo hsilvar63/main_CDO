@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__DataMaskObject__c</fullName>
+    <deprecated>false</deprecated>
+    <label>DataMaskObject</label>
+    <referenceTo>Flosum__DataMaskObject__c</referenceTo>
+    <relationshipLabel>DataMaskFields</relationshipLabel>
+    <relationshipName>DataMaskFields</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Project_Cert__c</entityName>
+    <fieldName>Phase__c</fieldName>
+    <masterLabel>Software Development</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>User__c</fieldNames>
+        <fieldNames>Date__c</fieldNames>
+        <picklistValueName>Design</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Account_Phone__c</fieldNames>
+        <fieldNames>Description__c</fieldNames>
+        <picklistValueName>Development</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>User__c</fieldNames>
+        <fieldNames>Date__c</fieldNames>
+        <picklistValueName>Maintenance</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Budget__c</fieldNames>
+        <fieldNames>Deliverables__c</fieldNames>
+        <fieldNames>Description__c</fieldNames>
+        <fieldNames>Website__c</fieldNames>
+        <info>&lt;p&gt;Please fill in these fields during this phase of the project&lt;/p&gt;</info>
+        <picklistValueName>Requires Analysis</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>End_Date__c</fieldNames>
+        <fieldNames>Name</fieldNames>
+        <picklistValueName>Testing</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Software_Development</recordTypeName>
+</PathAssistant>

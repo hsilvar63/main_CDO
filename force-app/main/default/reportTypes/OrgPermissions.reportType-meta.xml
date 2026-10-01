@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Flosum__Org_Permission__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Org Permissions</description>
+    <label>OrgPermissions</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>Flosum__Org_Permission__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>Flosum__Org_Permission__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Flosum__Org__c</field>
+            <table>Flosum__Org_Permission__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Flosum__Role__c</field>
+            <table>Flosum__Org_Permission__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Flosum__User__c</field>
+            <table>Flosum__Org_Permission__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Flosum__Org_Permission__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>Flosum__Org_Permission__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>Flosum__Org_Permission__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Flosum__Org_Permission__c</table>
+        </columns>
+        <masterLabel>Org Permissions</masterLabel>
+    </sections>
+</ReportType>

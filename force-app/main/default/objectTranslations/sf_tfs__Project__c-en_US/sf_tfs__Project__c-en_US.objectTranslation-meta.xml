@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_tfs__Project__c-en_US</fullName>
+    <layouts>
+        <layout>Project Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Work Item --></label>
+        <name>sf_tfs__Create_Work_Item</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Search TFS ticket --></label>
+        <name>sf_tfs__Search_TFS</name>
+    </quickActions>
+</CustomObjectTranslation>

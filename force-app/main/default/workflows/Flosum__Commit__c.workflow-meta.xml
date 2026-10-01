@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <description>EmailAlertOnCommit</description>
+        <fullName>Flosum__EmailAlertOnCommit</fullName>
+        <protected>false</protected>
+        <recipients>
+            <recipient>chatty.00d5j00000ad0rceab.td4jdhtsxpnp@chatter.salesforce.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>flosum.trailforce.testing.nrw7kjomvwgs.ulogo6mhwaj2@flosum.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>hsilva123@flosum.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Flosum__Flosum/Flosum__CommitTemplate</template>
+    </alerts>
+    <rules>
+        <actions>
+            <name>Flosum__EmailAlertOnCommit</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Flosum__Commit__c.Flosum__Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </criteriaItems>
+        <fullName>Flosum__OnCommit</fullName>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

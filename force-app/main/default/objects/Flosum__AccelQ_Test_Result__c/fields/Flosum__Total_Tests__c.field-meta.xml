@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Total_Tests__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Total Tests</label>
+    <summaryForeignKey>Flosum__AccelQ_One_Test_Result__c.Flosum__AccelQ_Test_Result__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

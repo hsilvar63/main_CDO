@@ -1,0 +1,13 @@
+<messaging:emailTemplate subject="A snapshot on org {!relatedTo.Organisation__r.Name} is complete." recipientType="User" relatedToType="Flosum__Snapshot__c">
+<messaging:htmlEmailBody >
+        <html>
+            <body>
+                <p>Dear {!recipient.FirstName},</p>
+                <p>Flosum has created a snapshot on org {!relatedTo.Organisation__r.Name}.</p>
+                <p>The details of the Snapshot can be seen here:</p>
+                <c:NotificationComponent recordId="{!relatedTo.Id}"/>
+                <c:FlosumLogo />
+            </body>
+        </html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
