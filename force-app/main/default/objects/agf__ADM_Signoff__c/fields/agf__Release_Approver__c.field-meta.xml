@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>agf__Release_Approver__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The Application Approver related to this signoff record.</description>
+    <inlineHelpText>Enter this Signoff record&apos;s Application Approver.</inlineHelpText>
+    <label>Release Approver</label>
+    <referenceTo>agf__ADM_Application_Approver__c</referenceTo>
+    <relationshipLabel>Signoffs</relationshipLabel>
+    <relationshipName>Signoffs</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum_Scan__All</fullName>
+    <columns>NAME</columns>
+    <columns>Flosum_Scan__Check_Date_Time__c</columns>
+    <columns>Flosum_Scan__Completed_Datetime__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>
