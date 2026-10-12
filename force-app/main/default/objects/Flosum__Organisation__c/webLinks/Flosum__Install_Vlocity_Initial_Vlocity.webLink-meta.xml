@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Install_Vlocity_Initial_Vlocity</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Install Vlocity Initial (Vlocity)</masterLabel>
+    <openType>sidebar</openType>
+    <page>Flosum__VlocityInstallVlocityInitial</page>
+    <protected>false</protected>
+</WebLink>
