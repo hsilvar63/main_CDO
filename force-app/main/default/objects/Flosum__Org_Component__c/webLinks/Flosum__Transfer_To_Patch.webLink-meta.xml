@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Transfer_To_Patch</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Transfer To Deployment</masterLabel>
+    <openType>noSidebar</openType>
+    <page>Flosum__OrgComponentToPatches</page>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+</WebLink>

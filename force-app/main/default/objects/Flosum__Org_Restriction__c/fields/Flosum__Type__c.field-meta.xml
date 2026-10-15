@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Type</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Commit</fullName>
+                <default>false</default>
+                <label>Commit</label>
+            </value>
+            <value>
+                <fullName>Deploy</fullName>
+                <default>false</default>
+                <label>Deploy</label>
+            </value>
+            <value>
+                <fullName>Path</fullName>
+                <default>false</default>
+                <label>Path</label>
+            </value>
+            <value>
+                <fullName>Locked</fullName>
+                <default>false</default>
+                <label>Locked</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
