@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>flosum_git__total_cmp_of_snapshot_commited_to_repo__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>total cmp of snapshot commited to repo</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
