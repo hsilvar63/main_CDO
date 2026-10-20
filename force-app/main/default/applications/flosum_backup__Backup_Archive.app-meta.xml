@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#FF2D78</headerColor>
+        <logo>flosum_backup__flosumlogo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Backup &amp; Archive</label>
+    <navType>Standard</navType>
+    <tabs>flosum_backup__Searches</tabs>
+    <tabs>flosum_backup__Settings</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>flosum_backup__Backup_Archive_UtilityBar</utilityBar>
+</CustomApplication>
