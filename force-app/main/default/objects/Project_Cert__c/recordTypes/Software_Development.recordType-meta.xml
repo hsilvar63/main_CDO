@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <fullName>Software_Development</fullName>
+    <label>Software Development</label>
+    <picklistValues>
+        <picklist>Deliverables1__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Documentation</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Mobile App</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Online Help</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Source Code</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>User Stories</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Website</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Phase__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Design</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Development</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Maintenance</fullName>
+        </values>
+        <values>
+            <default>true</default>
+            <fullName>Requires Analysis</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Testing</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Active</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Approved</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Complete</fullName>
+        </values>
+        <values>
+            <default>true</default>
+            <fullName>Proposed</fullName>
+        </values>
+    </picklistValues>
+</RecordType>

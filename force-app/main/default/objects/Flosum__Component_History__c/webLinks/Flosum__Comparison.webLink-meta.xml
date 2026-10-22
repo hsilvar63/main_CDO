@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Comparison</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Comparison</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>var records = {!GETRECORDIDS($ObjectType.Flosum__Component_History__c)};
+if(records.length != 2)
+{
+alert(&apos;Please select two records.&apos;);
+}
+else
+{
+parent.location.href= &apos;/apex/&apos;+&apos;{!$Setup.Flosum__Credentials__c.Flosum__Namespace__c}&apos;+&apos;HistoryComparison?source=&apos;+records[0]+&apos;&amp;target=&apos;+records[1];
+}</url>
+</WebLink>
