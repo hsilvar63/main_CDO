@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>flosum_connect__IsSupported__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>IF(
+ OR(
+  flosum_connect__ShemaSystem__c = &apos;summary&apos;,
+  flosum_connect__ShemaSystem__c = &apos;fixVersions&apos;,
+  flosum_connect__ShemaSystem__c = &apos;reporter&apos;,
+  flosum_connect__ShemaSystem__c = &apos;priority&apos;,
+  flosum_connect__ShemaSystem__c = &apos;labels&apos;,
+  flosum_connect__ShemaSystem__c = &apos;duedate&apos;,
+  flosum_connect__ShemaSystem__c = &apos;description&apos;,
+  flosum_connect__ShemaSystem__c = &apos;assignee&apos;, 
+  flosum_connect__ShemaSystem__c = &apos;parent&apos;,
+  flosum_connect__ShemaCustomType__c = &apos;gh-epic-label&apos;,
+  flosum_connect__ShemaCustomType__c = &apos;datepicker&apos;,
+  flosum_connect__ShemaCustomType__c = &apos;datetime&apos;,
+  flosum_connect__ShemaCustomType__c = &apos;textarea&apos;,
+  flosum_connect__ShemaCustomType__c = &apos;message&apos;,
+  flosum_connect__ShemaCustomType__c = &apos;multiselect&apos;,
+  flosum_connect__ShemaCustomType__c = &apos;radiobuttons&apos;,
+  flosum_connect__ShemaCustomType__c = &apos;labels&apos;,
+  flosum_connect__ShemaCustomType__c = &apos;multicheckboxes&apos;,
+  flosum_connect__ShemaCustomType__c = &apos;select&apos;
+ ), true, false)</formula>
+    <label>IsSupported</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
