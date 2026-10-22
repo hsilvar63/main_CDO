@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Metadata_Log__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Metadata Log</label>
+    <referenceTo>Flosum__Metadata_Log__c</referenceTo>
+    <relationshipLabel>Deployment Results</relationshipLabel>
+    <relationshipName>Component_Result</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
