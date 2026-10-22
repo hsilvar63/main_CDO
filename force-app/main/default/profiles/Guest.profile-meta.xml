@@ -2,8 +2,8 @@
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
         <application>Dataplier__Dataplier</application>
-        <default>false</default>
-        <visible>false</visible>
+        <default>true</default>
+        <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>Flosum_Scan__Flosum_Scan</application>
@@ -17,7 +17,7 @@
     </applicationVisibilities>
     <applicationVisibilities>
         <application>Profile2PermSet__Profiles_to_Permission_Sets</application>
-        <default>false</default>
+        <default>true</default>
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
