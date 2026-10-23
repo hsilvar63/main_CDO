@@ -37,8 +37,8 @@
     </applicationVisibilities>
     <applicationVisibilities>
         <application>agf__Agile_Accelerator_LEX</application>
-        <default>false</default>
-        <visible>true</visible>
+        <default>true</default>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>flosum_backup__Backup_Archive</application>
@@ -47,7 +47,7 @@
     </applicationVisibilities>
     <applicationVisibilities>
         <application>flosum_connect__Flosum_Connection</application>
-        <default>false</default>
+        <default>true</default>
         <visible>true</visible>
     </applicationVisibilities>
     <applicationVisibilities>
