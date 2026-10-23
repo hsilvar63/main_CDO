@@ -61,11 +61,6 @@
         <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
-        <application>standard__AIWorkbench</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
         <application>standard__AgentforceStudio</application>
         <default>false</default>
         <visible>false</visible>
@@ -107,11 +102,6 @@
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__LightningBolt</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningInstrumentation</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>
@@ -193,14 +183,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Dataplier__AsyncQueue</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>Dataplier__AuthFixController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>Dataplier__AuthFixControllerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -2116,34 +2098,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>Flosum__MulesoftAuthentication</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>Flosum__MulesoftAuthenticationTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>Flosum__MulesoftDeployController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>Flosum__MulesoftDeployControllerTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>Flosum__MulesoftSnapshotController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>Flosum__MulesoftSnapshotControllerTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>Flosum__MulesoftTestDataFactory</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>Flosum__MultiMetaAddManifestController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -3441,18 +3395,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Query</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SQ_CustomizationTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SQ_MetadataLogHandler</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>SQ_QualityGate</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -6969,19 +6911,14 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.Data_Quality_Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.Data_Quality_Score__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Account.Description</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Email__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -7026,6 +6963,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.Rating</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Sales__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -7162,6 +7104,11 @@
         <editable>true</editable>
         <field>ApprovalWorkItem.FlowOrchestrationWorkItemId</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ApprovalWorkItem.ParentWorkItemId</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -7419,16 +7366,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.Data_Quality_Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Campaign.Data_Quality_Score__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Campaign.Description</field>
         <readable>true</readable>
@@ -7597,16 +7534,6 @@
         <editable>true</editable>
         <field>Case.ContactId</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Data_Quality_Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Case.Data_Quality_Score__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -7854,11 +7781,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Account_Updated__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Contact.AssistantName</field>
         <readable>true</readable>
@@ -7877,16 +7799,6 @@
         <editable>true</editable>
         <field>Contact.BuyerAttributes</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Data_Quality_Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Data_Quality_Score__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -8164,6 +8076,76 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.ActiveToDateTime</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.BestTimeToContactEndTime</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.BestTimeToContactStartTime</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.BestTimeToContactTimeZone</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.BusinessPortfolioIdentifier</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.ChannelSenderCode</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.IsPrimary</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.IsUndeliverable</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.IsVerified</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.PhoneNumber</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.ProfileLastUpdatedDateTime</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.ProfileOccurrenceCount</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.UsageType</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ContactPointOttSvc.UserName</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>ContactPointPhone.ActiveFromDate</field>
         <readable>true</readable>
@@ -8319,16 +8301,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Contract.Data_Quality_Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contract.Data_Quality_Score__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Contract.Description</field>
         <readable>true</readable>
@@ -8479,6 +8451,546 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Filter__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Key_Fields__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__LimitFilterOption__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__LimitFilter__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Limit_Chunk_Bulk__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Masked_Fields__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Object_Fields__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Operation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__Query__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Data_Set__c.Dataplier__is_Custom_Where_Clause__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Child_Steps_Condition__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Child_Steps_Settings__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Data_Set_Option__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Execution_Condition__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Filter_Target_Records__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Filter__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Hierarchy_Levels__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Key_Data_Set__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Maximum_Deployed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Not_Populated_Lookups__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Operation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Parent_Id_Field__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Parent_Steps_Condition__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Parent_Steps_Settings__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Parent_Steps__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Second_Stage_Lookups__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__SelfLookups__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Sequence__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence_Step__c.Dataplier__Step_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Sequence__c.Dataplier__Execution_Direction__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step_Log__c.Dataplier__Batch_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step_Log__c.Dataplier__Job_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step_Log__c.Dataplier__Logs__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step_Records__c.Dataplier__Number_Records__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step_Records__c.Dataplier__Records_Ids__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Child_Steps_Condition__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Child_Steps_Settings__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Condition__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Data_Set_Option__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Execution_Sequence_Step__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Filter_Target_Records__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Filter__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Hierarchy_Levels__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Key_Fields__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Limit_Chunk_Bulk__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Lookup_Fields__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Masked_Fields__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Maximum_Deployed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Not_Populated_Lookups__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Object_API_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Object_Fields__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Operation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Parent_Id_Field__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Parent_Steps_Condition__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Parent_Steps_Settings__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Parent_Steps__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Query__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Records_Failed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Records_Processed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Second_Stage_Lookups__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__SelfLookups__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Sequence__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Space_Required__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution_Step__c.Dataplier__Total_batches__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution__c.Dataplier__Batch_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution__c.Dataplier__Batch_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution__c.Dataplier__Space_Required__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution__c.Dataplier__Started__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Execution__c.Dataplier__Total_Records__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Filter_Line__c.Dataplier__OperatorH__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Filter_Line__c.Dataplier__Operator__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Filter_Line__c.Dataplier__Query_V2__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Filter_Line__c.Dataplier__Query__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Filter_Line__c.Dataplier__Sequence__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Filter_Line__c.Dataplier__Value__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Filter__c.Dataplier__Boolean_Logic__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Filter__c.Dataplier__Query_Expression_Child__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Filter__c.Dataplier__Query_Expression__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__IdCache__c.Dataplier__MappedIds__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__IdCache__c.Dataplier__SequenceId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Log__c.Dataplier__Body__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__AuthName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__Completed_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__ETA__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__Org__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__Space_required__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__Start_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Job__c.Dataplier__Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Failed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Inserted__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Migrated__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Object_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Order__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Sequence_Step__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Space_required__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Total__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Migration_Step__c.Dataplier__Updated__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Object_State__c.Dataplier__orgId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Object_State__c.Dataplier__original_states__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Object_State__c.Dataplier__updated_states__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Organisation__c.Dataplier__HostName__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Organisation__c.Dataplier__Lattest_Test_Execution_Result__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Organisation__c.Dataplier__Organisation_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Organisation__c.Dataplier__Organisation_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Organisation__c.Dataplier__User_Full_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Dataplier__Organisation__c.Dataplier__Username__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Entitlement.AssetId</field>
         <readable>true</readable>
@@ -8557,16 +9069,6 @@
         <editable>true</editable>
         <field>Entitlement.WorkOrdersPerEntitlement</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Event.Data_Quality_Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Event.Data_Quality_Score__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -9991,11 +10493,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Flosum__HerokuCredentials__c.Flosum__IsFullReview__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Flosum__HerokuCredentials__c.Flosum__Is_Use_Named_Credentials__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -12370,11 +12867,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Flosum__Vlocity_Credentials__c.Flosum__Is_Use_Named_Credentials__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Flosum__Vlocity_Credentials__c.Flosum__OAuth_Key__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -12497,6 +12989,11 @@
         <editable>true</editable>
         <field>Incident.MilestoneStatus</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Incident.MilestoneTimer</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -12684,16 +13181,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Lead.Data_Quality_Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Lead.Data_Quality_Score__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.Description</field>
         <readable>true</readable>
@@ -12785,6 +13272,221 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>LiveAgentSession.ChatReqAssigned</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveAgentSession.ChatReqDeclined</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveAgentSession.ChatReqEngaged</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveAgentSession.ChatReqTimedOut</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveAgentSession.NumFlagLoweredAgent</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveAgentSession.NumFlagLoweredSupervisor</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveAgentSession.NumFlagRaised</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveAgentSession.TimeAtCapacity</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveAgentSession.TimeIdle</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveAgentSession.TimeInAwayStatus</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveAgentSession.TimeInChats</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveAgentSession.TimeInOnlineStatus</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.Abandoned</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.AccountId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.AverageResponseTimeOperator</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.AverageResponseTimeVisitor</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.Body</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.Browser</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.BrowserLanguage</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.CaseId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.ChatDuration</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.ChatKey</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.ContactId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.EndTime</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.EndedBy</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.IpAddress</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.LeadId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.Lifecycle</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.Location</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.MaxResponseTimeOperator</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.MaxResponseTimeVisitor</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.OperatorMessageCount</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.Platform</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.ReferrerUri</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.RequestTime</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.ScreenResolution</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.StartTime</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.Status</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.SupervisorTranscriptBody</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.UserAgent</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.VisitorMessageCount</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.VisitorNetwork</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>LiveChatTranscript.WaitTime</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Location.CloseDate</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -12866,16 +13568,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.ContractId</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Data_Quality_Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Opportunity.Data_Quality_Score__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13251,46 +13943,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Project_Cert__c.Website__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Config__mdt.Issue_Type__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Config__mdt.Message__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Config__mdt.Rule__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Config__mdt.Sevirity__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Enable_Setting__mdt.Enable_Disable__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Threshold_Config__mdt.Frequency__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Threshold_Config__mdt.Severity__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>SQ_Threshold_Config__mdt.Threshold_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -13797,16 +14449,6 @@
         <editable>true</editable>
         <field>Task.ActivityDate</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Task.Data_Quality_Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Task.Data_Quality_Score__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -23445,10 +24087,6 @@
     </fieldPermissions>
     <flowAccesses>
         <enabled>false</enabled>
-        <flow>Account_Updates_Contact_Checkbox</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
         <flow>Create_a_Case</flow>
     </flowAccesses>
     <flowAccesses>
@@ -23481,9 +24119,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>AccountTeamMember-Account Team Member Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ActiveScratchOrg-Active Scratch Org Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
@@ -23558,6 +24193,71 @@
         <layout>DataUsePurpose-Data Use Purpose Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Dataplier__Data_Set__c-Dataplier__Data Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Data_Set__c-Dataplier__Data Set Layout</layout>
+        <recordType>Dataplier__Data_Set__c.Dataplier__DataSet</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Sequence_Step__c-Dataplier__Execution Sequence Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Sequence__c-Dataplier__Execution Sequence Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Sequence__c-Dataplier__Execution Sequence Layout</layout>
+        <recordType>Dataplier__Execution_Sequence__c.Dataplier__ExecutionSequence</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Step_Log__c-Dataplier__Execution Step Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Step_Records__c-Dataplier__Execution Step Records Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Step__c-Dataplier__Execution Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution_Step__c-Dataplier__Execution Step Layout</layout>
+        <recordType>Dataplier__Execution_Step__c.Dataplier__ExecutionStep</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution__c-Dataplier__Execution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Execution__c-Dataplier__Execution Layout</layout>
+        <recordType>Dataplier__Execution__c.Dataplier__Execution</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Filter_Line__c-Dataplier__Filter Line Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Filter__c-Dataplier__Filter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__IdCache__c-Dataplier__IdCache Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Log__c-Dataplier__Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Migration_Job__c-Dataplier__Migration Job Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Migration_Job__c-Dataplier__Migration Job Layout</layout>
+        <recordType>Dataplier__Migration_Job__c.Dataplier__Migration_Job</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Migration_Step__c-Dataplier__Migration Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Object_State__c-Dataplier__Object State Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Dataplier__Organisation__c-Dataplier__Org Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -23612,10 +24312,6 @@
     <layoutAssignments>
         <layout>Flosum__Branch__c-Flosum__Branch Layout</layout>
         <recordType>Flosum__Branch__c.Flosum__Locked</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Branch__c-Flosum__Branch Layout</layout>
-        <recordType>Flosum__Branch__c.Flosum__MuleSoft</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Branch__c-Flosum__Commerce Cloud Layout</layout>
@@ -24094,10 +24790,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__AccountPlanObjMeasCalcDef</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__AccountRelationshipShareRule</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -24210,10 +24902,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ApplicationSubtypeDefinition</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__AppointmentAssignmentPolicy</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -24307,10 +24995,6 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__BusinessProcessGroup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__BusinessProcessTypeDefinition</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -24419,10 +25103,6 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__ContextDefinition</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ContextUseCaseMapping</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -24539,10 +25219,6 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__DataCategoryGroup</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__DataConnector</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -24678,10 +25354,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__DocumentTemplate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__DocumentType</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -24778,23 +25450,11 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ExplainabilityActionDefinition</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ExplainabilityActionVersion</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__ExplainabilityMsgTemplate</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__ExpressionSetDefinition</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ExpressionSetDefinitionVersion</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -25038,10 +25698,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__InvocableActionExtension</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__KeywordList</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -25079,10 +25735,6 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__LightningOnboardingConfig</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__LightningOutApp</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -25195,10 +25847,6 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__ModerationRule</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__MuleSoft</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -25394,14 +26042,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ProductSpecificationRecType</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ProductSpecificationType</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__Profile</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -25458,10 +26098,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__RecAlrtDataSrcExpSetDef</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__RecommendationStrategy</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -25475,14 +26111,6 @@
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
         <recordType>Flosum__Metadata_Item__c.Flosum__RecordAlertCategory</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__RecordAlertDataSource</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
-        <recordType>Flosum__Metadata_Item__c.Flosum__RecordAlertTemplate</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Flosum__Metadata_Item__c-Flosum__Metadata Item Layout</layout>
@@ -25867,10 +26495,6 @@
         <recordType>Flosum__Organisation__c.Flosum__Default</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Flosum__Organisation__c-Flosum__Organisation Layout</layout>
-        <recordType>Flosum__Organisation__c.Flosum__MuleSoft</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Flosum__Organisation__c-Flosum__Veeva Organisation Layout</layout>
         <recordType>Flosum__Organisation__c.Flosum__Veeva</recordType>
     </layoutAssignments>
@@ -25978,10 +26602,6 @@
         <layout>Flosum__Snapshot__c-Flosum__Snapshot Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Flosum__Snapshot__c-Flosum__Snapshot Layout</layout>
-        <recordType>Flosum__Snapshot__c.Flosum__MuleSoft</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Flosum__Story_Deployment_Manifest__c-Flosum__Story Deployment Manifest Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -26056,9 +26676,6 @@
         <layout>Macro-Macro Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>NamespaceRegistry-Namespace Registry Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -26100,15 +26717,6 @@
         <layout>QuickText-Quick Text Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>SQ_Config__mdt-SQ Config Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SQ_Enable_Setting__mdt-SQ Enable Setting Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SQ_Threshold_Config__mdt-SQ Threshold Config Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Scorecard-Scorecard Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -26116,9 +26724,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ScorecardMetric-Scorecard Metric Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ScratchOrgInfo-Scratch Org Info Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Seller-Seller Layout</layout>
@@ -26768,6 +27373,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Analyzer_Error__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26777,6 +27383,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Branch__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26786,6 +27393,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Build_Manifest__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26795,6 +27403,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Build__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26804,6 +27413,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Comment_Pull_Request__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26813,6 +27423,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Commit_Manifest__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26822,6 +27433,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Commit__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26831,6 +27443,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Component_History__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26840,6 +27453,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Component__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26849,6 +27463,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__DataMaskField__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26858,6 +27473,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__DataMaskObject__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26867,6 +27483,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__DataMask__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26876,6 +27493,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Deployment_Approval__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26885,6 +27503,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Deployment_Result__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26894,6 +27513,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Destructive_Changes__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26903,6 +27523,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Destructive_Manifest__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26912,6 +27533,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Flosum_Task__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26921,6 +27543,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__HerokuCredentials__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26930,6 +27553,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Log__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26939,6 +27563,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Manifest__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26948,6 +27573,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Metadata_Item_Vlocity__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26957,6 +27583,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Metadata_Item__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26966,6 +27593,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Metadata_Log__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26975,6 +27603,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__OrgLink__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26984,6 +27613,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Org_Component__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -26993,6 +27623,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Org_Permission__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27002,6 +27633,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Organisation__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27011,6 +27643,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Patch_Application__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27020,6 +27653,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Patch_Manifest__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27029,6 +27663,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Patch__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27038,6 +27673,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__PipelineExecution__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27047,6 +27683,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__PipelineStep__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27056,6 +27693,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__PipelineStepsResult__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27065,6 +27703,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Pipeline__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27074,6 +27713,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Promotion_path__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27083,6 +27723,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Pull_Request_Reviewer__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27092,6 +27733,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Pull_Request__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27101,6 +27743,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__RepositoryCredentials__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27110,6 +27753,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Repository_Manifest__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27119,6 +27763,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Repository_Permission__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27128,6 +27773,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Repository__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27137,6 +27783,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Review_Result__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27146,6 +27793,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Review_Violation__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27155,6 +27803,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Rule_Set__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27164,6 +27813,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Rule__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27173,6 +27823,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Snapshot_Vlocity__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27182,6 +27833,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Snapshot__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27191,6 +27843,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Story_Deployment_Manifest__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27200,6 +27853,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Story_Deployment__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27209,6 +27863,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__SwimLane__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27218,6 +27873,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Sync_Job__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27227,6 +27883,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Temp_Log__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27236,6 +27893,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Test_Log__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27245,6 +27903,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Trail_Component__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27254,6 +27913,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Unlocked_Package_Version__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27263,6 +27923,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Unlocked_Package__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27272,6 +27933,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__User_Story__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27281,6 +27943,7 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Flosum__Webhook__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -27290,12 +27953,9 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Idea</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
-    <pageAccesses>
-        <apexPage>Dataplier__AuthFix</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
     <pageAccesses>
         <apexPage>Dataplier__DMPostInstallScript</apexPage>
         <enabled>false</enabled>
@@ -27690,10 +28350,6 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>Flosum__ModifyOrgPermission</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>Flosum__MulesoftSnapshot</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -28554,6 +29210,31 @@
     </pageAccesses>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Dataplier__Data_Set__c.Dataplier__DataSet</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Dataplier__Execution_Sequence__c.Dataplier__ExecutionSequence</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Dataplier__Execution_Step__c.Dataplier__ExecutionStep</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Dataplier__Execution__c.Dataplier__Execution</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Dataplier__Migration_Job__c.Dataplier__Migration_Job</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Flosum__Branch__c.Flosum__Commerce_Cloud</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -28570,11 +29251,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Branch__c.Flosum__Marketing_Cloud</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Branch__c.Flosum__MuleSoft</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -29024,11 +29700,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__AccountPlanObjMeasCalcDef</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__AccountRelationshipShareRule</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -29169,11 +29840,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ApplicationSubtypeDefinition</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__AppointmentAssignmentPolicy</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -29290,11 +29956,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__BusinessProcessGroup</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__BusinessProcessTypeDefinition</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -29430,11 +30091,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__ContextDefinition</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ContextUseCaseMapping</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -29580,11 +30236,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__DataCategoryGroup</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__DataConnector</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -29754,11 +30405,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__DocumentTemplate</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__DocumentType</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -29879,27 +30525,12 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ExplainabilityActionDefinition</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ExplainabilityActionVersion</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__ExplainabilityMsgTemplate</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__ExpressionSetDefinition</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ExpressionSetDefinitionVersion</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -30204,11 +30835,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__InvocableActionExtension</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__KeywordList</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -30255,11 +30881,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__LightningOnboardingConfig</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__LightningOutApp</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -30400,11 +31021,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__ModerationRule</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__MuleSoft</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -30649,16 +31265,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ProductSpecificationRecType</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__ProductSpecificationType</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__Profile</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -30729,11 +31335,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__RecAlrtDataSrcExpSetDef</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__RecommendationStrategy</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -30750,16 +31351,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Metadata_Item__c.Flosum__RecordAlertCategory</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__RecordAlertDataSource</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Metadata_Item__c.Flosum__RecordAlertTemplate</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -31219,11 +31810,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Flosum__Organisation__c.Flosum__MuleSoft</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>Flosum__Organisation__c.Flosum__Veeva</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
@@ -31260,11 +31846,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Flosum__Snapshot__c.Flosum__Marketing_Cloud</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Flosum__Snapshot__c.Flosum__MuleSoft</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -31467,6 +32048,22 @@
         <recordType>agf__Release_Signoff_Infrastructure__c.agf__Splits_Migrations</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Dataplier__Data_Set__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Dataplier__Execution_Sequence__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Dataplier__Execution__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Dataplier__Settings</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>Flosum_Scan__Flosum_Scan</tab>
         <visibility>Hidden</visibility>
@@ -31808,7 +32405,7 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-ActiveScratchOrg</tab>
+        <tab>standard-Advisements</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -31964,6 +32561,30 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-DevopsAiModel</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-DevopsAiRule</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-DevopsAiRuleVldSpec</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-DevopsDeployComponent</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-DevopsGovernancePolicy</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-DevopsGovernancePolicyItem</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Document</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -31981,6 +32602,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-File</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-FlowLogs</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -32004,7 +32629,43 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-FulfmtRoutgSpecLocation</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-FulfmtRoutgSpecProduct</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-GRNItemBatchUnusableQtyDtl</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-GRNItemProductionBatch</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-GRNItemSerializedProduct</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-GRNItemUnusableQtyDetail</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-GeolocationBasedAction</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-GlobalFlowResources</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-GoodsReceivedNote</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-GoodsReceivedNoteItem</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -32064,6 +32725,18 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-LiveAgentSession</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-LiveChatTranscript</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-LiveChatVisitor</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Location</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -32088,10 +32761,6 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-NamespaceRegistry</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>standard-Opportunity</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -32104,8 +32773,24 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-OrderSource</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-OrgManagement</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-OtherUserProfile</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-PartnerUnsoldInvLedger</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-PartnerUnsoldInventory</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-PartyConsent</tab>
@@ -32176,11 +32861,35 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-PurchaseOrder</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-PurchaseOrderItem</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Recognition</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Recommendation</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-RegltCntntEngmtChannelType</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-RegltCntntProcessStatus</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-RegltCntntRendition</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-RegltCntntType</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -32212,8 +32921,28 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>standard-ScratchOrgInfo</tab>
-        <visibility>Hidden</visibility>
+        <tab>standard-SecurityCenterConfig</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-SecurityCenterCustomMetrics</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-SecurityCenterNotification</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-SecurityCenterPolicies</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-SecurityHub</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-SecurityInvestigations</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Seller</tab>
@@ -32248,6 +32977,14 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-Tags</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-TenantSecurityInvestigation</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-TerritoryAccountScore</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -32260,8 +32997,16 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-TradeScheme</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-UserDefinedLabel</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-UserDevopsPreference</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-UserProfile</tab>

@@ -1,6 +1,6 @@
 public class Friends {
 /*Pizza Rates:
-1 slice - $8/slice
+1 slice - $8/slice test update
 2-3 slice - $7/slice
 >3 slice - $6/slice
 
