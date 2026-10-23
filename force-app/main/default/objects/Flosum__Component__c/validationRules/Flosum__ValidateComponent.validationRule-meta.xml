@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__ValidateComponent</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISBLANK( RecordTypeId ) || 
+(RecordType.Name = &apos;Repository&apos; &amp;&amp; ISBLANK( Flosum__Repository__c ))  || (RecordType.Name = &apos;Branch&apos; &amp;&amp; ISBLANK( Flosum__Branch__c )))</errorConditionFormula>
+    <errorMessage>Repository or Branch can not be empty.</errorMessage>
+</ValidationRule>

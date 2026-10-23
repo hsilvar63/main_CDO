@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Tests_Passed__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Tests Passed</label>
+    <summaryFilterItems>
+        <field>Flosum__AccelQ_One_Test_Result__c.Flosum__Success__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Flosum__AccelQ_One_Test_Result__c.Flosum__AccelQ_Test_Result__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
