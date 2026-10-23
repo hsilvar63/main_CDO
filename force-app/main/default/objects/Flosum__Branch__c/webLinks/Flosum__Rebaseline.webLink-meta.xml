@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Rebaseline</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Sync</masterLabel>
+    <openType>sidebar</openType>
+    <page>Flosum__SyncWithBranch</page>
+    <protected>false</protected>
+</WebLink>

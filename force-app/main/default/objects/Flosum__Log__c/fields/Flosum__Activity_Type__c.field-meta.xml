@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Activity_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Activity Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Update Components</fullName>
+                <default>false</default>
+                <label>Update Components</label>
+            </value>
+            <value>
+                <fullName>Code Scan</fullName>
+                <default>false</default>
+                <label>Code Scan</label>
+            </value>
+            <value>
+                <fullName>Create Pull Request</fullName>
+                <default>false</default>
+                <label>Create Pull Request</label>
+            </value>
+            <value>
+                <fullName>Impact analysis</fullName>
+                <default>false</default>
+                <label>Impact analysis</label>
+            </value>
+            <value>
+                <fullName>Dependency</fullName>
+                <default>false</default>
+                <label>Dependency</label>
+            </value>
+            <value>
+                <fullName>Deployment</fullName>
+                <default>false</default>
+                <label>Deployment</label>
+            </value>
+            <value>
+                <fullName>Status Pull Request</fullName>
+                <default>false</default>
+                <label>Status Pull Request</label>
+            </value>
+            <value>
+                <fullName>Delete Components</fullName>
+                <default>false</default>
+                <label>Delete Components</label>
+            </value>
+            <value>
+                <fullName>Deployment Analyzer</fullName>
+                <default>false</default>
+                <label>Deployment Analyzer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
