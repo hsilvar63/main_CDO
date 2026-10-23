@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>agf__Either_Release_or_eRelease_Request</fullName>
+    <active>true</active>
+    <description>Either the Release field or the eRelease Request field must be specified, but not both.</description>
+    <errorConditionFormula>(ISBLANK(agf__Release__c) &amp;&amp; ISBLANK(agf__eRelease_Request__c)) ||
+  (NOT(ISBLANK(agf__Release__c)) &amp;&amp; NOT(ISBLANK(agf__eRelease_Request__c)))</errorConditionFormula>
+    <errorMessage>Either Release must be specified or eRelease Request must be specified, but both cannot be entered.</errorMessage>
+</ValidationRule>
