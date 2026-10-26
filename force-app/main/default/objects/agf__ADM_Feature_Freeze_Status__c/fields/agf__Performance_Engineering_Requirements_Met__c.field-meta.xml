@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The Performance Engineering requirements have been met.</description>
+    <fullName>agf__Performance_Engineering_Requirements_Met__c</fullName>
+    <inlineHelpText>The Performance Engineering requirements have been met.</inlineHelpText>
+    <label>Performance Engineering Requirements Met</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>False</fullName>
+                <label>False</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>True</fullName>
+                <label>True</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

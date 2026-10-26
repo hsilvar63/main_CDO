@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select to indicate this Course Offering is on Sundays. You can select multiple days. --></help>
+    <label>Dimanche</label>
+    <name>hed__Sunday__c</name>
+</CustomFieldTranslation>

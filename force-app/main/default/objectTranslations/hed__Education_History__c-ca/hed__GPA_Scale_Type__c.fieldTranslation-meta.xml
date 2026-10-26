@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Tracks how the GPA was determined. For example, using a weighted or unweighted scale. --></help>
+    <label>Tipus d’escala de qualificació escolar</label>
+    <name>hed__GPA_Scale_Type__c</name>
+    <picklistValues>
+        <masterLabel>Unweighted</masterLabel>
+        <translation><!-- Unweighted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weighted</masterLabel>
+        <translation><!-- Weighted --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

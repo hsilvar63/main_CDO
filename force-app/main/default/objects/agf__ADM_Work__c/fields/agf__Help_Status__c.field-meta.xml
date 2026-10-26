@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Tracks whether the Documentation team is engaged and the progress of the documentation.</description>
+    <fullName>agf__Help_Status__c</fullName>
+    <label>Help Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Closed</fullName>
+                <label>Closed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deferred</fullName>
+                <label>Deferred</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Fixed</fullName>
+                <label>Fixed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>In Progress</fullName>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Info Only</fullName>
+                <label>Info Only</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>New</fullName>
+                <label>New</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Not Needed</fullName>
+                <label>Not Needed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pilot</fullName>
+                <label>Pilot</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Ready for Review</fullName>
+                <label>Ready for Review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

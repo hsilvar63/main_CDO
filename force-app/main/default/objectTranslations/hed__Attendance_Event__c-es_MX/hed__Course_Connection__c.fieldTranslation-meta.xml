@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The class and period in which the student was tardy or absent. --></help>
+    <label>Enlace de cursos</label>
+    <name>hed__Course_Connection__c</name>
+    <relationshipLabel>Eventos de asistencia</relationshipLabel>
+</CustomFieldTranslation>

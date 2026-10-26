@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The type of grading period that this grade is for, for example, Mid-Term Grade, Final Grade, Exam Grade, Grading Period.</description>
+    <fullName>hed__Term_Grade_Type__c</fullName>
+    <inlineHelpText>The type of grading period that this grade is for, for example, Mid-Term Grade, Final Grade, Exam Grade, Grading Period.</inlineHelpText>
+    <label>Term Grade Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Exam Grade</fullName>
+                <label>Exam Grade</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Final Grade</fullName>
+                <label>Final Grade</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Grading Period</fullName>
+                <label>Grading Period</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mid-Term Grade</fullName>
+                <label>Mid-Term Grade</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>hed__EDA_Academic_Certification_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>hed__Academic_Certification__c</pageOrSobjectType>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>hed__EDA_Attribute_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>hed__Attribute__c</pageOrSobjectType>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>hed__EDA_Credential_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>hed__Credential__c</pageOrSobjectType>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>hed__EDA_Education_History_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>hed__Education_History__c</pageOrSobjectType>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>hed__EDA_Program_Enrollment_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>hed__Program_Enrollment__c</pageOrSobjectType>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Salesforce.org Education Data Architecture</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Education Data Architecture</label>
+    <navType>Standard</navType>
+    <setupExperience>all</setupExperience>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>hed__Course__c</tabs>
+    <tabs>hed__Term__c</tabs>
+    <tabs>hed__Course_Offering__c</tabs>
+    <tabs>hed__Program_Plan__c</tabs>
+    <tabs>hed__Trigger_Handler__c</tabs>
+    <tabs>hed__Education_Cloud_Settings</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

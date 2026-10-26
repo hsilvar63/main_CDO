@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Behavior_Response__c-es_MX</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>Respuesta de comportamiento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Respuestas de comportamiento</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>EDA Behavior Response Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de respuesta de comportamiento</nameFieldLabel>
+</CustomObjectTranslation>

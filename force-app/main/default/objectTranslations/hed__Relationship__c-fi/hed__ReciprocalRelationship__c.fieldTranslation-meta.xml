@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Lookup to the related Reciprocal Relationship record. This field is automatically populated. Manually updating this field could result in errors. --></help>
+    <label>Vastavuoroinen suhde</label>
+    <name>hed__ReciprocalRelationship__c</name>
+    <relationshipLabel>Suhteet</relationshipLabel>
+</CustomFieldTranslation>

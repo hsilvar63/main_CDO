@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Cloud__c</fullName>
+    <label>Department</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Analytics</fullName>
+                <label>Analytics</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Capacity</fullName>
+                <label>Capacity</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Core</fullName>
+                <label>Core</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Core Infrastructure</fullName>
+                <label>Core Infrastructure</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Data Center Automation</fullName>
+                <label>Data Center Automation</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>IT</fullName>
+                <label>IT</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Industry</fullName>
+                <label>Industry</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Marketing</fullName>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Matrix</fullName>
+                <label>Matrix</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mobile</fullName>
+                <label>Mobile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Network and Systems Platform</fullName>
+                <label>Network and Systems Platform</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Path-To-Production</fullName>
+                <label>Path-To-Production</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform</fullName>
+                <label>Platform</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Production Support</fullName>
+                <label>Production Support</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Productivity</fullName>
+                <label>Productivity</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Programmatic UI</fullName>
+                <label>Programmatic UI</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>R&amp;D App Delivery</fullName>
+                <label>R&amp;D App Delivery</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Reliability</fullName>
+                <label>Reliability</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sales</fullName>
+                <label>Sales</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Security</fullName>
+                <label>Security</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Service</fullName>
+                <label>Service</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Shared Services</fullName>
+                <label>Shared Services</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Trust</fullName>
+                <label>Trust</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

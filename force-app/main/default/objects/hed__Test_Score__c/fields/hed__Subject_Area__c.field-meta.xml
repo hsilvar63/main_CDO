@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The subject matter or category for this test score.</description>
+    <fullName>hed__Subject_Area__c</fullName>
+    <inlineHelpText>The subject matter or category for this test score.</inlineHelpText>
+    <label>Subject Area</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Language</fullName>
+                <label>Language</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mathematics</fullName>
+                <label>Mathematics</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Overall</fullName>
+                <label>Overall</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Reading</fullName>
+                <label>Reading</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Science</fullName>
+                <label>Science</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Writing</fullName>
+                <label>Writing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

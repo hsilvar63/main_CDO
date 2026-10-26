@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Cloud_Type__c</fullName>
+    <label>Cloud Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>IT</fullName>
+                <label>IT</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Infrastructure</fullName>
+                <label>Infrastructure</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Product</fullName>
+                <label>Product</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

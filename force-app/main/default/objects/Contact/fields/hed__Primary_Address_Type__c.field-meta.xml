@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Indicate what kind of address the Mailing Address is, for example, Work, Home, or Other.</description>
+    <fullName>hed__Primary_Address_Type__c</fullName>
+    <inlineHelpText>Indicate what kind of address the Mailing Address is, for example, Work, Home, or Other.</inlineHelpText>
+    <label>Primary Address Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Home</fullName>
+                <label>Home</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Vacation Residence</fullName>
+                <label>Vacation Residence</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Work</fullName>
+                <label>Work</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The Lead&apos;s self-identified ethnicity.</description>
+    <fullName>hed__Ethnicity__c</fullName>
+    <label>Ethnicity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Hispanic or Latino</fullName>
+                <label>Hispanic or Latino</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Not Hispanic or Latino</fullName>
+                <label>Not Hispanic or Latino</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

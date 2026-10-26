@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Approval_Status__c</fullName>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Approved</fullName>
+                <label>Approved</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Not Submitted</fullName>
+                <label>Not Submitted</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pending</fullName>
+                <label>Pending</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Rejected</fullName>
+                <label>Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

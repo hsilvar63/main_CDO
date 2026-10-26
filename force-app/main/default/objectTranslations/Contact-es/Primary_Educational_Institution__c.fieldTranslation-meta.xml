@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Institución educativa principal</label>
+    <name>Primary_Educational_Institution__c</name>
+    <relationshipLabel>Miembros de la institución</relationshipLabel>
+</CustomFieldTranslation>

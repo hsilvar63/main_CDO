@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Customer_Communication_Requirement__c</fullName>
+    <inlineHelpText>Will this product enhancement or feature enablement require proactive communication from SFDC to customer Sys Admin&apos;s informing them of a behavior change or action they will be required to take?</inlineHelpText>
+    <label>Customer Communication Required</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>No</fullName>
+                <label>No</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yes</fullName>
+                <label>Yes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The Lead&apos;s self-identified gender.</description>
+    <fullName>hed__Gender__c</fullName>
+    <label>Gender</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Decline to State</fullName>
+                <label>Decline to State</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Female</fullName>
+                <label>Female</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Male</fullName>
+                <label>Male</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

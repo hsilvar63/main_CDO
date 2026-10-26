@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <label>EDAProductInformation</label>
+    <protected>false</protected>
+    <values>
+        <field>hed__API_Version__c</field>
+        <value xsi:type="xsd:double">52.0</value>
+    </values>
+    <values>
+        <field>hed__Action__c</field>
+        <value xsi:type="xsd:string">Settings Product Information</value>
+    </values>
+    <values>
+        <field>hed__Class_Name__c</field>
+        <value xsi:type="xsd:string">EDASettingsProductInformationAPIService</value>
+    </values>
+    <values>
+        <field>hed__Enabled__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>hed__Namespace__c</field>
+        <value xsi:type="xsd:string">hed</value>
+    </values>
+</CustomMetadata>

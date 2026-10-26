@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The student&apos;s level in a Program, for example, Freshman, Sophomore, Junior, or Senior.</description>
+    <fullName>hed__Class_Standing__c</fullName>
+    <inlineHelpText>The student&apos;s level in a Program, for example, Freshman, Sophomore, Junior, or Senior.</inlineHelpText>
+    <label>Class Standing</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Freshman</fullName>
+                <label>Freshman</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Junior</fullName>
+                <label>Junior</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Senior</fullName>
+                <label>Senior</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sophomore</fullName>
+                <label>Sophomore</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

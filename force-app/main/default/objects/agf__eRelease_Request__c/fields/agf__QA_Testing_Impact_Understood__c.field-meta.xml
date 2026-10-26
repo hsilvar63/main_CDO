@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__QA_Testing_Impact_Understood__c</fullName>
+    <inlineHelpText>Please indicate if the QA testing impact is understood.  If you specify &quot;Yes,&quot; then the information in the Testing Required and Other Testing fields should be considered correct. If you specify &quot;No,&quot; then you must determine this as soon as possible.</inlineHelpText>
+    <label>QA Testing Impact Understood</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>true</default>
+                <fullName>No</fullName>
+                <label>No</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Not Applicable</fullName>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yes</fullName>
+                <label>Yes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

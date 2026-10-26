@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The name of the desired campus related to this Opportunity.</description>
+    <fullName>hed__Desired_Campus__c</fullName>
+    <inlineHelpText>The name of the desired campus related to this Opportunity.</inlineHelpText>
+    <label>Desired Campus</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Main</fullName>
+                <label>Main</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Online</fullName>
+                <label>Online</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

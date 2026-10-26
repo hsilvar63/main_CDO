@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Tracks how the GPA was determined. For example, using a weighted or unweighted scale.</description>
+    <fullName>hed__GPA_Scale_Type__c</fullName>
+    <inlineHelpText>Tracks how the GPA was determined. For example, using a weighted or unweighted scale.</inlineHelpText>
+    <label>GPA Scale Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Unweighted</fullName>
+                <label>Unweighted</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Weighted</fullName>
+                <label>Weighted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

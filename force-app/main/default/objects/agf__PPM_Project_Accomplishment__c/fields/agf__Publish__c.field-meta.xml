@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Identifies whether this accomplishment is to be published or not.</description>
+    <fullName>agf__Publish__c</fullName>
+    <inlineHelpText>Identifies whether this accomplishment is to be published or not.</inlineHelpText>
+    <label>Publish</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

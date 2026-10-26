@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Functional Organization</description>
+    <fullName>agf__Organization__c</fullName>
+    <label>Organization</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Analyst Relations</fullName>
+                <label>Analyst Relations</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Analytics GTM</fullName>
+                <label>Analytics GTM</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>CCE</fullName>
+                <label>CCE</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>CMO</fullName>
+                <label>CMO</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Demo Marketing</fullName>
+                <label>Demo Marketing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Development</fullName>
+                <label>Development</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Documentation</fullName>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Global Recruiting</fullName>
+                <label>Global Recruiting</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>ISV</fullName>
+                <label>ISV</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>IT</fullName>
+                <label>IT</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>IT Apps</fullName>
+                <label>IT Apps</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>IT Infra</fullName>
+                <label>IT Infra</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Marketing</fullName>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Matrix</fullName>
+                <label>Matrix</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>PerfEng</fullName>
+                <label>PerfEng</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Product</fullName>
+                <label>Product</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Product Management</fullName>
+                <label>Product Management</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Product Marketing</fullName>
+                <label>Product Marketing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Products</fullName>
+                <label>Products</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>QE</fullName>
+                <label>QE</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Real Estate Management</fullName>
+                <label>Real Estate Management</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Renewals</fullName>
+                <label>Renewals</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>SOMA</fullName>
+                <label>SOMA</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sales</fullName>
+                <label>Sales</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Salesforce University</fullName>
+                <label>Salesforce University</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Service</fullName>
+                <label>Service</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Site Reliability</fullName>
+                <label>Site Reliability</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Strategy &amp; Ops</fullName>
+                <label>Strategy &amp; Ops</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Support</fullName>
+                <label>Support</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sys Eng</fullName>
+                <label>Sys Eng</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>T&amp;P Shared</fullName>
+                <label>T&amp;P Shared</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>TPL</fullName>
+                <label>TPL</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>TPM</fullName>
+                <label>TPM</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>TechOps</fullName>
+                <label>TechOps</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Trust Technology</fullName>
+                <label>Trust Technology</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>UE</fullName>
+                <label>UE</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>UX</fullName>
+                <label>UX</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>User Experience</fullName>
+                <label>User Experience</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

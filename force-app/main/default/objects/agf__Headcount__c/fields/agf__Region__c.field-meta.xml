@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Region__c</fullName>
+    <inlineHelpText>Region is set by Finance.</inlineHelpText>
+    <label>Region_Deprecated</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>APAC - All Countries</fullName>
+                <label>APAC - All Countries</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Americas - Canada</fullName>
+                <label>Americas - Canada</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Americas - Latin America</fullName>
+                <label>Americas - Latin America</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Americas - USA</fullName>
+                <label>Americas - USA</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>EMEA - All Countries</fullName>
+                <label>EMEA - All Countries</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Japan</fullName>
+                <label>Japan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The field of study for the Attribute&apos;s Credential. Read only. --></help>
+    <label><!-- Field of Study --></label>
+    <name>hed__Field_Of_Study__c</name>
+</CustomFieldTranslation>

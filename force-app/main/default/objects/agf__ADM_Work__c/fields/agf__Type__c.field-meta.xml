@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Bug</fullName>
+                <label>Bug</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Bug List</fullName>
+                <label>Bug List</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Gack</fullName>
+                <label>Gack</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Help</fullName>
+                <label>Help</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Integrate</fullName>
+                <label>Integrate</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Non Deterministic Test</fullName>
+                <label>Non Deterministic Test</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Skunkforce</fullName>
+                <label>Skunkforce</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Test Case</fullName>
+                <label>Test Case</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Test Change</fullName>
+                <label>Test Change</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Test Failure</fullName>
+                <label>Test Failure</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Test Tool</fullName>
+                <label>Test Tool</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Translation</fullName>
+                <label>Translation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Geeft aan met welk gender de persoon zich identificeert.</help>
+    <label><!-- Gender --></label>
+    <name>hed__Gender__c</name>
+    <picklistValues>
+        <masterLabel>Decline to State</masterLabel>
+        <translation>Niet aangegeven</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Female</masterLabel>
+        <translation>Vrouw</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Male</masterLabel>
+        <translation>Man</translation>
+    </picklistValues>
+</CustomFieldTranslation>

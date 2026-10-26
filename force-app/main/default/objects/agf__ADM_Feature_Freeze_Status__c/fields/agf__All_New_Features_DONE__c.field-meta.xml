@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>All new product development meets the Definition Of Done.</description>
+    <fullName>agf__All_New_Features_DONE__c</fullName>
+    <inlineHelpText>All new product development meets the Definition Of Done:  https://sites.google.com/a/salesforce.com/adm/definition-of-done?AuthEventSource=SSO</inlineHelpText>
+    <label>Features Meet Definition of Done</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>true</default>
+                <fullName>False</fullName>
+                <label>False</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>N/A</fullName>
+                <label>N/A</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>True</fullName>
+                <label>True</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
