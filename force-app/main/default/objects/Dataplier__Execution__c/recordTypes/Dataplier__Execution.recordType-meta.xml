@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <fullName>Dataplier__Execution</fullName>
+    <label>Execution</label>
+    <picklistValues>
+        <picklist>Dataplier__Batch_Status__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Completed</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>In Progress</fullName>
+        </values>
+        <values>
+            <default>true</default>
+            <fullName>Not Started</fullName>
+        </values>
+    </picklistValues>
+</RecordType>

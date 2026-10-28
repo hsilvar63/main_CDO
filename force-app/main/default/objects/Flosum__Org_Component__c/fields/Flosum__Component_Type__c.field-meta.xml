@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>Flosum__Component_Type__c</fullName>
+    <label>Component Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>ActionLinkGroupTemplate</fullName>
+                <label>ActionLinkGroupTemplate</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>AnalyticSnapshot</fullName>
+                <label>AnalyticSnapshot</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>ApexClass</fullName>
+                <label>ApexClass</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

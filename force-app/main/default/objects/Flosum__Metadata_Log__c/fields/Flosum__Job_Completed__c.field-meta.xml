@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Show if the process related to deployment or retrieve has been completed or not for the current  Async request Id</description>
+    <fullName>Flosum__Job_Completed__c</fullName>
+    <label>Job Completed?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Dependency_Status__c</fullName>
+    <inlineHelpText>The status of this dependency.
+
+Prioritized = Deliverable has a user story and is prioritized on the backlog.
+
+Committed = Team is confident the work can be done in the needed timeframe and PO committed to maintaining the priority of the deliverable.</inlineHelpText>
+    <label>Dependency Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Committed</fullName>
+                <label>Committed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Completed</fullName>
+                <label>Completed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deferred</fullName>
+                <label>Deferred</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>More Info Needed</fullName>
+                <label>More Info Needed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Never</fullName>
+                <label>Never</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>New</fullName>
+                <label>New</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Prioritized</fullName>
+                <label>Prioritized</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

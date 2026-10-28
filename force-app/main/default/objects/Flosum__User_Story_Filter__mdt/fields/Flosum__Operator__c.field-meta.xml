@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <fullName>Flosum__Operator__c</fullName>
+    <label>Operator</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>contains</fullName>
+                <label>contains</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>does not contain</fullName>
+                <label>does not contain</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>ends with</fullName>
+                <label>ends with</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>equals</fullName>
+                <label>equals</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>not equals</fullName>
+                <label>not equals</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>starts with</fullName>
+                <label>starts with</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <fullName>Dataplier__Org__c</fullName>
+    <label>Destination Org</label>
+    <referenceTo>Dataplier__Organisation__c</referenceTo>
+    <relationshipLabel>Migration Jobs</relationshipLabel>
+    <relationshipName>Migration_Jobs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

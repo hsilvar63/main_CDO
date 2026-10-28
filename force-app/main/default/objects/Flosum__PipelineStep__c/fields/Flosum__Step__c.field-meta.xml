@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>Flosum__Step__c</fullName>
+    <label>Step</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>AccelQ</fullName>
+                <label>AccelQ</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Automation Step</fullName>
+                <label>Automation Step</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Backup</fullName>
+                <label>Backup</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Change Branch Record Type</fullName>
+                <label>Change Branch Record Type</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Commit to Source</fullName>
+                <label>Commit to Source</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deploy</fullName>
+                <label>Deploy</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Execute Apex</fullName>
+                <label>Execute Apex</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Lock Branch</fullName>
+                <label>Lock Branch</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Manual Step</fullName>
+                <label>Manual Step</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Overwrite Protection</fullName>
+                <label>Overwrite Protection</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pause</fullName>
+                <label>Pause</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Peer Review</fullName>
+                <label>Peer Review</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>PreDeploy Fix</fullName>
+                <label>PreDeploy Fix</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Rollback</fullName>
+                <label>Rollback</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Unlock Branch</fullName>
+                <label>Unlock Branch</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Validate</fullName>
+                <label>Validate</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>WebHook</fullName>
+                <label>WebHook</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

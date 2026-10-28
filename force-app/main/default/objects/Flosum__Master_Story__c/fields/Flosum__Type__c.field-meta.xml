@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>Flosum__Type__c</fullName>
+    <label>Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>true</default>
+                <fullName>Agile Work</fullName>
+                <label>Agile Work</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Custom Object</fullName>
+                <label>Custom Object</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>JIRA</fullName>
+                <label>JIRA</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Service Now</fullName>
+                <label>Service Now</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

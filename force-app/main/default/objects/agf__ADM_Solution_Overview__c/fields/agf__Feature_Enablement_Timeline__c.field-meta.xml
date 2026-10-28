@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Feature_Enablement_Timeline__c</fullName>
+    <inlineHelpText>All features must be enabled with the release or within 24 hrs of the release.
+*No exceptions*</inlineHelpText>
+    <label>Feature Enablement Timing</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>BT Perm (within 24hrs)</fullName>
+                <label>BT Perm (within 24hrs)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Off Cycle (Requires Exec Approval)</fullName>
+                <label>Off Cycle (Requires Exec Approval)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Post Scripts (within 24hrs)</fullName>
+                <label>Post Scripts (within 24hrs)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>With Release</fullName>
+                <label>With Release</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

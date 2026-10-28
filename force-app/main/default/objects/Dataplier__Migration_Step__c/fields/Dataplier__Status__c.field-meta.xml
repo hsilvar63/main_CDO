@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>Dataplier__Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Canceled</fullName>
+                <label>Canceled</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Completed</fullName>
+                <label>Completed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Completed,queued: crossupdate</fullName>
+                <label>Completed,queued: crossupdate</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Migrating</fullName>
+                <label>Migrating</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Preparing</fullName>
+                <label>Preparing</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Queued</fullName>
+                <label>Queued</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Updating cross-references</fullName>
+                <label>Updating cross-references</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Updating self-lookups</fullName>
+                <label>Updating self-lookups</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

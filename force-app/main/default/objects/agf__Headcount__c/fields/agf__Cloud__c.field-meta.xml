@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Defines the Cloud headcount is associated with</description>
+    <fullName>agf__Cloud__c</fullName>
+    <label>Cloud (Deprecated)</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Analyst Relations</fullName>
+                <label>Analyst Relations</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Analytics</fullName>
+                <label>Analytics</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>CCE/Site Reliability</fullName>
+                <label>CCE/Site Reliability</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Capacity</fullName>
+                <label>Capacity</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Capacity and SR</fullName>
+                <label>Capacity and SR</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Chatter</fullName>
+                <label>Chatter</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Compute - System</fullName>
+                <label>Compute - System</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Compute Deploy</fullName>
+                <label>Compute Deploy</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Customer</fullName>
+                <label>Customer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Data Center Automation</fullName>
+                <label>Data Center Automation</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Data Platform and Services</fullName>
+                <label>Data Platform and Services</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Data.com - Product Delivery</fullName>
+                <label>Data.com - Product Delivery</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Data.com - San Francisco</fullName>
+                <label>Data.com - San Francisco</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Data.com - San Mateo</fullName>
+                <label>Data.com - San Mateo</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Data.com - Service Delivery</fullName>
+                <label>Data.com - Service Delivery</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Database</fullName>
+                <label>Database</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Database and Core</fullName>
+                <label>Database and Core</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Demo Marketing</fullName>
+                <label>Demo Marketing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Desk.com</fullName>
+                <label>Desk.com</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Dev Marketing</fullName>
+                <label>Dev Marketing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Hardware</fullName>
+                <label>Hardware</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Heroku</fullName>
+                <label>Heroku</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>IT</fullName>
+                <label>IT</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Industry</fullName>
+                <label>Industry</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Infrastructure Delivery</fullName>
+                <label>Infrastructure Delivery</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Marketing</fullName>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Matrix</fullName>
+                <label>Matrix</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mobile</fullName>
+                <label>Mobile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Monitoring</fullName>
+                <label>Monitoring</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Network</fullName>
+                <label>Network</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Network and Systems Platform</fullName>
+                <label>Network and Systems Platform</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pardot</fullName>
+                <label>Pardot</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Path-To-Production</fullName>
+                <label>Path-To-Production</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform</fullName>
+                <label>Platform</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform - Declarative</fullName>
+                <label>Platform - Declarative</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform - Programmatic</fullName>
+                <label>Platform - Programmatic</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform - Services</fullName>
+                <label>Platform - Services</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform Programmatic UI</fullName>
+                <label>Platform Programmatic UI</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Productivity</fullName>
+                <label>Productivity</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>R&amp;D App Delivery</fullName>
+                <label>R&amp;D App Delivery</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Relate IQ</fullName>
+                <label>Relate IQ</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Reliability</fullName>
+                <label>Reliability</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sales</fullName>
+                <label>Sales</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Salesforce Cloud</fullName>
+                <label>Salesforce Cloud</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sayonara</fullName>
+                <label>Sayonara</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Search</fullName>
+                <label>Search</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Security</fullName>
+                <label>Security</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Security &amp; Compliance</fullName>
+                <label>Security &amp; Compliance</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Service</fullName>
+                <label>Service</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Shared Services</fullName>
+                <label>Shared Services</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>T&amp;P Shared</fullName>
+                <label>T&amp;P Shared</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Trust</fullName>
+                <label>Trust</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Work.com</fullName>
+                <label>Work.com</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

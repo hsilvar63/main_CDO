@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phase__c</fullName>
+    <label>Phase</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Design</fullName>
+                <label>Design</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Development</fullName>
+                <label>Development</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Maintenance</fullName>
+                <label>Maintenance</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Requires Analysis</fullName>
+                <label>Requires Analysis</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Testing</fullName>
+                <label>Testing</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Proposed</controllingFieldValue>
+            <valueName>Requires Analysis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proposed</controllingFieldValue>
+            <valueName>Design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <valueName>Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <controllingFieldValue>Active</controllingFieldValue>
+            <valueName>Testing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Complete</controllingFieldValue>
+            <valueName>Maintenance</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

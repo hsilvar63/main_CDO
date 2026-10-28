@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>Dataplier__Space_required__c</fullName>
+    <label>Space required (KB)</label>
+    <summarizedField>Dataplier__Migration_Step__c.Dataplier__Space_required__c</summarizedField>
+    <summaryForeignKey>Dataplier__Migration_Step__c.Dataplier__Job__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>High Risk Performance Impacting features tested / behind perm</description>
+    <fullName>agf__Perf_Impact_Features_Tested_Behind_Perm__c</fullName>
+    <inlineHelpText>Performance risk assessment completed for all features.   All high risk performance impacting features have been adequately tested and/or disabled by default (e.g. behind perm, or config)</inlineHelpText>
+    <label>High Risk Performance:Tested/Behind Perm</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>N/A</fullName>
+                <label>N/A</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>No</fullName>
+                <label>No</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yes</fullName>
+                <label>Yes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

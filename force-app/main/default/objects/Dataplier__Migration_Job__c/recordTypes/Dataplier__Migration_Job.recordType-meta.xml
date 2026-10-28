@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <fullName>Dataplier__Migration_Job</fullName>
+    <label>Migration_Job</label>
+    <picklistValues>
+        <picklist>Dataplier__Status__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Canceled</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Completed</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Migration</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Preparation</fullName>
+        </values>
+        <values>
+            <default>true</default>
+            <fullName>Queued</fullName>
+        </values>
+    </picklistValues>
+</RecordType>

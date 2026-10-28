@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dataplier__Auto_Generate_Sequence</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Auto Generate Sequence</masterLabel>
+    <openType>sidebar</openType>
+    <page>Dataplier__SequenceAutoGeneratePage</page>
+    <protected>false</protected>
+</WebLink>

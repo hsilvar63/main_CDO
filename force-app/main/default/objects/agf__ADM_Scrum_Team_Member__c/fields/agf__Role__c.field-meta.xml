@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Role__c</fullName>
+    <label>Role</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Analyst</fullName>
+                <label>Analyst</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Architect</fullName>
+                <label>Architect</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>BSA</fullName>
+                <label>BSA</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Business Owner</fullName>
+                <label>Business Owner</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Capacity Planner</fullName>
+                <label>Capacity Planner</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>DBA</fullName>
+                <label>DBA</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Data Center Engineer</fullName>
+                <label>Data Center Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Dev Manager</fullName>
+                <label>Dev Manager</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Developer</fullName>
+                <label>Developer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Doc Editor</fullName>
+                <label>Doc Editor</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Doc Manager</fullName>
+                <label>Doc Manager</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Engineering Manager</fullName>
+                <label>Engineering Manager</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Network Engineer</fullName>
+                <label>Network Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Performance Engineer</fullName>
+                <label>Performance Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Product Owner</fullName>
+                <label>Product Owner</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Program Manager</fullName>
+                <label>Program Manager</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Provisioning Specialist / Asset Manager</fullName>
+                <label>Provisioning Specialist / Asset Manager</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>QA Engineer</fullName>
+                <label>QA Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>QA Manager</fullName>
+                <label>QA Manager</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Release Engineer</fullName>
+                <label>Release Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Release Manager</fullName>
+                <label>Release Manager</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Scrum Master</fullName>
+                <label>Scrum Master</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Security Engineer</fullName>
+                <label>Security Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Site Reliability Engineer</fullName>
+                <label>Site Reliability Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Software Engineer</fullName>
+                <label>Software Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>SysAdmin</fullName>
+                <label>SysAdmin</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>SysAdmin Linux</fullName>
+                <label>SysAdmin Linux</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>SysAdmin Storage</fullName>
+                <label>SysAdmin Storage</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>SysAdmin Win</fullName>
+                <label>SysAdmin Win</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>TechOps Manager</fullName>
+                <label>TechOps Manager</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Technical Writer</fullName>
+                <label>Technical Writer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Trust Engineer</fullName>
+                <label>Trust Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>UE</fullName>
+                <label>UE</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>UE Manager</fullName>
+                <label>UE Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

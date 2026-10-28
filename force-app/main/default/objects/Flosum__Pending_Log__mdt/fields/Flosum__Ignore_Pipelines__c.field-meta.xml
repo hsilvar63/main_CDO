@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If the deployment is associated with a pipeline, emails will not be sent.</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <fullName>Flosum__Ignore_Pipelines__c</fullName>
+    <inlineHelpText>If the deployment is associated with a pipeline, emails will not be sent.</inlineHelpText>
+    <label>Ignore Pipelines</label>
+    <type>Checkbox</type>
+</CustomField>

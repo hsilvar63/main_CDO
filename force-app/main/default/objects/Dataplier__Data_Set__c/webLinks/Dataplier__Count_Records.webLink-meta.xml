@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dataplier__Count_Records</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Count Records</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/resource/Dataplier__migration/js/jquery-1.10.2.js&quot;)}
+{!REQUIRESCRIPT(&quot;/resource/Dataplier__migration/js/jsforce-1.7.0.min.js&quot;)}
+{!REQUIRESCRIPT(&quot;/resource/Dataplier__execution/js/utilities5.js&quot;)}
+
+conn2 = new jsforce.Connection({ accessToken: &apos;{!$Api.Session_Id}&apos; , proxyUrl: &quot;/services/proxy&quot;});
+countDataSetResultRecords(&quot;{!Dataplier__Data_Set__c.Dataplier__Object_API_Name__c}&quot;, &quot;{!Dataplier__Data_Set__c.Dataplier__Query__c}&quot;);</url>
+</WebLink>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>for test</description>
+    <fullName>Dataplier__ExecutionStep</fullName>
+    <label>ExecutionStep</label>
+    <picklistValues>
+        <picklist>Dataplier__Operation__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>INSERT</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>UPSERT</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dataplier__Status__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Completed</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Faled</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>In Progress</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Not Started</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Retrieved</fullName>
+        </values>
+    </picklistValues>
+</RecordType>

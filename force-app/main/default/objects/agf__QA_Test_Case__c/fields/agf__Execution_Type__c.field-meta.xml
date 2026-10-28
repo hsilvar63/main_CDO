@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Execution_Type__c</fullName>
+    <label>Execution Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>.Net</fullName>
+                <label>.Net</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Automated</fullName>
+                <label>Automated</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Boundary</fullName>
+                <label>Boundary</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>CTI - script</fullName>
+                <label>CTI - script</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Client Automation</fullName>
+                <label>Client Automation</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>End To End</fullName>
+                <label>End To End</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Manual</fullName>
+                <label>Manual</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>ProdTest - API</fullName>
+                <label>ProdTest - API</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>ProdTest - Selenium</fullName>
+                <label>ProdTest - Selenium</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sanity</fullName>
+                <label>Sanity</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Silktest</fullName>
+                <label>Silktest</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Systest</fullName>
+                <label>Systest</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Upgrade Script</fullName>
+                <label>Upgrade Script</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Utest</fullName>
+                <label>Utest</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>TrustCenter__Risk_Type__c</fullName>
+    <label>Risk Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>High risk</fullName>
+                <label>High risk</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Ignore</fullName>
+                <label>Ignore</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Low risk</fullName>
+                <label>Low risk</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Warning</fullName>
+                <label>Warning</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

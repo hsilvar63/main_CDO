@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Blocked</fullName>
+                <label>Blocked</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cancelled</fullName>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Delivered</fullName>
+                <label>Delivered</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>In Progress</fullName>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>More Information Needed</fullName>
+                <label>More Information Needed</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>New</fullName>
+                <label>New</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Waiting on Requestor</fullName>
+                <label>Waiting on Requestor</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Waiting on Requirements</fullName>
+                <label>Waiting on Requirements</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

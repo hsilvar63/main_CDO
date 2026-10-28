@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Considered</fullName>
+                <label>Considered</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Does not apply</fullName>
+                <label>Does not apply</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Not Started</fullName>
+                <label>Not Started</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Under Consideration</fullName>
+                <label>Under Consideration</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

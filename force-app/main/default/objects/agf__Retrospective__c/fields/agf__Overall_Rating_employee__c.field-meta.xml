@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Overall Rating as seen by the employee for this release</description>
+    <fullName>agf__Overall_Rating_employee__c</fullName>
+    <inlineHelpText>Please specify the overall rating for your performance in this release</inlineHelpText>
+    <label>Overall Rating (employee)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Blizzard</fullName>
+                <label>Blizzard</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cloudy</fullName>
+                <label>Cloudy</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Partly Sunny</fullName>
+                <label>Partly Sunny</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Rain Showers</fullName>
+                <label>Rain Showers</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sunny</fullName>
+                <label>Sunny</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

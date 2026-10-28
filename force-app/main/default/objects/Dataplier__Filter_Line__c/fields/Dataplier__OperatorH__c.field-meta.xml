@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Dataplier__Operator__c, &apos;e&apos;), &apos;equals&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;n&apos;), &apos;not equal to&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;s&apos;), &apos;starts with&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;c&apos;), &apos;contains&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;k&apos;), &apos;does not contain&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;l&apos;), &apos;less than&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;g&apos;), &apos;greater than&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;m&apos;), &apos;less or equal&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;h&apos;), &apos;greater or equal&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;u&apos;), &apos;includes&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;x&apos;), &apos;excludes&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;w&apos;), &apos;within&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;i&apos;), &apos;in&apos;,
+IF(ISPICKVAL(Dataplier__Operator__c, &apos;j&apos;), &apos;does not in&apos;,
+&apos;&apos;
+))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <fullName>Dataplier__OperatorH__c</fullName>
+    <label>OperatorH</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

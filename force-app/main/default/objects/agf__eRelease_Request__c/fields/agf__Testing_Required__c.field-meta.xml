@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Testing_Required__c</fullName>
+    <inlineHelpText>Please indicate what type of testing is required for this change.</inlineHelpText>
+    <label>Testing Required</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Basic ftest</fullName>
+                <label>Basic ftest</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Entity Basic ftest</fullName>
+                <label>Entity Basic ftest</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Extended ftest</fullName>
+                <label>Extended ftest</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Full ftest</fullName>
+                <label>Full ftest</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>None required</fullName>
+                <label>None required</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Selenium</fullName>
+                <label>Selenium</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Canceled or Never Released</fullName>
+                <label>Canceled or Never Released</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deployed - Date Changed</fullName>
+                <label>Deployed - Date Changed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deployed - Exceeded Release Window</fullName>
+                <label>Deployed - Exceeded Release Window</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deployed - Other Issues</fullName>
+                <label>Deployed - Other Issues</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deployed Successfully</fullName>
+                <label>Deployed Successfully</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deployment Introduced Regression</fullName>
+                <label>Deployment Introduced Regression</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deployment in Progress</fullName>
+                <label>Deployment in Progress</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>In Development</fullName>
+                <label>In Development</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Partial Deployment - Halted</fullName>
+                <label>Partial Deployment - Halted</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Partial Deployment - Superseded</fullName>
+                <label>Partial Deployment - Superseded</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Partial Rollback</fullName>
+                <label>Partial Rollback</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Ready for Deployment</fullName>
+                <label>Ready for Deployment</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Redeployed After Rollback</fullName>
+                <label>Redeployed After Rollback</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Rollback</fullName>
+                <label>Rollback</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

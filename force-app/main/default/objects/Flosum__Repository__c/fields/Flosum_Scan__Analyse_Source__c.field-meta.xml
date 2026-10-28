@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Which components from repository need to scan throw SonarCube</description>
+    <fullName>Flosum_Scan__Analyse_Source__c</fullName>
+    <label>Analyse_Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>true</default>
+                <fullName>All</fullName>
+                <label>All</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Branch</fullName>
+                <label>Branch</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Repository</fullName>
+                <label>Repository</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

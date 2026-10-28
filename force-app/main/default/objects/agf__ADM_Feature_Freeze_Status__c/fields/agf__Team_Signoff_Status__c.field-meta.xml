@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Team_Signoff_Status__c</fullName>
+    <label>Team Signoff Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>No</fullName>
+                <label>No</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yes / does not meet criteria</fullName>
+                <label>Yes / does not meet criteria</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yes / meets criteria</fullName>
+                <label>Yes / meets criteria</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>Flosum__Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Deleted</fullName>
+                <label>Deleted</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Error</fullName>
+                <label>Error</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>In Progress</fullName>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>No Data</fullName>
+                <label>No Data</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pending</fullName>
+                <label>Pending</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Retrieved</fullName>
+                <label>Retrieved</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Too Large</fullName>
+                <label>Too Large</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

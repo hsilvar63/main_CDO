@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Mobile_Network__c</fullName>
+    <label>Mobile Network</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>3G</fullName>
+                <label>3G</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Edge</fullName>
+                <label>Edge</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Offline/Airplane mode</fullName>
+                <label>Offline/Airplane mode</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>WiFi 4G/LTE</fullName>
+                <label>WiFi 4G/LTE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

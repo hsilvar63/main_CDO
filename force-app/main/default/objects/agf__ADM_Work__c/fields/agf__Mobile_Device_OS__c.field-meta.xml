@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Mobile_Device_OS__c</fullName>
+    <label>Mobile Device OS</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Android 4.2.x</fullName>
+                <label>Android 4.2.x</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Android 4.3</fullName>
+                <label>Android 4.3</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Android 4.4.x</fullName>
+                <label>Android 4.4.x</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Android 5.x</fullName>
+                <label>Android 5.x</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Windows 10 Pro</fullName>
+                <label>Windows 10 Pro</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Windows 10.0</fullName>
+                <label>Windows 10.0</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Windows 8.0</fullName>
+                <label>Windows 8.0</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Windows 8.0 Pro</fullName>
+                <label>Windows 8.0 Pro</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Windows 8.1</fullName>
+                <label>Windows 8.1</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Windows 8.1 Pro</fullName>
+                <label>Windows 8.1 Pro</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Windows Phone 10.0</fullName>
+                <label>Windows Phone 10.0</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Windows Phone 8.0</fullName>
+                <label>Windows Phone 8.0</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Windows Phone 8.1</fullName>
+                <label>Windows Phone 8.1</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>iOS 8</fullName>
+                <label>iOS 8</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>iOS 9.0</fullName>
+                <label>iOS 9.0</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>iOS 9.0.1</fullName>
+                <label>iOS 9.0.1</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>iOS 9.0.2</fullName>
+                <label>iOS 9.0.2</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>iOS 9.1</fullName>
+                <label>iOS 9.1</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>iOS 9.2</fullName>
+                <label>iOS 9.2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

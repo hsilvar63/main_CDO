@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>Flosum__Source_Name__c</fullName>
+    <label>Source</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Branch</fullName>
+                <label>Branch</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Repository</fullName>
+                <label>Repository</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Snapshot</fullName>
+                <label>Snapshot</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Work</fullName>
+                <label>Work</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

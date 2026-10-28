@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Deployment_Type__c</fullName>
+    <inlineHelpText>Please indicate what type of deployment is required for this eRelease.</inlineHelpText>
+    <label>Deployment Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>CONFIG</fullName>
+                <label>CONFIG</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>DOCS (Chatter HTML)</fullName>
+                <label>DOCS (Chatter HTML)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>DOCS (H&amp;T 2.0)</fullName>
+                <label>DOCS (H&amp;T 2.0)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>DOCS (PDF)</fullName>
+                <label>DOCS (PDF)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>JAVA, PLSQL</fullName>
+                <label>JAVA, PLSQL</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>JSP Pages</fullName>
+                <label>JSP Pages</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

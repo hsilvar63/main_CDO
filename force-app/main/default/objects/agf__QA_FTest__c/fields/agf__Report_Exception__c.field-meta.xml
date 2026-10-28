@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Report_Exception__c</fullName>
+    <label>Exclude from Report</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Generated Test</fullName>
+                <label>Generated Test</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>PLSQL Findbugs</fullName>
+                <label>PLSQL Findbugs</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Unit Test</fullName>
+                <label>Unit Test</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

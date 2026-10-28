@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>Flosum__Activity_Type__c</fullName>
+    <label>Activity Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Code Scan</fullName>
+                <label>Code Scan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Create Pull Request</fullName>
+                <label>Create Pull Request</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Delete Components</fullName>
+                <label>Delete Components</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Dependency</fullName>
+                <label>Dependency</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deployment</fullName>
+                <label>Deployment</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deployment Analyzer</fullName>
+                <label>Deployment Analyzer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Impact analysis</fullName>
+                <label>Impact analysis</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Status Pull Request</fullName>
+                <label>Status Pull Request</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Update Components</fullName>
+                <label>Update Components</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

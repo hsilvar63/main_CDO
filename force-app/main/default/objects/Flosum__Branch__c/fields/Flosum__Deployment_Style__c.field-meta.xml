@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>Flosum__Deployment_Style__c</fullName>
+    <label>CI Deployment Style</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>CONTINUE ON FAILURE</fullName>
+                <label>CONTINUE ON FAILURE</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>STOP ON FAILURE</fullName>
+                <label>STOP ON FAILURE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

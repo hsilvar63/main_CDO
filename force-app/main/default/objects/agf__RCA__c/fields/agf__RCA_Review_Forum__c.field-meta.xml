@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__RCA_Review_Forum__c</fullName>
+    <label>RCA Review Forum</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Analytics Big Data Review</fullName>
+                <label>Analytics Big Data Review</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Applications Review</fullName>
+                <label>Applications Review</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Automation Review</fullName>
+                <label>Automation Review</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Core Review</fullName>
+                <label>Core Review</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>HA Review</fullName>
+                <label>HA Review</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>IT Review</fullName>
+                <label>IT Review</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Internal HA Review</fullName>
+                <label>Internal HA Review</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Marketing Cloud</fullName>
+                <label>Marketing Cloud</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform Review</fullName>
+                <label>Platform Review</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>data.com Review</fullName>
+                <label>data.com Review</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>work.com Review</fullName>
+                <label>work.com Review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

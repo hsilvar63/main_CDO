@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__T_Shirt_Size__c</fullName>
+    <label>T-Shirt Size</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Extra Large</fullName>
+                <label>Extra Large</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Large</fullName>
+                <label>Large</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Medium</fullName>
+                <label>Medium</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Small</fullName>
+                <label>Small</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

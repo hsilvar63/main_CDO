@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sf_tfs__All</fullName>
+    <columns>NAME</columns>
+    <columns>sf_tfs__type__c</columns>
+    <columns>sf_tfs__allowedValues__c</columns>
+    <columns>sf_tfs__defaultValue__c</columns>
+    <columns>sf_tfs__readOnly__c</columns>
+    <columns>sf_tfs__alwaysRequired__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

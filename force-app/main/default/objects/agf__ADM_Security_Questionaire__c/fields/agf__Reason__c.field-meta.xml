@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Reason for Doneness &lt; 100%</description>
+    <fullName>agf__Reason__c</fullName>
+    <inlineHelpText>Reason for Doneness &lt; 100%</inlineHelpText>
+    <label>Reason for Doneness &lt; 100%</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Feature unavailable for testing</fullName>
+                <label>Feature unavailable for testing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Inadequate bandwidth</fullName>
+                <label>Inadequate bandwidth</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Low risk feature</fullName>
+                <label>Low risk feature</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

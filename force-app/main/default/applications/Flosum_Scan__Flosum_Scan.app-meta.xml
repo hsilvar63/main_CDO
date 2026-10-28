@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#FF2D78</headerColor>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Integration with the Sonarqube</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Flosum Scan</label>
+    <navType>Standard</navType>
+    <tabs>Flosum__Branch__c</tabs>
+    <tabs>Flosum_Scan__Flosum_Scan</tabs>
+    <tabs>Flosum_Scan__Issues</tabs>
+    <tabs>Flosum_Scan__Log__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Flosum_Scan__Flosum_Scan_UtilityBar</utilityBar>
+</CustomApplication>
