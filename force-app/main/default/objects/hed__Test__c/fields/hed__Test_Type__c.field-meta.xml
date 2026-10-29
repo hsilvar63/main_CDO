@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The formal name for the test taken.</description>
+    <fullName>hed__Test_Type__c</fullName>
+    <inlineHelpText>The formal name for the test taken.</inlineHelpText>
+    <label>Test Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>ACT</fullName>
+                <label>ACT</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>GMAT</fullName>
+                <label>GMAT</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>GRE</fullName>
+                <label>GRE</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>SAT</fullName>
+                <label>SAT</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>TOEFL</fullName>
+                <label>TOEFL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

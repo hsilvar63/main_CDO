@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The year that this Address no longer replaces the Default Address. --></help>
+    <label>季節性終了年</label>
+    <name>hed__Seasonal_End_Year__c</name>
+</CustomFieldTranslation>

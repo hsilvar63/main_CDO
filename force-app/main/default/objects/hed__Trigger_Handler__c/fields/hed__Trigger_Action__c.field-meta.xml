@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The context in which this class should run, for example, before a record is inserted, after a record is deleted, etc.</description>
+    <fullName>hed__Trigger_Action__c</fullName>
+    <inlineHelpText>The context in which this class should run, for example, before a record is inserted, after a record is deleted, etc.</inlineHelpText>
+    <label>Trigger Action</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>AfterDelete</fullName>
+                <label>AfterDelete</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>AfterInsert</fullName>
+                <label>AfterInsert</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>AfterUndelete</fullName>
+                <label>AfterUndelete</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>AfterUpdate</fullName>
+                <label>AfterUpdate</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>BeforeDelete</fullName>
+                <label>BeforeDelete</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>BeforeInsert</fullName>
+                <label>BeforeInsert</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>BeforeUpdate</fullName>
+                <label>BeforeUpdate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

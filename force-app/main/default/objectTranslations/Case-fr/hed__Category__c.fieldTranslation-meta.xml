@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Le type de requête suivi.</help>
+    <label><!-- Category --></label>
+    <name>hed__Category__c</name>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Autre</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>School Code of Conduct</masterLabel>
+        <translation>Code de conduite de l’école</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>School Violation</masterLabel>
+        <translation>Infraction au règlement de l’école</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State Offense</masterLabel>
+        <translation>Infraction d’État</translation>
+    </picklistValues>
+</CustomFieldTranslation>

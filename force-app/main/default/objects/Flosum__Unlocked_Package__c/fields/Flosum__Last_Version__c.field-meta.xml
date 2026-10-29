@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Last_Version__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Last Version</label>
+    <referenceTo>Flosum__Unlocked_Package_Version__c</referenceTo>
+    <relationshipLabel>Unlocked Package</relationshipLabel>
+    <relationshipName>Unlocked_Package</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Organizational_Priority_Methods__c</fullName>
+    <label>Organizational Priority Methods</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>agf__Organizational_Priority_Value__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Accelerate Service Cloud</fullName>
+                <label>Accelerate Service Cloud</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deliver Chatter</fullName>
+                <label>Deliver Chatter</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Delivery</fullName>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Dominate the Sales Cloud</fullName>
+                <label>Dominate the Sales Cloud</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Drive The Platform</fullName>
+                <label>Drive The Platform</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Innovate to Scale</fullName>
+                <label>Innovate to Scale</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Leadership,Communication, Culture</fullName>
+                <label>Leadership,Communication, Culture</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Productivity of our company</fullName>
+                <label>Productivity of our company</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Productivity of our team</fullName>
+                <label>Productivity of our team</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Quality &amp; Performance</fullName>
+                <label>Quality &amp; Performance</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Security</fullName>
+                <label>Security</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Trust</controllingFieldValue>
+            <valueName>Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trust</controllingFieldValue>
+            <valueName>Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trust</controllingFieldValue>
+            <valueName>Quality &amp; Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Innovation</controllingFieldValue>
+            <valueName>Innovate to Scale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Innovation</controllingFieldValue>
+            <valueName>Deliver Chatter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Innovation</controllingFieldValue>
+            <valueName>Accelerate Service Cloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Innovation</controllingFieldValue>
+            <valueName>Dominate the Sales Cloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Innovation</controllingFieldValue>
+            <valueName>Drive The Platform</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Productivity</controllingFieldValue>
+            <valueName>Productivity of our team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Productivity</controllingFieldValue>
+            <valueName>Productivity of our company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Productivity</controllingFieldValue>
+            <valueName>Leadership,Communication, Culture</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

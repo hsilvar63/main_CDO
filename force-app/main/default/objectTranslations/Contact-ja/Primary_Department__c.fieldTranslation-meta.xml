@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>主部門</label>
+    <name>Primary_Department__c</name>
+    <relationshipLabel>部門メンバー</relationshipLabel>
+</CustomFieldTranslation>

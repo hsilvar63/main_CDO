@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Moratoriums that impact the application&apos;s release.</description>
+    <fullName>agf__Applicable_Moratoriums__c</fullName>
+    <inlineHelpText>Moratoriums that impact the application&apos;s release.</inlineHelpText>
+    <label>Applicable Moratoriums</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Dreamforce</fullName>
+                <label>Dreamforce</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>EOM</fullName>
+                <label>EOM</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>EOY / Holidays</fullName>
+                <label>EOY / Holidays</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Major Release</fullName>
+                <label>Major Release</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

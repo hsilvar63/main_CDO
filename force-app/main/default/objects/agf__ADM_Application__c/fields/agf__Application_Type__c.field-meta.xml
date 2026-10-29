@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Application_Type__c</fullName>
+    <label>Application Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Core Salesforce Application</fullName>
+                <label>Core Salesforce Application</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Distributed Customer Facing Application</fullName>
+                <label>Distributed Customer Facing Application</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Documentation</fullName>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>IT</fullName>
+                <label>IT</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Independent R&amp;D</fullName>
+                <label>Independent R&amp;D</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Infrastructure</fullName>
+                <label>Infrastructure</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Internal Monitoring &amp; Management</fullName>
+                <label>Internal Monitoring &amp; Management</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Moratorium</fullName>
+                <label>Moratorium</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

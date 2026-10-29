@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <businessProcess>Opp Sales</businessProcess>
+    <fullName>Ashford</fullName>
+    <label>Ashford</label>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Best Case</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Closed</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Commit</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Omitted</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Pipeline</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Advertisement</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Employee Referral</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>External Referral</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Other</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Partner</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Public Relations</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Seminar - Internal</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Seminar - Partner</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Trade Show</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Web</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Word of mouth</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Existing Business</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>New Business</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>hed__Desired_Campus__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Main</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Online</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>hed__Desired_Degree_Level__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Certification</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Graduate</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Non-degree</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Undergraduate</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>hed__Living_Situation__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Off Campus</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>On Campus</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>With Family</fullName>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Action__c</fullName>
+    <label>Action</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>true</default>
+                <fullName>Copy</fullName>
+                <label>Copy</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Copy All</fullName>
+                <label>Copy All</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Transfer</fullName>
+                <label>Transfer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Transfer All</fullName>
+                <label>Transfer All</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

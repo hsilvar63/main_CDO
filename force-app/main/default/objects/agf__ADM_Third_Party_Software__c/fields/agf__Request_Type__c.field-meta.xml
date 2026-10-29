@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Request_Type__c</fullName>
+    <label>Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Fonts</fullName>
+                <label>Fonts</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Software</fullName>
+                <label>Software</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Trademarks, Logos and Icons</fullName>
+                <label>Trademarks, Logos and Icons</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

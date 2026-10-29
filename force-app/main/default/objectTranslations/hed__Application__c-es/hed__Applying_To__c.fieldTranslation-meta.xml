@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The academic program or major the applicant is applying to. --></help>
+    <label>Solicitando a</label>
+    <name>hed__Applying_To__c</name>
+    <relationshipLabel>Solicitudes</relationshipLabel>
+</CustomFieldTranslation>

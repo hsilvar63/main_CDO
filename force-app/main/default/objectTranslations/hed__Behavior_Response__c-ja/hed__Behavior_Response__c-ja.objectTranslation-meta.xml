@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Behavior_Response__c-ja</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>行動対応</value>
+    </caseValues>
+    <layouts>
+        <layout>EDA Behavior Response Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>行動対応名</nameFieldLabel>
+</CustomObjectTranslation>

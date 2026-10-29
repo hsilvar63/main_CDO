@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The letter grade achieved for the Course Connection. --></help>
+    <label><!-- Display Grade --></label>
+    <name>hed__Display_Grade__c</name>
+</CustomFieldTranslation>

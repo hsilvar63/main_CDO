@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__RCA_Type__c</fullName>
+    <inlineHelpText>5 value options are presented here to allow the owner to categorize the release at a high level.</inlineHelpText>
+    <label>RCA Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Deployment Delayed</fullName>
+                <label>Deployment Delayed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>E-Release/Break-Fix Request</fullName>
+                <label>E-Release/Break-Fix Request</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Incorrect/Incomplete Code Release</fullName>
+                <label>Incorrect/Incomplete Code Release</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Incorrect/Incomplete Deployment</fullName>
+                <label>Incorrect/Incomplete Deployment</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Performance Degradation</fullName>
+                <label>Performance Degradation</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Rollback</fullName>
+                <label>Rollback</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Service Degradation</fullName>
+                <label>Service Degradation</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Service Disruption</fullName>
+                <label>Service Disruption</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

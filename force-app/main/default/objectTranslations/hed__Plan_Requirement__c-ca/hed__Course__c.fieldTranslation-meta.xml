@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Course associated with this Plan Requirement. Leave blank for a parent Plan Requirement with nested Plan Requirements. --></help>
+    <label>Curs</label>
+    <name>hed__Course__c</name>
+    <relationshipLabel>Requisits del pla</relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Is_the_work_behind_a_perm__c</fullName>
+    <label>Is the work behind a perm?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>False</fullName>
+                <label>False</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>NA</fullName>
+                <label>NA</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>True</fullName>
+                <label>True</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

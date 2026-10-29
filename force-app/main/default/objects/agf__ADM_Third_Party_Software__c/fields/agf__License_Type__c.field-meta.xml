@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__License_Type__c</fullName>
+    <label>License Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Commercial</fullName>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Open Source</fullName>
+                <label>Open Source</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

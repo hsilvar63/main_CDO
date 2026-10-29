@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Are remaining features which have not yet completed performance testing, ready to be handed over to Performance Engineering Team?”</description>
+    <fullName>agf__Performance_Self_Assessment__c</fullName>
+    <inlineHelpText>What does it mean to be ready?
+
+Test plans are finalized &amp; reviewed.
+
+Features with known performance risk are disabled by default (behind perm, config switch)</inlineHelpText>
+    <label>Performance Self Assessment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>No</fullName>
+                <label>No</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Unknown</fullName>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yes</fullName>
+                <label>Yes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

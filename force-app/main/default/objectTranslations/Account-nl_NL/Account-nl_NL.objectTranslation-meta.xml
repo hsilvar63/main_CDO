@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account-nl_NL</fullName>
+    <layouts>
+        <layout>HEDA Household Layout</layout>
+        <sections>
+            <label>Adres</label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Beschrijving</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Velden</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HEDA Organization Layout</layout>
+        <sections>
+            <label>Adres</label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Beschrijving</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Velden</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description>Een academisch programma dat bij de onderwijsinstelling wordt aangeboden.</description>
+        <label>Academisch programma</label>
+        <name>Academic_Program</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Een administratief account.</description>
+        <label>Administratief</label>
+        <name>Administrative</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Een bedrijfsorganisatie.</description>
+        <label>Bedrijfsorganisatie</label>
+        <name>Business_Organization</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Een onderwijsinstelling.</description>
+        <label>Onderwijsinstelling</label>
+        <name>Educational_Institution</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Een huishouden met één of meerdere individuen.</description>
+        <label>Huishoudenaccount</label>
+        <name>HH_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Een sportorganisatie.</description>
+        <label>Sportorganisatie</label>
+        <name>Sports_Organization</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Een afdeling binnen de onderwijsinstelling.</description>
+        <label>Universitaire afdeling</label>
+        <name>University_Department</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

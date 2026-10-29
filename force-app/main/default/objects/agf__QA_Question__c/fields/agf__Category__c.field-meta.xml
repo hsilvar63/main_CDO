@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Where the question will be categorized under.</description>
+    <fullName>agf__Category__c</fullName>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>true</default>
+                <fullName>Admin</fullName>
+                <label>Admin</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Application Testing</fullName>
+                <label>Application Testing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Core Testing</fullName>
+                <label>Core Testing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Data Management</fullName>
+                <label>Data Management</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Error Handling</fullName>
+                <label>Error Handling</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Functionality</fullName>
+                <label>Functionality</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Globalization</fullName>
+                <label>Globalization</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Help</fullName>
+                <label>Help</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Performance and System Testing</fullName>
+                <label>Performance and System Testing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform Testing</fullName>
+                <label>Platform Testing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Regression Testing</fullName>
+                <label>Regression Testing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Security</fullName>
+                <label>Security</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>UI testing</fullName>
+                <label>UI testing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Upgrade Script</fullName>
+                <label>Upgrade Script</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

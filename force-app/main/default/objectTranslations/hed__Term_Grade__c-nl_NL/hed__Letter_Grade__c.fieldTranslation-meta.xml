@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If your school uses letter grades, enter the letter grade the student earned, for example, A, B, C, etc. --></help>
+    <label>Letterscore</label>
+    <name>hed__Letter_Grade__c</name>
+</CustomFieldTranslation>

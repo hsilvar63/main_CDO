@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the person related to the Contact. --></help>
+    <label>関連する取引先責任者</label>
+    <name>hed__RelatedContact__c</name>
+    <relationshipLabel>非表示のリレーションリスト</relationshipLabel>
+</CustomFieldTranslation>

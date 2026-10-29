@@ -1,0 +1,52 @@
+<template>
+    <div class="container">
+        <h1 class="header header--large">SCSS Testing Component</h1>
+        
+        <div class="card card--highlighted">
+            <h2 class="card__title">Testing SCSS Compilation</h2>
+            <div class="card__content">
+                This component demonstrates SCSS features including variables, nesting, 
+                mixins, and BEM methodology. Check if styles are applied correctly after 
+                deployment through Flosum.
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 class="card__title">Status Badges</h3>
+            <div class="card__content">
+                <span class="status-badge status-badge--success">Success</span>
+                <span class="status-badge status-badge--warning">Warning</span>
+                <span class="status-badge status-badge--error">Error</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 class="card__title">Button Variants</h3>
+            <div class="card__content">
+                <button class="button button--primary" onclick={handleClick}>Primary</button>
+                <button class="button button--secondary" onclick={handleClick}>Secondary</button>
+                <button class="button button--success" onclick={handleClick}>Success</button>
+                <button class="button button--warning" onclick={handleClick}>Warning</button>
+                <button class="button button--danger" onclick={handleClick}>Danger</button>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="grid__item">
+                <p>Grid Item 1</p>
+            </div>
+            <div class="grid__item">
+                <p>Grid Item 2</p>
+            </div>
+            <div class="grid__item">
+                <p>Grid Item 3</p>
+            </div>
+        </div>
+
+        <div if:true={clickMessage} class="card">
+            <div class="card__content">
+                {clickMessage}
+            </div>
+        </div>
+    </div>
+</template>

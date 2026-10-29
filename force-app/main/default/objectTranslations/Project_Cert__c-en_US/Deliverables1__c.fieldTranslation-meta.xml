@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Deliverable(s) --></label>
+    <name>Deliverables1__c</name>
+    <picklistValues>
+        <masterLabel>Documentation</masterLabel>
+        <translation><!-- Documentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mobile App</masterLabel>
+        <translation><!-- Mobile App --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Online Help</masterLabel>
+        <translation><!-- Online Help --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Source Code</masterLabel>
+        <translation><!-- Source Code --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User Stories</masterLabel>
+        <translation><!-- User Stories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Website</masterLabel>
+        <translation><!-- Website --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

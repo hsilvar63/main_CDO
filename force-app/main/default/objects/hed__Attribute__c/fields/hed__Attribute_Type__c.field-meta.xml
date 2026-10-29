@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The kind of credential or student Attribute.</description>
+    <fullName>hed__Attribute_Type__c</fullName>
+    <inlineHelpText>The kind of credential or student Attribute.</inlineHelpText>
+    <label>Attribute Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Accommodation</fullName>
+                <label>Accommodation</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Asylee</fullName>
+                <label>Asylee</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Certification</fullName>
+                <label>Certification</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Economically Disadvantaged</fullName>
+                <label>Economically Disadvantaged</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Endorsement</fullName>
+                <label>Endorsement</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>English Learners</fullName>
+                <label>English Learners</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Family Consideration</fullName>
+                <label>Family Consideration</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Foster Care</fullName>
+                <label>Foster Care</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Free Lunch</fullName>
+                <label>Free Lunch</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Homeless</fullName>
+                <label>Homeless</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Immigrant</fullName>
+                <label>Immigrant</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>International Student</fullName>
+                <label>International Student</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Licensure</fullName>
+                <label>Licensure</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Parent in Military</fullName>
+                <label>Parent in Military</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pregnant</fullName>
+                <label>Pregnant</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Reduced Price Lunch</fullName>
+                <label>Reduced Price Lunch</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Refugee</fullName>
+                <label>Refugee</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Section 504 Handicapped</fullName>
+                <label>Section 504 Handicapped</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

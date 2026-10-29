@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account-ja</fullName>
+    <layouts>
+        <layout>HEDA Household Layout</layout>
+        <sections>
+            <label>住所</label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>説明</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>項目</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HEDA Organization Layout</layout>
+        <sections>
+            <label>住所</label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>説明</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>項目</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description>教育機関で提供されるアカデミックプログラム。</description>
+        <label>アカデミックプログラム</label>
+        <name>Academic_Program</name>
+    </recordTypes>
+    <recordTypes>
+        <description>管理取引先。</description>
+        <label>管理</label>
+        <name>Administrative</name>
+    </recordTypes>
+    <recordTypes>
+        <description>ビジネス団体。</description>
+        <label>ビジネス団体</label>
+        <name>Business_Organization</name>
+    </recordTypes>
+    <recordTypes>
+        <description>教育機関。</description>
+        <label>教育機関</label>
+        <name>Educational_Institution</name>
+    </recordTypes>
+    <recordTypes>
+        <description>1 人以上の個人を含む世帯。</description>
+        <label>世帯取引先</label>
+        <name>HH_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description>スポーツ団体。</description>
+        <label>スポーツ団体</label>
+        <name>Sports_Organization</name>
+    </recordTypes>
+    <recordTypes>
+        <description>教育機関の部門。</description>
+        <label>大学の学部</label>
+        <name>University_Department</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

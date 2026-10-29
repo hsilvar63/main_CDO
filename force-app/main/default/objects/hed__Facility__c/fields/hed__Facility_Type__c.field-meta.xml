@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Select the type of Facility this is, for example, a computer lab, health center, lecture hall, etc.</description>
+    <fullName>hed__Facility_Type__c</fullName>
+    <inlineHelpText>Select the type of Facility this is, for example, a computer lab, health center, lecture hall, etc.</inlineHelpText>
+    <label>Facility Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Building</fullName>
+                <label>Building</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cafeteria/Food Hall</fullName>
+                <label>Cafeteria/Food Hall</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Classroom</fullName>
+                <label>Classroom</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Computer Lab</fullName>
+                <label>Computer Lab</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Gymnasium</fullName>
+                <label>Gymnasium</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Health Center</fullName>
+                <label>Health Center</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Laboratory</fullName>
+                <label>Laboratory</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Lecture Hall</fullName>
+                <label>Lecture Hall</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Library</fullName>
+                <label>Library</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The status of the Education History. For example, Enrolled or Completed.</description>
+    <fullName>hed__Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Completed</fullName>
+                <label>Completed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Enrolled</fullName>
+                <label>Enrolled</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Failed</fullName>
+                <label>Failed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Leave of Absence</fullName>
+                <label>Leave of Absence</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>On Hold</fullName>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Withdrew</fullName>
+                <label>Withdrew</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

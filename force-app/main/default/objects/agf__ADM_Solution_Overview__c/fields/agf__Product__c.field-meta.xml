@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Product__c</fullName>
+    <label>Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Admin &amp; Tools</fullName>
+                <label>Admin &amp; Tools</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Application Exchange</fullName>
+                <label>Application Exchange</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Call Center</fullName>
+                <label>Call Center</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Content</fullName>
+                <label>Content</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Customer Portal</fullName>
+                <label>Customer Portal</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Database</fullName>
+                <label>Database</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Ideas</fullName>
+                <label>Ideas</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Infrastructure</fullName>
+                <label>Infrastructure</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Integration</fullName>
+                <label>Integration</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Logic</fullName>
+                <label>Logic</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Marketing</fullName>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mobile</fullName>
+                <label>Mobile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Partners</fullName>
+                <label>Partners</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sales</fullName>
+                <label>Sales</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>User Interface</fullName>
+                <label>User Interface</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

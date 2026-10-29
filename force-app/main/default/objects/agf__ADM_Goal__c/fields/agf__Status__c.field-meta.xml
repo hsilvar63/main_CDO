@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Deferred</fullName>
+                <label>Deferred</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Met</fullName>
+                <label>Met</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>New</fullName>
+                <label>New</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Not Met</fullName>
+                <label>Not Met</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Partially Met</fullName>
+                <label>Partially Met</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

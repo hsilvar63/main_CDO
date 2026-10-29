@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Recruiter&apos;s -GYR signal for recruiting status on this position.</description>
+    <fullName>agf__Recruiter_Status__c</fullName>
+    <inlineHelpText>Blank: no activity on this position 
+Green: Likely to close within the assigned quarter 
+Yellow: May close within the assigned quarter but I&apos;m not confident 
+Red: Unlikely to close within assigned quarter
+Blue: May close before assigned quarter</inlineHelpText>
+    <label>Recruiter Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Blue</fullName>
+                <label>Blue</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Green</fullName>
+                <label>Green</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Red</fullName>
+                <label>Red</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yellow</fullName>
+                <label>Yellow</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

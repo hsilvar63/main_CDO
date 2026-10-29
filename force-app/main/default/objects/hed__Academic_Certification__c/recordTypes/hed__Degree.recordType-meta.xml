@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <compactLayoutAssignment>hed__EDA_Academic_Certification_Compact_Layout</compactLayoutAssignment>
+    <description>A certification related to the completion of a course of study.</description>
+    <fullName>hed__Degree</fullName>
+    <label>Degree</label>
+    <picklistValues>
+        <picklist>hed__Academic_Level__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Adult Education</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Doctoral</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Elementary</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Graduate</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>High School</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Middle School</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Post-Baccalaureate Certificate</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Pre-K%2FPreschool</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Professional Education</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Undergraduate</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>hed__Field_Of_Study__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Agriculture</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Architecture</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Biology</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Business%2C Management%2C and Marketing</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Communications</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Computer and Information Sciences</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Education</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Engineering</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>English Language%2C Literature%2C and Letters</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Family and Consumer Sciences</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Foreign Languages</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>General Studies and Humanities</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Health Professions</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>History</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Legal Professions and Studies</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Mathematics and Statistics</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Natural Resources and Conservation</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Philosophy and Religious Studies</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Physical Sciences</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Psychology</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Social Sciences</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Visual and Performing Arts</fullName>
+        </values>
+    </picklistValues>
+</RecordType>

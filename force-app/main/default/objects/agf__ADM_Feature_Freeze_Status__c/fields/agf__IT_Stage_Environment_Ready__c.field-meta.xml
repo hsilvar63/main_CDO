@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>IT Feature Freeze Criteria to ensure the Stage environment is prepared and ready for the Release Sprint/UAT.</description>
+    <fullName>agf__IT_Stage_Environment_Ready__c</fullName>
+    <inlineHelpText>All 4 swimlanes for the solution are built and utilized (dev, test, stage, prod).  Dev/Test must be part of Sprint.  Stage must be used for UAT.</inlineHelpText>
+    <label>IT Stage Environment Ready</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>No</fullName>
+                <label>No</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yes</fullName>
+                <label>Yes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

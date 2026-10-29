@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Ilmoita, mikä osoite toissijainen osoite on, esimerkiksi työ, koti tai jokin muu.</help>
+    <label><!-- Secondary Address Type --></label>
+    <name>hed__Secondary_Address_Type__c</name>
+    <picklistValues>
+        <masterLabel>Home</masterLabel>
+        <translation>Koti</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Muu</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vacation Residence</masterLabel>
+        <translation>Loma-asunto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Work</masterLabel>
+        <translation>Työ</translation>
+    </picklistValues>
+</CustomFieldTranslation>

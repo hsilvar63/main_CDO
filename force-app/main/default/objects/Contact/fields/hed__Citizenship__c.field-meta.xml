@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The person&apos;s country of citizenship. If this student has dual citizenship, indicate the second country of citizenship in the Dual Citizenship field.</description>
+    <fullName>hed__Citizenship__c</fullName>
+    <inlineHelpText>The person&apos;s country of citizenship. If this student has dual citizenship, indicate the second country of citizenship in the Dual Citizenship field.</inlineHelpText>
+    <label>Citizenship</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Afghanistan</fullName>
+                <label>Afghanistan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Albania</fullName>
+                <label>Albania</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Algeria</fullName>
+                <label>Algeria</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>American Samoa</fullName>
+                <label>American Samoa</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Andorra</fullName>
+                <label>Andorra</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Angola</fullName>
+                <label>Angola</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Anguilla</fullName>
+                <label>Anguilla</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Antarctica</fullName>
+                <label>Antarctica</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Antigua and Barbuda</fullName>
+                <label>Antigua and Barbuda</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Argentina</fullName>
+                <label>Argentina</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Armenia</fullName>
+                <label>Armenia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Aruba</fullName>
+                <label>Aruba</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Australia</fullName>
+                <label>Australia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Austria</fullName>
+                <label>Austria</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Azerbaijan</fullName>
+                <label>Azerbaijan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Bahamas (the)</fullName>
+                <label>Bahamas (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Bahrain</fullName>
+                <label>Bahrain</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Bangladesh</fullName>
+                <label>Bangladesh</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Barbados</fullName>
+                <label>Barbados</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Belarus</fullName>
+                <label>Belarus</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Belgium</fullName>
+                <label>Belgium</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Belize</fullName>
+                <label>Belize</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Benin</fullName>
+                <label>Benin</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Bermuda</fullName>
+                <label>Bermuda</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Bhutan</fullName>
+                <label>Bhutan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Bolivia (Plurinational State of)</fullName>
+                <label>Bolivia (Plurinational State of)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Bonaire, Sint Eustatius and Saba</fullName>
+                <label>Bonaire, Sint Eustatius and Saba</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Bosnia and Herzegovina</fullName>
+                <label>Bosnia and Herzegovina</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Botswana</fullName>
+                <label>Botswana</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Bouvet Island</fullName>
+                <label>Bouvet Island</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Brazil</fullName>
+                <label>Brazil</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>British Antarctic Territory</fullName>
+                <label>British Antarctic Territory</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>British Indian Ocean Territory (the)</fullName>
+                <label>British Indian Ocean Territory (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Brunei Darussalam</fullName>
+                <label>Brunei Darussalam</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Bulgaria</fullName>
+                <label>Bulgaria</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Burkina Faso</fullName>
+                <label>Burkina Faso</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Burma</fullName>
+                <label>Burma</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Burundi</fullName>
+                <label>Burundi</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Byelorussian SSR</fullName>
+                <label>Byelorussian SSR</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cabo Verde</fullName>
+                <label>Cabo Verde</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cambodia</fullName>
+                <label>Cambodia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cameroon</fullName>
+                <label>Cameroon</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Canada</fullName>
+                <label>Canada</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Canton and Enderbury Islands</fullName>
+                <label>Canton and Enderbury Islands</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cayman Islands (the)</fullName>
+                <label>Cayman Islands (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Central African Republic (the)</fullName>
+                <label>Central African Republic (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Chad</fullName>
+                <label>Chad</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Chile</fullName>
+                <label>Chile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>China</fullName>
+                <label>China</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Christmas Island</fullName>
+                <label>Christmas Island</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cocos (Keeling) Islands (the)</fullName>
+                <label>Cocos (Keeling) Islands (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Colombia</fullName>
+                <label>Colombia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Comoros (the)</fullName>
+                <label>Comoros (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Congo (the Democratic Republic of the)</fullName>
+                <label>Congo (the Democratic Republic of the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Congo (the)</fullName>
+                <label>Congo (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cook Islands (the)</fullName>
+                <label>Cook Islands (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Costa Rica</fullName>
+                <label>Costa Rica</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Croatia</fullName>
+                <label>Croatia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cuba</fullName>
+                <label>Cuba</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Curaçao</fullName>
+                <label>Curaçao</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cyprus</fullName>
+                <label>Cyprus</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Czech Republic (the)</fullName>
+                <label>Czech Republic (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Czechoslovakia</fullName>
+                <label>Czechoslovakia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Côte d&apos;Ivoire</fullName>
+                <label>Côte d&apos;Ivoire</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Dahomey</fullName>
+                <label>Dahomey</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Denmark</fullName>
+                <label>Denmark</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Djibouti</fullName>
+                <label>Djibouti</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Dominica</fullName>
+                <label>Dominica</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Dominican Republic (the)</fullName>
+                <label>Dominican Republic (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Dronning Maud Land</fullName>
+                <label>Dronning Maud Land</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>East Timor</fullName>
+                <label>East Timor</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Ecuador</fullName>
+                <label>Ecuador</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Egypt</fullName>
+                <label>Egypt</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>El Salvador</fullName>
+                <label>El Salvador</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Equatorial Guinea</fullName>
+                <label>Equatorial Guinea</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Eritrea</fullName>
+                <label>Eritrea</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Estonia</fullName>
+                <label>Estonia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Ethiopia</fullName>
+                <label>Ethiopia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Falkland Islands (the) [Malvinas]</fullName>
+                <label>Falkland Islands (the) [Malvinas]</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Faroe Islands (the)</fullName>
+                <label>Faroe Islands (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Fiji</fullName>
+                <label>Fiji</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Finland</fullName>
+                <label>Finland</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>France</fullName>
+                <label>France</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>France, Metropolitan</fullName>
+                <label>France, Metropolitan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>French Afars and Issas</fullName>
+                <label>French Afars and Issas</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>French Guiana</fullName>
+                <label>French Guiana</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>French Polynesia</fullName>
+                <label>French Polynesia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>French Southern Territories (the)</fullName>
+                <label>French Southern Territories (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>French Southern and Antarctic Territories</fullName>
+                <label>French Southern and Antarctic Territories</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Gabon</fullName>
+                <label>Gabon</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Gambia (the)</fullName>
+                <label>Gambia (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Georgia</fullName>
+                <label>Georgia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>German Democratic Republic</fullName>
+                <label>German Democratic Republic</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Germany</fullName>
+                <label>Germany</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Ghana</fullName>
+                <label>Ghana</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Gibraltar</fullName>
+                <label>Gibraltar</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Gilbert and Ellice Islands</fullName>
+                <label>Gilbert and Ellice Islands</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Greece</fullName>
+                <label>Greece</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Greenland</fullName>
+                <label>Greenland</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Grenada</fullName>
+                <label>Grenada</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Guadeloupe</fullName>
+                <label>Guadeloupe</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Guam</fullName>
+                <label>Guam</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Guatemala</fullName>
+                <label>Guatemala</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Guernsey</fullName>
+                <label>Guernsey</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Guinea</fullName>
+                <label>Guinea</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Guinea-Bissau</fullName>
+                <label>Guinea-Bissau</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Guyana</fullName>
+                <label>Guyana</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Haiti</fullName>
+                <label>Haiti</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Heard Island and McDonal Islands</fullName>
+                <label>Heard Island and McDonal Islands</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Holy See (the)</fullName>
+                <label>Holy See (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Honduras</fullName>
+                <label>Honduras</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Hong Kong</fullName>
+                <label>Hong Kong</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Hungary</fullName>
+                <label>Hungary</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Iceland</fullName>
+                <label>Iceland</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>India</fullName>
+                <label>India</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Indonesia</fullName>
+                <label>Indonesia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Iran (Islamic Republic of)</fullName>
+                <label>Iran (Islamic Republic of)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Iraq</fullName>
+                <label>Iraq</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Ireland</fullName>
+                <label>Ireland</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Isle of Man</fullName>
+                <label>Isle of Man</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Israel</fullName>
+                <label>Israel</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Italy</fullName>
+                <label>Italy</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Jamaica</fullName>
+                <label>Jamaica</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Japan</fullName>
+                <label>Japan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Jersey</fullName>
+                <label>Jersey</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Johnston Island</fullName>
+                <label>Johnston Island</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Jordan</fullName>
+                <label>Jordan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Kazakhstan</fullName>
+                <label>Kazakhstan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Kenya</fullName>
+                <label>Kenya</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Kiribati</fullName>
+                <label>Kiribati</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Korea (the Democratic People&apos;s Republic of)</fullName>
+                <label>Korea (the Democratic People&apos;s Republic of)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Korea (the Republic of)</fullName>
+                <label>Korea (the Republic of)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Kuwait</fullName>
+                <label>Kuwait</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Kyrgyzstan</fullName>
+                <label>Kyrgyzstan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Lao People&apos;s Democratic Republic (the)</fullName>
+                <label>Lao People&apos;s Democratic Republic (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Latvia</fullName>
+                <label>Latvia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Lebanon</fullName>
+                <label>Lebanon</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Lesotho</fullName>
+                <label>Lesotho</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Liberia</fullName>
+                <label>Liberia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Libya</fullName>
+                <label>Libya</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Liechtenstein</fullName>
+                <label>Liechtenstein</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Lithuania</fullName>
+                <label>Lithuania</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Luxembourg</fullName>
+                <label>Luxembourg</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Macao</fullName>
+                <label>Macao</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Macedonia (the former Yugoslav Republic of)</fullName>
+                <label>Macedonia (the former Yugoslav Republic of)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Madagascar</fullName>
+                <label>Madagascar</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Malawi</fullName>
+                <label>Malawi</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Malaysia</fullName>
+                <label>Malaysia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mali</fullName>
+                <label>Mali</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Malta</fullName>
+                <label>Malta</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Marshall Islands (the)</fullName>
+                <label>Marshall Islands (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Martinique</fullName>
+                <label>Martinique</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mauritania</fullName>
+                <label>Mauritania</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mauritius</fullName>
+                <label>Mauritius</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mayotte</fullName>
+                <label>Mayotte</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mexico</fullName>
+                <label>Mexico</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Micronesia (Federated States of)</fullName>
+                <label>Micronesia (Federated States of)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Midway Islands</fullName>
+                <label>Midway Islands</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Moldova (the Republic of)</fullName>
+                <label>Moldova (the Republic of)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Monaco</fullName>
+                <label>Monaco</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mongolia</fullName>
+                <label>Mongolia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Montenegro</fullName>
+                <label>Montenegro</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Montserrat</fullName>
+                <label>Montserrat</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Morocco</fullName>
+                <label>Morocco</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mozambique</fullName>
+                <label>Mozambique</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Myanmar</fullName>
+                <label>Myanmar</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Namibia</fullName>
+                <label>Namibia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Nauru</fullName>
+                <label>Nauru</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Nepal</fullName>
+                <label>Nepal</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Netherlands (the)</fullName>
+                <label>Netherlands (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Netherlands Antilles</fullName>
+                <label>Netherlands Antilles</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Neutral Zone</fullName>
+                <label>Neutral Zone</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>New Caledonia</fullName>
+                <label>New Caledonia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>New Hebrides</fullName>
+                <label>New Hebrides</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>New Zealand</fullName>
+                <label>New Zealand</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Nicaragua</fullName>
+                <label>Nicaragua</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Niger (the)</fullName>
+                <label>Niger (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Nigeria</fullName>
+                <label>Nigeria</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Niue</fullName>
+                <label>Niue</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Norfolk Island</fullName>
+                <label>Norfolk Island</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Northern Mariana Islands (the)</fullName>
+                <label>Northern Mariana Islands (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Norway</fullName>
+                <label>Norway</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Oman</fullName>
+                <label>Oman</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pacific Islands (Trust Territory)</fullName>
+                <label>Pacific Islands (Trust Territory)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pakistan</fullName>
+                <label>Pakistan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Palau</fullName>
+                <label>Palau</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Palestine, State of</fullName>
+                <label>Palestine, State of</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Panama</fullName>
+                <label>Panama</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Panama Canal Zone</fullName>
+                <label>Panama Canal Zone</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Papua New Guinea</fullName>
+                <label>Papua New Guinea</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Paraguay</fullName>
+                <label>Paraguay</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Peru</fullName>
+                <label>Peru</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Philippines (the)</fullName>
+                <label>Philippines (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pitcairn</fullName>
+                <label>Pitcairn</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Poland</fullName>
+                <label>Poland</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Portugal</fullName>
+                <label>Portugal</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Puerto Rico</fullName>
+                <label>Puerto Rico</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Qatar</fullName>
+                <label>Qatar</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Romania</fullName>
+                <label>Romania</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Russian Federation (the)</fullName>
+                <label>Russian Federation (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Rwanda</fullName>
+                <label>Rwanda</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Réunion</fullName>
+                <label>Réunion</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Saint Barthélemy</fullName>
+                <label>Saint Barthélemy</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Saint Helena, Ascension and Tristan da Cunha</fullName>
+                <label>Saint Helena, Ascension and Tristan da Cunha</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Saint Kitts and Nevis</fullName>
+                <label>Saint Kitts and Nevis</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Saint Lucia</fullName>
+                <label>Saint Lucia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Saint Martin (French part)</fullName>
+                <label>Saint Martin (French part)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Saint Pierre and Miquelon</fullName>
+                <label>Saint Pierre and Miquelon</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Saint Vincent and the Grenadines</fullName>
+                <label>Saint Vincent and the Grenadines</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Samoa</fullName>
+                <label>Samoa</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>San Marino</fullName>
+                <label>San Marino</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sao Tome and Principe</fullName>
+                <label>Sao Tome and Principe</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Saudi Arabia</fullName>
+                <label>Saudi Arabia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Senegal</fullName>
+                <label>Senegal</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Serbia</fullName>
+                <label>Serbia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Serbia and Montenegro</fullName>
+                <label>Serbia and Montenegro</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Seychelles</fullName>
+                <label>Seychelles</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sierra Leone</fullName>
+                <label>Sierra Leone</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sikkim</fullName>
+                <label>Sikkim</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Singapore</fullName>
+                <label>Singapore</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sint Maarten (Dutch part)</fullName>
+                <label>Sint Maarten (Dutch part)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Slovakia</fullName>
+                <label>Slovakia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Slovenia</fullName>
+                <label>Slovenia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Solomon Islands</fullName>
+                <label>Solomon Islands</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Somalia</fullName>
+                <label>Somalia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>South Africa</fullName>
+                <label>South Africa</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>South Georgia and the South Sandwich Islands</fullName>
+                <label>South Georgia and the South Sandwich Islands</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>South Sudan</fullName>
+                <label>South Sudan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Southern Rodesia</fullName>
+                <label>Southern Rodesia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Spain</fullName>
+                <label>Spain</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sri Lanka</fullName>
+                <label>Sri Lanka</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sudan (the)</fullName>
+                <label>Sudan (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Surinam</fullName>
+                <label>Surinam</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Svalbard and Jan Mayen</fullName>
+                <label>Svalbard and Jan Mayen</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Swaziland</fullName>
+                <label>Swaziland</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sweden</fullName>
+                <label>Sweden</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Switzerland</fullName>
+                <label>Switzerland</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Syrian Arab Republic</fullName>
+                <label>Syrian Arab Republic</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Taiwan (Province of China)</fullName>
+                <label>Taiwan (Province of China)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Tajikistan</fullName>
+                <label>Tajikistan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Tanzania, United Republic of</fullName>
+                <label>Tanzania, United Republic of</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Thailand</fullName>
+                <label>Thailand</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Timor-Leste</fullName>
+                <label>Timor-Leste</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Togo</fullName>
+                <label>Togo</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Tokelau</fullName>
+                <label>Tokelau</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Tonga</fullName>
+                <label>Tonga</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Trinidad and Tobago</fullName>
+                <label>Trinidad and Tobago</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Tunisia</fullName>
+                <label>Tunisia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Turkey</fullName>
+                <label>Turkey</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Turkmenistan</fullName>
+                <label>Turkmenistan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Turks and Caicos Islands (the)</fullName>
+                <label>Turks and Caicos Islands (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Tuvalu</fullName>
+                <label>Tuvalu</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>USSR</fullName>
+                <label>USSR</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Uganda</fullName>
+                <label>Uganda</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Ukraine</fullName>
+                <label>Ukraine</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>United Arab Emirates (the)</fullName>
+                <label>United Arab Emirates (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>United Kingdom of Great Britain and Northern Ireland (the)</fullName>
+                <label>United Kingdom of Great Britain and Northern Ireland (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>United States Minor Outlying Islands (the)</fullName>
+                <label>United States Minor Outlying Islands (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>United States of America (the)</fullName>
+                <label>United States of America (the)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Unites States Miscellaneous Pacific Islands</fullName>
+                <label>Unites States Miscellaneous Pacific Islands</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Upper Volta</fullName>
+                <label>Upper Volta</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Uruguay</fullName>
+                <label>Uruguay</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Uzbekistan</fullName>
+                <label>Uzbekistan</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Vanuatu</fullName>
+                <label>Vanuatu</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Venezuela (Bolivarian Republic of)</fullName>
+                <label>Venezuela (Bolivarian Republic of)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Viet Nam</fullName>
+                <label>Viet Nam</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Viet-Nam, Democratic Republic of</fullName>
+                <label>Viet-Nam, Democratic Republic of</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Virgin Islands (British)</fullName>
+                <label>Virgin Islands (British)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Virgin Islands (U.S.)</fullName>
+                <label>Virgin Islands (U.S.)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Wake Island</fullName>
+                <label>Wake Island</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Wallis and Futuna</fullName>
+                <label>Wallis and Futuna</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Western Sahara</fullName>
+                <label>Western Sahara</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yemen</fullName>
+                <label>Yemen</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yemen, Democratic</fullName>
+                <label>Yemen, Democratic</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yugoslavia</fullName>
+                <label>Yugoslavia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Zaire</fullName>
+                <label>Zaire</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Zambia</fullName>
+                <label>Zambia</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Zimbabwe</fullName>
+                <label>Zimbabwe</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Åland Islands</fullName>
+                <label>Åland Islands</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

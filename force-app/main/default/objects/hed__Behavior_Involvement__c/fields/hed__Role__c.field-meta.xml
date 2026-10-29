@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The role this person played in the event.</description>
+    <fullName>hed__Role__c</fullName>
+    <inlineHelpText>The role this person played in the event.</inlineHelpText>
+    <label>Role</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Perpetrator</fullName>
+                <label>Perpetrator</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Reporter</fullName>
+                <label>Reporter</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Victim</fullName>
+                <label>Victim</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Witness</fullName>
+                <label>Witness</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

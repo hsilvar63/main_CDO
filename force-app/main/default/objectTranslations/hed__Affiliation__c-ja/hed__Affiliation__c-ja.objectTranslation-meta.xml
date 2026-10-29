@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Affiliation__c-ja</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>所属</value>
+    </caseValues>
+    <layouts>
+        <layout>HEDA Affiliation Layout</layout>
+        <sections>
+            <label><!-- Affiliation Information --></label>
+            <section>Affiliation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>所属キー</nameFieldLabel>
+</CustomObjectTranslation>
