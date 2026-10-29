@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>agf__Record_Group__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Record Group</label>
+    <referenceTo>agf__ADM_Record_Group__c</referenceTo>
+    <relationshipLabel>Record Group Items</relationshipLabel>
+    <relationshipName>Object_Group_Junctions</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
