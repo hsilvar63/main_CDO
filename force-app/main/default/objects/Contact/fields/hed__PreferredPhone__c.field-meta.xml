@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The phone (Work, Home, Mobile, Other) that this Contact prefers you to use.</description>
+    <fullName>hed__PreferredPhone__c</fullName>
+    <inlineHelpText>The phone (Work, Home, Mobile, Other) that this Contact prefers you to use.</inlineHelpText>
+    <label>Preferred Phone</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Home Phone</fullName>
+                <label>Home Phone</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mobile Phone</fullName>
+                <label>Mobile Phone</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other Phone</fullName>
+                <label>Other Phone</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Work Phone</fullName>
+                <label>Work Phone</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

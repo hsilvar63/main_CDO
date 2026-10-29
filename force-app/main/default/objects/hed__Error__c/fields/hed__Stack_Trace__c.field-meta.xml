@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Stack trace for the thrown error, if available at runtime.</description>
+    <fullName>hed__Stack_Trace__c</fullName>
+    <inlineHelpText>Stack trace for the thrown error, if available at runtime.</inlineHelpText>
+    <label>Stack Trace</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

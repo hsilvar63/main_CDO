@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ProdOrgId1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProdOrgId1</shortDescription>
+        <value>a065j000002pCyDAAU</value>
+    </labels>
+    <labels>
+        <fullName>ProdOrgId2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProdOrgId2</shortDescription>
+        <value>a065j000002pCyDAAU</value>
+    </labels>
+    <labels>
+        <fullName>TestLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TestLabel</shortDescription>
+        <value>TestValue for Label</value>
+    </labels>
+    <labels>
+        <fullName>TestLabel2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TestLabel2</shortDescription>
+        <value>TestValueforLabel2</value>
+    </labels>
+    <labels>
+        <fullName>turnOffValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>turnOffValidation</shortDescription>
+        <value>1</value>
+    </labels>
+</CustomLabels>

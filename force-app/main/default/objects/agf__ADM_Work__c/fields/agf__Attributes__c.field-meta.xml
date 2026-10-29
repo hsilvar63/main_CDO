@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Attributes__c</fullName>
+    <label>Attributes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Automated</fullName>
+                <label>Automated</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Flapper</fullName>
+                <label>Flapper</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Performance</fullName>
+                <label>Performance</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Regressed</fullName>
+                <label>Regressed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Requires Testing</fullName>
+                <label>Requires Testing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Security</fullName>
+                <label>Security</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Technical Debt</fullName>
+                <label>Technical Debt</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Trust</fullName>
+                <label>Trust</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

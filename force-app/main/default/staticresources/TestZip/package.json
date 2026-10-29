@@ -1,0 +1,21 @@
+{
+  "name": "salesforce-flosum-scss-test",
+  "version": "1.0.0",
+  "description": "Testing SCSS compilation for Flosum deployment",
+  "scripts": {
+    "scss:watch": "sass --watch force-app/main/default/lwc:force-app/main/default/lwc",
+    "scss:build": "sass force-app/main/default/lwc:force-app/main/default/lwc --style=compressed",
+    "scss:build:single": "sass force-app/main/default/lwc/testScssComponent/testScssComponent.scss force-app/main/default/lwc/testScssComponent/testScssComponent.css",
+    "preflosum": "npm run scss:build",
+    "flosum:push": "npm run scss:build && echo 'CSS compiled. Now push to Flosum via VS Code.'"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  },
+  "keywords": [
+    "salesforce",
+    "lwc",
+    "scss",
+    "flosum"
+  ]
+}

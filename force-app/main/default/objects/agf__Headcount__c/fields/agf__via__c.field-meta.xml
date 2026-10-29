@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__via__c</fullName>
+    <label>via</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>agf__Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Left T&amp;P</fullName>
+                <label>Left T&amp;P</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>New Hire</fullName>
+                <label>New Hire</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Reciprocated Opportunity Open Market</fullName>
+                <label>Reciprocated Opportunity Open Market</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Reciprocated Transfer</fullName>
+                <label>Reciprocated Transfer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Unreciprocated Opportunity Open Market</fullName>
+                <label>Unreciprocated Opportunity Open Market</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Unreciprocated Transfer</fullName>
+                <label>Unreciprocated Transfer</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Open - Backfill</controllingFieldValue>
+            <valueName>Reciprocated Opportunity Open Market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Open - Backfill</controllingFieldValue>
+            <valueName>Reciprocated Transfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Open - Backfill</controllingFieldValue>
+            <valueName>Left T&amp;P</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

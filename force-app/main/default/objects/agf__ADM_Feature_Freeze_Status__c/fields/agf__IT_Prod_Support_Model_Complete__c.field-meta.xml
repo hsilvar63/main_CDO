@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>IT Feature Freeze Criteria to ensure a Production Support model has been documented, reviewed and signed off (Tier 1, Tier 2, etc.)</description>
+    <fullName>agf__IT_Prod_Support_Model_Complete__c</fullName>
+    <inlineHelpText>IT Feature Freeze Criteria to ensure a Production Support model has been documented, reviewed and signed off (Tier 1, Tier 2, etc.)</inlineHelpText>
+    <label>IT Prod Support Model Complete</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>No</fullName>
+                <label>No</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yes</fullName>
+                <label>Yes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

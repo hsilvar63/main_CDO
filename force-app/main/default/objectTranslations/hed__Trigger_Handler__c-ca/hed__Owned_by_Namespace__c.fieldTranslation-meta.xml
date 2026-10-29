@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The namespace of the package or Org that controls this Trigger Handler. --></help>
+    <label>Propietat per l&apos;espai de noms</label>
+    <name>hed__Owned_by_Namespace__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The location of the scheduled Course Offering. --></help>
+    <label>Räumlichkeit</label>
+    <name>hed__Facility__c</name>
+    <relationshipLabel>Zeitpläne für Kursangebot</relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Référence l&apos;enregistrement Adresse actuel pour ce Contact. Le champ Adresse postale du contact est automatiquement rempli avec les champs d&apos;adresse de l&apos;enregistrement Adresse actuel.</help>
+    <label><!-- Current Address --></label>
+    <name>hed__Current_Address__c</name>
+    <relationshipLabel><!-- Contacts (Current Address) --></relationshipLabel>
+</CustomFieldTranslation>

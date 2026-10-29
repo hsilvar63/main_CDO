@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Cert__c-en_US</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Cert</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Certs</value>
+    </caseValues>
+    <layouts>
+        <layout>Admin Only</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project Cert Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Installation --></label>
+        <name>Installation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Software Development --></label>
+        <name>Software_Development</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot add progress larger than 100% --></errorMessage>
+        <name>PercentageValidationLimit</name>
+    </validationRules>
+</CustomObjectTranslation>

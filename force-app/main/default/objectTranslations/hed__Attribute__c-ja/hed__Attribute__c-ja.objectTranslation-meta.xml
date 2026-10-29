@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Attribute__c-ja</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>特記事項</value>
+    </caseValues>
+    <layouts>
+        <layout>EDA Credential Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Procurement Details --></label>
+            <section>Procurement Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>EDA Student Characteristic Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>特記事項名</nameFieldLabel>
+    <recordTypes>
+        <description>スタッフまたは学生が取得したライセンス、証明書、または保証を教育機関が追跡できるようにします。</description>
+        <label>資格</label>
+        <name>hed__Credential</name>
+    </recordTypes>
+    <recordTypes>
+        <description>学生の教育に影響する可能性がある学生の重要な特徴を教育機関が追跡できるようにします。</description>
+        <label>学生の特徴</label>
+        <name>hed__Student_Characteristic</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>flosum_git__Git_Provider__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Git Provider</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Azure</fullName>
+                <default>false</default>
+                <label>Azure</label>
+            </value>
+            <value>
+                <fullName>Azure Onpremise</fullName>
+                <default>false</default>
+                <label>Azure Onpremise</label>
+            </value>
+            <value>
+                <fullName>BitBucket</fullName>
+                <default>false</default>
+                <label>BitBucket</label>
+            </value>
+            <value>
+                <fullName>BitBucket Onpremise</fullName>
+                <default>false</default>
+                <label>BitBucket Onpremise</label>
+            </value>
+            <value>
+                <fullName>GitHub</fullName>
+                <default>false</default>
+                <label>GitHub</label>
+            </value>
+            <value>
+                <fullName>GitHub Onpremise</fullName>
+                <default>false</default>
+                <label>GitHub Onpremise</label>
+            </value>
+            <value>
+                <fullName>GitLab</fullName>
+                <default>false</default>
+                <label>GitLab</label>
+            </value>
+            <value>
+                <fullName>GitLab Onpremise</fullName>
+                <default>false</default>
+                <label>GitLab Onpremise</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

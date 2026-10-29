@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Acknowledged</fullName>
+                <label>Acknowledged</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed</fullName>
+                <label>Closed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed - Defunct</fullName>
+                <label>Closed - Defunct</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed - Duplicate</fullName>
+                <label>Closed - Duplicate</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed - Eng Internal</fullName>
+                <label>Closed - Eng Internal</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed - Known Bug Exists</fullName>
+                <label>Closed - Known Bug Exists</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed - LAP Request Approved</fullName>
+                <label>Closed - LAP Request Approved</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed - LAP Request Denied</fullName>
+                <label>Closed - LAP Request Denied</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed - New Bug Logged</fullName>
+                <label>Closed - New Bug Logged</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed - No Fix - Feature Request</fullName>
+                <label>Closed - No Fix - Feature Request</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed - No Fix - Will Not Fix</fullName>
+                <label>Closed - No Fix - Will Not Fix</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed - No Fix - Working as Designed</fullName>
+                <label>Closed - No Fix - Working as Designed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed - Resolved With Internal Tools</fullName>
+                <label>Closed - Resolved With Internal Tools</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed - Resolved Without Code Change</fullName>
+                <label>Closed - Resolved Without Code Change</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Completed</fullName>
+                <label>Completed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Deferred</fullName>
+                <label>Deferred</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Duplicate</fullName>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Eng Internal</fullName>
+                <label>Eng Internal</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Fixed</fullName>
+                <label>Fixed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>In Progress</fullName>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Inactive</fullName>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Integrate</fullName>
+                <label>Integrate</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Investigating</fullName>
+                <label>Investigating</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>More Info Reqd from Support</fullName>
+                <label>More Info Reqd from Support</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Never</fullName>
+                <label>Never</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>New</fullName>
+                <label>New</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Not Reproducible</fullName>
+                <label>Not Reproducible</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Not a bug</fullName>
+                <label>Not a bug</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pending Release</fullName>
+                <label>Pending Release</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>QA In Progress</fullName>
+                <label>QA In Progress</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Ready for Review</fullName>
+                <label>Ready for Review</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Rejected</fullName>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Triaged</fullName>
+                <label>Triaged</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Waiting</fullName>
+                <label>Waiting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

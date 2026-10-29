@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The role that this Approver performs.</description>
+    <fullName>agf__Approver_Role__c</fullName>
+    <inlineHelpText>Approval Role. Note: &quot;Distribution List&quot; indicated this Approver is for notifications only. &quot;Functional&quot; requires that a Team be entered in the Functional Role field.</inlineHelpText>
+    <label>Approver Role</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Buildmaster</fullName>
+                <label>Buildmaster</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cloud Leader</fullName>
+                <label>Cloud Leader</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Development Engineer</fullName>
+                <label>Development Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Development Manager</fullName>
+                <label>Development Manager</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Distribution List</fullName>
+                <label>Distribution List</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Executive</fullName>
+                <label>Executive</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Functional</fullName>
+                <label>Functional</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Performance</fullName>
+                <label>Performance</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>QE Manager</fullName>
+                <label>QE Manager</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Quality Engineer</fullName>
+                <label>Quality Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Release Coverage</fullName>
+                <label>Release Coverage</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Release Engineer</fullName>
+                <label>Release Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Release Manager</fullName>
+                <label>Release Manager</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>TechOps Engineer</fullName>
+                <label>TechOps Engineer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>TechOps Manager</fullName>
+                <label>TechOps Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

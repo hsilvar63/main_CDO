@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Scheduled Build.</description>
+    <fullName>agf__Scheduled_Build__c</fullName>
+    <inlineHelpText>Scheduled Build.</inlineHelpText>
+    <label>Release</label>
+    <referenceTo>agf__ADM_Build__c</referenceTo>
+    <relationshipLabel>Security Questionnaires</relationshipLabel>
+    <relationshipName>SecQ_Scheduled_Build</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

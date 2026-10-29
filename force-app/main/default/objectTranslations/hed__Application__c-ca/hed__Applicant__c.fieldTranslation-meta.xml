@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Contact applying to the institution or program. --></help>
+    <label>Sol·licitant</label>
+    <name>hed__Applicant__c</name>
+    <relationshipLabel>Sol·licituds (Sol·licitant)</relationshipLabel>
+</CustomFieldTranslation>

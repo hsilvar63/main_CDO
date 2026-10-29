@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The year the student is expected to graduate from this Program. --></help>
+    <label>Vuosiluokka</label>
+    <name>hed__Graduation_Year__c</name>
+</CustomFieldTranslation>

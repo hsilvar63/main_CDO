@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The content or subject area that a credential is for.</description>
+    <fullName>hed__Subject_Area__c</fullName>
+    <inlineHelpText>The content or subject area that a credential is for.</inlineHelpText>
+    <label>Subject Area</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Biology</fullName>
+                <label>Biology</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Career and Technical Education</fullName>
+                <label>Career and Technical Education</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Economics</fullName>
+                <label>Economics</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>English Language Arts</fullName>
+                <label>English Language Arts</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Fine and Performing Arts</fullName>
+                <label>Fine and Performing Arts</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Foreign Language</fullName>
+                <label>Foreign Language</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>History</fullName>
+                <label>History</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Life and Physical Sciences</fullName>
+                <label>Life and Physical Sciences</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mathematics</fullName>
+                <label>Mathematics</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Physical, Health, and Safety Education</fullName>
+                <label>Physical, Health, and Safety Education</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Physics</fullName>
+                <label>Physics</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Psychology</fullName>
+                <label>Psychology</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Science</fullName>
+                <label>Science</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Social Studies</fullName>
+                <label>Social Studies</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sociology</fullName>
+                <label>Sociology</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

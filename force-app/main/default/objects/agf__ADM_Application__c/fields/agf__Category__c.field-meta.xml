@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Category indicates the stage of an application (Preproduction, Active, Retired or Maintenance) or whether the application represents an activity that is to appear on the Release Schedule.</description>
+    <fullName>agf__Category__c</fullName>
+    <inlineHelpText>Select &quot;Schedule&quot; if this Application object represents an activity that is to appear on the Release schedule (eg, Moratorium, Maintenance or Infrastructure), otherwise select the Application&apos;s life-cycle stage.</inlineHelpText>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Active</fullName>
+                <label>Active</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Maintenance</fullName>
+                <label>Maintenance</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Preproduction</fullName>
+                <label>Preproduction</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Retired</fullName>
+                <label>Retired</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Schedule</fullName>
+                <label>Schedule</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

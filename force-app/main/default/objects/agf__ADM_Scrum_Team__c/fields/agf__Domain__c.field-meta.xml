@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Domain__c</fullName>
+    <label>Domain</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>agf__Cloud__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>All Products</fullName>
+                <label>All Products</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Analytics</fullName>
+                <label>Analytics</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Appstore</fullName>
+                <label>Appstore</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Architecture</fullName>
+                <label>Architecture</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Commerce</fullName>
+                <label>Commerce</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Common Services</fullName>
+                <label>Common Services</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Communities</fullName>
+                <label>Communities</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Core</fullName>
+                <label>Core</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Data</fullName>
+                <label>Data</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>IT Infrastructure</fullName>
+                <label>IT Infrastructure</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Identity / Security</fullName>
+                <label>Identity / Security</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>InfoSec</fullName>
+                <label>InfoSec</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Infrastructure</fullName>
+                <label>Infrastructure</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mobile</fullName>
+                <label>Mobile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Monitoring</fullName>
+                <label>Monitoring</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform</fullName>
+                <label>Platform</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Programmable Data Center</fullName>
+                <label>Programmable Data Center</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Reliability</fullName>
+                <label>Reliability</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sales Department</fullName>
+                <label>Sales Department</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Service Department</fullName>
+                <label>Service Department</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>T&amp;P Ops</fullName>
+                <label>T&amp;P Ops</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Test Health</fullName>
+                <label>Test Health</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Tools</fullName>
+                <label>Tools</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Trust &amp; Productivity</fullName>
+                <label>Trust &amp; Productivity</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Web</fullName>
+                <label>Web</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Reliability</controllingFieldValue>
+            <valueName>Core</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reliability</controllingFieldValue>
+            <valueName>Infrastructure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reliability</controllingFieldValue>
+            <valueName>Reliability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics</controllingFieldValue>
+            <valueName>All Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics</controllingFieldValue>
+            <valueName>Analytics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <valueName>IT Infrastructure</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

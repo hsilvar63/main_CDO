@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date &amp; time the error occurred. --></help>
+    <label>日時</label>
+    <name>hed__Datetime__c</name>
+</CustomFieldTranslation>

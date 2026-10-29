@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>The religion this person practices.</description>
+    <fullName>hed__Religion__c</fullName>
+    <inlineHelpText>The religion this person practices.</inlineHelpText>
+    <label>Religion</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Atheist</fullName>
+                <label>Atheist</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Buddhist</fullName>
+                <label>Buddhist</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Christian</fullName>
+                <label>Christian</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Hindu</fullName>
+                <label>Hindu</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Jewish</fullName>
+                <label>Jewish</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Muslim</fullName>
+                <label>Muslim</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>agf__Product_Area__c</fullName>
+    <label>Product Area</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>AppStore Edition</fullName>
+                <label>AppStore Edition</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>CSS</fullName>
+                <label>CSS</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>CSS - Knowledge Base</fullName>
+                <label>CSS - Knowledge Base</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Collaboration</fullName>
+                <label>Collaboration</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Content</fullName>
+                <label>Content</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Core - Architecture</fullName>
+                <label>Core - Architecture</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Email Clients</fullName>
+                <label>Email Clients</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Ideas</fullName>
+                <label>Ideas</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Marketing</fullName>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Messaging</fullName>
+                <label>Messaging</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mobile</fullName>
+                <label>Mobile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Partner Networks</fullName>
+                <label>Partner Networks</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform - Administration &amp; Distribution</fullName>
+                <label>Platform - Administration &amp; Distribution</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform - Analytics</fullName>
+                <label>Platform - Analytics</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform - AppExchange</fullName>
+                <label>Platform - AppExchange</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform - Application Development</fullName>
+                <label>Platform - Application Development</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform - Application Services</fullName>
+                <label>Platform - Application Services</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform - Appstore</fullName>
+                <label>Platform - Appstore</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform - Other</fullName>
+                <label>Platform - Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Web</fullName>
+                <label>Web</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

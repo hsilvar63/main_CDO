@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Relationship__c-fr</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>Relation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Relations</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>HEDA Relationship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Information --></label>
+            <section>Relationship Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Clé de relation</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Au lieu de modifier les contacts dans cette relation, supprimez cet enregistrement ou ajoutez une date de fin et mettez le statut à jour sur Ancien, si approprié. Créez ensuite un autre enregistrement de relation entre les nouveaux contacts.</errorMessage>
+        <name>hed__Contact_Do_Not_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Au lieu de modifier les contacts dans cette relation, supprimez cet enregistrement ou ajoutez une date de fin et mettez le statut à jour sur Ancien, si approprié. Créez ensuite un autre enregistrement de relation entre les nouveaux contacts.</errorMessage>
+        <name>hed__Related_Contact_Do_Not_Change</name>
+    </validationRules>
+</CustomObjectTranslation>

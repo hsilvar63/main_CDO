@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The date the student was admitted to the Program. --></help>
+    <label>Toelatingsdatum</label>
+    <name>hed__Admission_Date__c</name>
+</CustomFieldTranslation>

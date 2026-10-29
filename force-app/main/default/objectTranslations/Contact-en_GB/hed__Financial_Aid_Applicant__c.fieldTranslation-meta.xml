@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indicates whether this student has applied for financial aid.</help>
+    <label><!-- Financial Aid Applicant --></label>
+    <name>hed__Financial_Aid_Applicant__c</name>
+</CustomFieldTranslation>

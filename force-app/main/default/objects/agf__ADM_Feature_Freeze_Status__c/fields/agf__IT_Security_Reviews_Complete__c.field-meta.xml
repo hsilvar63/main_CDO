@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>IT Feature Freeze Criteria for all Security reviews, testing and fixes complete.</description>
+    <fullName>agf__IT_Security_Reviews_Complete__c</fullName>
+    <inlineHelpText>Security reviews, testing and fixes complete.</inlineHelpText>
+    <label>IT Security Reviews Complete</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>No</fullName>
+                <label>No</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yes</fullName>
+                <label>Yes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Relationship__c-de</fullName>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Beziehung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Beziehungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Beziehung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Beziehungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Beziehung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Beziehungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Beziehung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Beziehungen</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>HEDA Relationship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Relationship Information --></label>
+            <section>Relationship Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Beziehungsschlüssel</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Anstatt die Kontakte in dieser Beziehung zu ändern, löschen Sie entweder diesen Datensatz, oder fügen Sie ggf. ein Enddatum hinzu und ändern Sie den Status in &quot;Ehemalig&quot;. Erstellen Sie anschließend einen neuen Beziehungsdatensatz zwischen den neuen Kontakten.</errorMessage>
+        <name>hed__Contact_Do_Not_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Anstatt die Kontakte in dieser Beziehung zu ändern, löschen Sie entweder diesen Datensatz, oder fügen Sie ggf. ein Enddatum hinzu und ändern Sie den Status in &quot;Ehemalig&quot;. Erstellen Sie anschließend einen neuen Beziehungsdatensatz zwischen den neuen Kontakten.</errorMessage>
+        <name>hed__Related_Contact_Do_Not_Change</name>
+    </validationRules>
+</CustomObjectTranslation>

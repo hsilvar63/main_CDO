@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed__Trigger_Handler__c-es</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>Controlador de desencadenador</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Controladores de desencadenador</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>HEDA Trigger Handler Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de controlador de desencadenador</nameFieldLabel>
+</CustomObjectTranslation>

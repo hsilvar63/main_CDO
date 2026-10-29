@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Une adresse e-mail facultative non capturée dans les autres champs de messagerie.</help>
+    <label><!-- Alternate Email --></label>
+    <name>hed__AlternateEmail__c</name>
+</CustomFieldTranslation>

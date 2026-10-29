@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>All New or Upgraded 3rd Party Software Products have Approval through the 3PP Process (Yes/No)</description>
+    <fullName>agf__All_New_Upgraded_3PP_are_Approved__c</fullName>
+    <inlineHelpText>All New or Upgraded 3rd Party Software Products have Approval through the 3PP Process.  Feature Freeze requirement is that all are APPROVED.</inlineHelpText>
+    <label>All New/Upgraded 3PP are Approved</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>No</fullName>
+                <label>No</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Not Applicable</fullName>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yes</fullName>
+                <label>Yes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
