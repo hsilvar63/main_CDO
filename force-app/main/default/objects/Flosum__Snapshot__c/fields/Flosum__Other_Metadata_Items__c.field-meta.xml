@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Other_Metadata_Items__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>Flosum__No_of_Metadata_Items__c - ( Flosum__No_of_Apex_Classes__c +  Flosum__No_of_Apex_Pages__c +  Flosum__No_of_Apex_Triggers__c +  Flosum__No_of_Custom_Labels__c + Flosum__No_of_Custom_Objects__c +  Flosum__No_of_Record_Types__c +  Flosum__No_of_Reports__c +  Flosum__No_of_Workflow_Rules__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Other Metadata Items</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Org__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Org</label>
+    <referenceTo>Flosum__Organisation__c</referenceTo>
+    <relationshipLabel>Org Permissions</relationshipLabel>
+    <relationshipName>Org_Permissions</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

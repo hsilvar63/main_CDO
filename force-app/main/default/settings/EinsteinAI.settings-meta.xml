@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EinsteinAISettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableAIFeedbackWithDC>false</enableAIFeedbackWithDC>
+    <enablePBPromptPerformanceMetrics>false</enablePBPromptPerformanceMetrics>
+    <enableTrustPIIMasking>false</enableTrustPIIMasking>
+</EinsteinAISettings>

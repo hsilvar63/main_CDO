@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__ReviewJob__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Jobs with type Review</description>
+    <label>ReviewJob</label>
+    <referenceTo>Flosum__Branch__c</referenceTo>
+    <relationshipLabel>Code Analysis</relationshipLabel>
+    <relationshipName>Jobs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

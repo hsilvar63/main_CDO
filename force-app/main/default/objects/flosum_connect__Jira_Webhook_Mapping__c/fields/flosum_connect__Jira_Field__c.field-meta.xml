@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>flosum_connect__Jira_Field__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Jira Field</label>
+    <referenceTo>flosum_connect__Jira_Field__c</referenceTo>
+    <relationshipLabel>Jira Webhook Mappings</relationshipLabel>
+    <relationshipName>Jira_Webhook_Mappings</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

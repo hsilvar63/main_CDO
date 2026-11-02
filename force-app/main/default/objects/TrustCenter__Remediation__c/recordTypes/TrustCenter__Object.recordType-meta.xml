@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>Remediation in object</description>
+    <fullName>TrustCenter__Object</fullName>
+    <label>Object</label>
+    <picklistValues>
+        <picklist>TrustCenter__RiskLevel__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>High</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Low</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TrustCenter__Status__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Closed</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>In Progress</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Muted</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Open</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TrustCenter__TaskLevel__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Organization</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Permission Set</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Profile</fullName>
+        </values>
+    </picklistValues>
+</RecordType>

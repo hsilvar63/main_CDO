@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <label>System Type Definitions</label>
+    <protected>false</protected>
+    <values>
+        <field>Flosum__Component_Type__c</field>
+        <value xsi:type="xsd:string">GlobalData</value>
+    </values>
+    <values>
+        <field>Flosum__Description__c</field>
+        <value xsi:type="xsd:string">System type definitions</value>
+    </values>
+    <values>
+        <field>Flosum__Is_Global_Data__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

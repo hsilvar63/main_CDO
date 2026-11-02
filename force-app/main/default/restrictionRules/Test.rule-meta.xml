@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RestrictionRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <enforcementType>Restrict</enforcementType>
+    <masterLabel>Test</masterLabel>
+    <recordFilter>IsClosed=false</recordFilter>
+    <targetEntity>Task</targetEntity>
+    <userCriteria>$User.CompanyName=&apos;Tesla&apos;</userCriteria>
+    <version>1</version>
+</RestrictionRule>
