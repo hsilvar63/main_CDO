@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>flosum_connect__Commit__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Commit</label>
+    <referenceTo>Flosum__Commit__c</referenceTo>
+    <relationshipLabel>Jira Issue Commit Links</relationshipLabel>
+    <relationshipName>Jira_Issue_Commit_Links</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

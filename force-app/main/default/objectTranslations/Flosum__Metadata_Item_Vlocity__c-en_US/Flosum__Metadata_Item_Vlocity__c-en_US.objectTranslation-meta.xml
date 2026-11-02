@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Metadata_Item_Vlocity__c-en_US</fullName>
+    <layouts>
+        <layout>Metadata Item Vlocity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Attachment --></label>
+        <name>Flosum__Attachment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AttributeAssignmentRule --></label>
+        <name>Flosum__AttributeAssignmentRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AttributeCategory --></label>
+        <name>Flosum__AttributeCategory</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AuraDefinitionBundle --></label>
+        <name>Flosum__AuraDefinitionBundle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CalculationMatrix --></label>
+        <name>Flosum__CalculationMatrix</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CalculationMatrixVersion --></label>
+        <name>Flosum__CalculationMatrixVersion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CalculationProcedure --></label>
+        <name>Flosum__CalculationProcedure</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CalculationProcedureVersion --></label>
+        <name>Flosum__CalculationProcedureVersion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Catalog --></label>
+        <name>Flosum__Catalog</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ChargeMeasurement --></label>
+        <name>Flosum__ChargeMeasurement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ContentVersion --></label>
+        <name>Flosum__ContentVersion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ContextAction --></label>
+        <name>Flosum__ContextAction</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ContextDimension --></label>
+        <name>Flosum__ContextDimension</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ContextScope --></label>
+        <name>Flosum__ContextScope</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ContractType --></label>
+        <name>Flosum__ContractType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CpqConfigurationSetup --></label>
+        <name>Flosum__CpqConfigurationSetup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomFieldMap --></label>
+        <name>Flosum__CustomFieldMap</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CustomObjectMap --></label>
+        <name>Flosum__CustomObjectMap</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DataRaptor --></label>
+        <name>Flosum__DataRaptor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DecisionMatrix --></label>
+        <name>Flosum__DecisionMatrix</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DecisionMatrixVersion --></label>
+        <name>Flosum__DecisionMatrixVersion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Document --></label>
+        <name>Flosum__Document</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DocumentClause --></label>
+        <name>Flosum__DocumentClause</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DocumentTemplate --></label>
+        <name>Flosum__DocumentTemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DocumentTemplates --></label>
+        <name>Flosum__DocumentTemplates</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EntityFilter --></label>
+        <name>Flosum__EntityFilter</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExpressionSet --></label>
+        <name>Flosum__ExpressionSet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ExpressionSetVersion --></label>
+        <name>Flosum__ExpressionSetVersion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FlexCard --></label>
+        <name>Flosum__FlexCard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GeneralSettings --></label>
+        <name>Flosum__GeneralSettings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IntegrationProcedure --></label>
+        <name>Flosum__IntegrationProcedure</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IntegrationProcedureVersion --></label>
+        <name>Flosum__IntegrationProcedureVersion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IntegrationRetryPolicy --></label>
+        <name>Flosum__IntegrationRetryPolicy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- InterfaceImplementation --></label>
+        <name>Flosum__InterfaceImplementation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ItemImplementation --></label>
+        <name>Flosum__ItemImplementation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ManualQueue --></label>
+        <name>Flosum__ManualQueue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ObjectClass --></label>
+        <name>Flosum__ObjectClass</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ObjectContextRule --></label>
+        <name>Flosum__ObjectContextRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ObjectLayout --></label>
+        <name>Flosum__ObjectLayout</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OfferMigrationPlan --></label>
+        <name>Flosum__OfferMigrationPlan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OfferingProcedure --></label>
+        <name>Flosum__OfferingOfferingProcedureProcedure</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OmniScript --></label>
+        <name>Flosum__OmniScript</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OmniScriptVersion --></label>
+        <name>Flosum__OmniScriptVersion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OrchestrationDependencyDefinition --></label>
+        <name>Flosum__OrchestrationDependencyDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OrchestrationItemDefinition --></label>
+        <name>Flosum__OrchestrationItemDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OrchestrationPlanDefinition --></label>
+        <name>Flosum__OrchestrationPlanDefinition</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OrchestrationQueueAssignmentRule --></label>
+        <name>Flosum__OrchestrationQueueAssignmentRule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PriceList --></label>
+        <name>Flosum__PriceList</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pricebook2 --></label>
+        <name>Flosum__Pricebook2</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PricingPlan --></label>
+        <name>Flosum__PricingPlan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PricingVariable --></label>
+        <name>Flosum__PricingVariable</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product2 --></label>
+        <name>Flosum__Product2</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Project --></label>
+        <name>Flosum__Project</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Promotion --></label>
+        <name>Flosum__Promotion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QueryBuilder --></label>
+        <name>Flosum__QueryBuilder</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RateBand --></label>
+        <name>Flosum__RateBand</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RelationshipGraph --></label>
+        <name>Flosum__RelationshipGraph</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Rule --></label>
+        <name>Flosum__Rule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SpecTemplateMapping --></label>
+        <name>Flosum__SpecTemplateMapping</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- StoryObjectConfiguration --></label>
+        <name>Flosum__StoryObjectConfiguration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- String --></label>
+        <name>Flosum__String</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- System --></label>
+        <name>Flosum__System</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ThorOrchestrationQueue --></label>
+        <name>Flosum__ThorOrchestrationQueue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TimePlan --></label>
+        <name>Flosum__TimePlan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TimePolicy --></label>
+        <name>Flosum__TimePolicy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UIFacet --></label>
+        <name>Flosum__UIFacet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UISection --></label>
+        <name>Flosum__UISection</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocityAction --></label>
+        <name>Flosum__VlocityAction</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocityAttachment --></label>
+        <name>Flosum__VlocityAttachment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocityCard --></label>
+        <name>Flosum__VlocityCard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocityDataStore --></label>
+        <name>Flosum__VlocityDataStore</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocityFunction --></label>
+        <name>Flosum__VlocityFunction</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocityPicklist --></label>
+        <name>Flosum__VlocityPicklist</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocityScheduledJob --></label>
+        <name>Flosum__VlocityScheduledJob</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocitySearchWidgetSetup --></label>
+        <name>Flosum__VlocitySearchWidgetSetup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocityStateModel --></label>
+        <name>Flosum__VlocityStateModel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocityTrackingGroup --></label>
+        <name>Flosum__VlocityTrackingGroup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocityUILayout --></label>
+        <name>Flosum__VlocityUILayout</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocityUITemplate --></label>
+        <name>Flosum__VlocityUITemplate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VlocityWebTrackingConfiguration --></label>
+        <name>Flosum__VlocityWebTrackingConfiguration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VqMachine --></label>
+        <name>Flosum__VqMachine</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VqResource --></label>
+        <name>Flosum__VqResource</name>
+    </recordTypes>
+</CustomObjectTranslation>

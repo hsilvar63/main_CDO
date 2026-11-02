@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Title__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Flosum__Job_Type__c, &apos;REVIEW&apos;), &apos;Code Analysis &apos; &amp; TEXT( DATETIMEVALUE(CreatedDate)),IF(ISPICKVAL(Flosum__Job_Type__c, &apos;BUILD&apos;),&apos;Deployment &apos; &amp; HYPERLINK( &quot;/&quot;+Flosum__PatchId__c , Flosum__PatchId__r.Name , &apos;_self&apos;),&apos;SYNC&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Title</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

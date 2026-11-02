@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Role__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Role</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Release Manager</fullName>
+                <default>true</default>
+                <label>Release Manager</label>
+            </value>
+            <value>
+                <fullName>Developer</fullName>
+                <default>false</default>
+                <label>Developer</label>
+            </value>
+            <value>
+                <fullName>View Only</fullName>
+                <default>false</default>
+                <label>View Only</label>
+            </value>
+            <value>
+                <fullName>Validate Only</fullName>
+                <default>false</default>
+                <label>Validate Only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

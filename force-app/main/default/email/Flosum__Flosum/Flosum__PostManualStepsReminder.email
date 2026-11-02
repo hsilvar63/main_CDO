@@ -1,0 +1,13 @@
+<messaging:emailTemplate subject="Do not forget to complete post manual steps" recipientType="User" relatedToType="Flosum__Branch__c">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <p>Hello,</p>
+                <p>Do not forget to complete the following post manual steps: </p>
+                <c:BranchPostManualSteps recordId="{!relatedTo.Id}"/>
+                <p>Thanks!</p>
+                <c:FlosumLogo />
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>
