@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <description>Choose this Record Type if the request for message does not meet RCM criteri but is  a P0 bug, a P1 or P2 bug with significant customer impact (10+ customers or top customer), or by management (Support or Technology) request</description>
+    <fullName>agf__Issue_Message</fullName>
+    <label>Issue Message</label>
+    <picklistValues>
+        <picklist>agf__Customer_Impacting__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>No</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Yes</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>agf__Message_Status__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Approved</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Delivered</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>In Progress</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>New</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Still Investigating</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>agf__RCA_Review_Forum__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Applications Review</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Core Review</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>HA Review</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Internal HA Review</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Platform Review</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>data%2Ecom Review</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>work%2Ecom Review</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>agf__RCA_Status__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>New</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>agf__RCA_Type__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Deployment Delayed</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>E-Release%2FBreak-Fix Request</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Incorrect%2FIncomplete Code Release</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Incorrect%2FIncomplete Deployment</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Performance Degradation</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Rollback</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Service Degradation</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Service Disruption</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>agf__RCM_Type__c</picklist>
+        <values>
+            <default>true</default>
+            <fullName>Verbal</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Written</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>agf__Reported_By__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>External Customer</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Internal Customer</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Monitoring</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Other</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>agf__Root_Cause_Category__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>3rd Party Variable</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Application</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Autobuild Issue</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Code Checked into Incorrect Branch</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Configuration</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Corner Case</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Customer-Specific Environment Issue</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>DICE Issues</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Database</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Deficient Usability</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Documentation Issue</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Environment Disparity</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Hardware</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Hardware%2FNetwork Issues</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Impact from Another Team</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Inadequate Functional Design</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Inadequate Test Coverage</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Incorrect%2FIncomplete Code Released</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Insufficient Automation</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Known Issue that was Deprioritized</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Misunderstood Dependencies</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Network</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Operator Error</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Other</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Regression</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Release</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Release Runner Issues</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Software</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Staging%2FPromotion Issue</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Storage</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>System</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Translation Issue</fullName>
+        </values>
+    </picklistValues>
+</RecordType>

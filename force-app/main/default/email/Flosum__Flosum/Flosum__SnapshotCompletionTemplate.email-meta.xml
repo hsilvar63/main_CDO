@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>15.0</apiVersion>
+    <available>true</available>
+    <description>Email alert on snapshot completion</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>SnapshotCompletionTemplate</name>
+    <style>none</style>
+    <subject>A snapshot on org  is complete.</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

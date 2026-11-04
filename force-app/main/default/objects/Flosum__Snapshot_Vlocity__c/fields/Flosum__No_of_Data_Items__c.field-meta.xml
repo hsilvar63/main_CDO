@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__No_of_Data_Items__c</fullName>
+    <deprecated>false</deprecated>
+    <label>No. of Data Items</label>
+    <summaryForeignKey>Flosum__Metadata_Item_Vlocity__c.Flosum__Snapshot__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Process_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Process Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Deployment</fullName>
+                <default>false</default>
+                <label>Deployment</label>
+            </value>
+            <value>
+                <fullName>Validate</fullName>
+                <default>false</default>
+                <label>Validate</label>
+            </value>
+            <value>
+                <fullName>Rollback (Validate)</fullName>
+                <default>false</default>
+                <label>Rollback (Validate)</label>
+            </value>
+            <value>
+                <fullName>Rollback (Deployment)</fullName>
+                <default>false</default>
+                <label>Rollback (Deployment)</label>
+            </value>
+            <value>
+                <fullName>Schedule Deployment</fullName>
+                <default>false</default>
+                <label>Schedule Deployment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

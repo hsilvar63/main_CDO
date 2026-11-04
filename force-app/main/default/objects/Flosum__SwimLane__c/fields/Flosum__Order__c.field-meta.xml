@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Order__c</fullName>
+    <deprecated>false</deprecated>
+    <description>use it for kanban org ordering</description>
+    <label>Order</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Flosum__SwimLanes_orders</valueSetName>
+    </valueSet>
+</CustomField>

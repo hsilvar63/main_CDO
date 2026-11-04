@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Branch__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Branch</label>
+    <referenceTo>Flosum__Branch__c</referenceTo>
+    <relationshipLabel>Clayton Scan Results</relationshipLabel>
+    <relationshipName>Clayton_Scan_Results</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
