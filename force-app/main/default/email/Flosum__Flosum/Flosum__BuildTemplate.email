@@ -1,0 +1,13 @@
+<messaging:emailTemplate subject="Build {!If(relatedTo.Flosum__Succeed__c,'succeeded, hurrah!','failed. Oops!')}" recipientType="User" relatedToType="Flosum__Build__c">
+<messaging:htmlEmailBody >
+        <html>
+            <body>
+                <p>Dear {!recipient.FirstName},</p>
+                <p></p>
+                <p>{!If(relatedTo.Succeed__c,'The build succeeded. Please consult the log for details.','The build failed. Please consult the log for details.')}</p>
+                <c:NotificationComponent recordId="{!relatedTo.Id}"/>
+                <c:FlosumLogo />
+            </body>
+        </html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
