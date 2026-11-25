@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Commit__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Commit</label>
+    <referenceTo>Flosum__Commit__c</referenceTo>
+    <relationshipLabel>Commit Manifest</relationshipLabel>
+    <relationshipName>Commit_Manifest</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

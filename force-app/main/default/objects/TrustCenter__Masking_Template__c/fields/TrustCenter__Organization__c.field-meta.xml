@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrustCenter__Organization__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Organization Description</description>
+    <inlineHelpText>Select an org from the list. Metadata definitions to define the data masking template will be retrieved from the selected org, but this template can be used on any org.</inlineHelpText>
+    <label>Source Organization</label>
+    <referenceTo>Flosum__Organisation__c</referenceTo>
+    <relationshipLabel>Masking Templates</relationshipLabel>
+    <relationshipName>Masking_Templates</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
