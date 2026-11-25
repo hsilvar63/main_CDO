@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Snapshot__c-en_US</fullName>
+    <layouts>
+        <layout>Commerce Cloud Layout</layout>
+        <sections>
+            <label><!-- Snapshot Summary --></label>
+            <section>Snapshot Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Marketing Cloud Layout</layout>
+        <sections>
+            <label><!-- Snapshot Summary --></label>
+            <section>Snapshot Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Snapshot Layout</layout>
+        <sections>
+            <label><!-- Snapshot Summary --></label>
+            <section>Snapshot Summary</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Cancel Snapshot --></label>
+        <name>Flosum__Cancel_Snapshot</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Metadata Reports --></label>
+        <name>Flosum__Metadata_Reports</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Commerce Cloud --></label>
+        <name>Flosum__Commerce_Cloud</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Marketing Cloud --></label>
+        <name>Flosum__Marketing_Cloud</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Commit --></label>
+        <name>Flosum__Commit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Commit_to_Branch_Commerce_Cloud --></label>
+        <name>Flosum__Commit_to_Branch_Commerce_Cloud</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Commit_to_Branch_Marketing_Cloud --></label>
+        <name>Flosum__Commit_to_Branch_Marketing_Cloud</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Deploy --></label>
+        <name>Flosum__Deploy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Download_Components --></label>
+        <name>Flosum__Download_Components</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Object_Report --></label>
+        <name>Flosum__Object_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Re_Create_Snapshot --></label>
+        <name>Flosum__Re_Create_Snapshot</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recreate_Snapshot_Commerce_Cloud --></label>
+        <name>Flosum__Recreate_Snapshot_Commerce_Cloud</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recreate_Snapshot_Marketing_Cloud --></label>
+        <name>Flosum__Recreate_Snapshot_Marketing_Cloud</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Repository --></label>
+        <name>Flosum__Repository</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Snapshot_Comparison --></label>
+        <name>Flosum__Snapshot_Comparison</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Validate --></label>
+        <name>Flosum__Validate</name>
+    </webLinks>
+</CustomObjectTranslation>
