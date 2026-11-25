@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__No_of_Workflow_Rules__c</fullName>
+    <deprecated>false</deprecated>
+    <label>No. of Workflow Rules</label>
+    <summaryFilterItems>
+        <field>Flosum__Metadata_Item__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>WorkflowRule</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Flosum__Metadata_Item__c.Flosum__Attachment_ID__c</field>
+        <operation>notEqual</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryForeignKey>Flosum__Metadata_Item__c.Flosum__Snapshot__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

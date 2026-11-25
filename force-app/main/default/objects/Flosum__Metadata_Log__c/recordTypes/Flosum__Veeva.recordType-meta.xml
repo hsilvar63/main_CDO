@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <fullName>Flosum__Veeva</fullName>
+    <label>Veeva</label>
+    <picklistValues>
+        <picklist>Flosum__Process_Type__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Deployment</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Patch</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Retrieve</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Rollback %28Deployment%29</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Rollback %28Validate%29</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Schedule Deployment</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Validate</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Flosum__Status__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>Completed</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Exception</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>In Progress</fullName>
+        </values>
+    </picklistValues>
+</RecordType>
