@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>agf__ADM_Acceptance_Criterion__c-en_US</fullName>
+    <layouts>
+        <layout>Acceptance Criterion Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Description cannot be blank! --></errorMessage>
+        <name>agf__Description_is_not_null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Name cannot be blank! --></errorMessage>
+        <name>agf__Name_is_not_null</name>
+    </validationRules>
+</CustomObjectTranslation>
