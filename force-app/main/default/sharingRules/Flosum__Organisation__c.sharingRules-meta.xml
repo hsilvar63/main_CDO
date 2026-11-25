@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <accessLevel>Edit</accessLevel>
+        <criteriaItems>
+            <field>OwnerId</field>
+            <operation>equals</operation>
+            <value>0055j000005ofCRAAY</value>
+        </criteriaItems>
+        <fullName>Beth</fullName>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+        <label>Beth</label>
+        <sharedTo>
+            <group>Private</group>
+        </sharedTo>
+    </sharingCriteriaRules>
+</SharingRules>
