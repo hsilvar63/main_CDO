@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Repository__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Repository</label>
+    <referenceTo>Flosum__Repository__c</referenceTo>
+    <relationshipLabel>Domain To Repository</relationshipLabel>
+    <relationshipName>Domain_To_Repository</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
