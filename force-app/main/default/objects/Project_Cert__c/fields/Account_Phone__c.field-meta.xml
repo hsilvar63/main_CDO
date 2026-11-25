@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Phone__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL(Account__r.Phone), &quot;&quot;, &quot;(&quot; &amp; LEFT(Account__r.Phone, 3) &amp; &quot;) - &quot; &amp; LEFT(RIGHT(Account__r.Phone, 7), 3) &amp; &quot; - &quot; &amp; RIGHT(Account__r.Phone, 4))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Account Phone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
