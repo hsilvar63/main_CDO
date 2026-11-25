@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Destructive_Changes_Id__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Destructive Changes</label>
+    <referenceTo>Flosum__Destructive_Changes__c</referenceTo>
+    <relationshipLabel>Comments_Pull_Request</relationshipLabel>
+    <relationshipName>Comments_Pull_Request</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
