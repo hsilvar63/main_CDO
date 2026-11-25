@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>agf__Approver_Role__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Application Approver&apos;s Approval Role</description>
+    <externalId>false</externalId>
+    <formula>TEXT(agf__Release_Approver__r.agf__Approver_Role__c)</formula>
+    <inlineHelpText>Approver Role from Application Approver record</inlineHelpText>
+    <label>Approver Role</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Destructive_Changes__c-en_US</fullName>
+    <webLinks>
+        <label><!-- Add_Post_Destructive_Changes --></label>
+        <name>Flosum__Add_Post_Destructive_Changes</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Pre_Destructive_Changes --></label>
+        <name>Flosum__Add_Pre_Destructive_Changes</name>
+    </webLinks>
+</CustomObjectTranslation>

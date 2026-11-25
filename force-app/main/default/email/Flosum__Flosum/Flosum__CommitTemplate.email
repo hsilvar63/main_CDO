@@ -1,0 +1,13 @@
+<messaging:emailTemplate subject="Commit To Repository" recipientType="User" relatedToType="Flosum__Commit__c">
+<messaging:htmlEmailBody >
+        <html>
+            <body>
+                <p>Dear {!recipient.FirstName},</p>
+                <p>{!relatedTo.LastModifiedBy.FirstName} has committed changes to the repository from branch {!relatedTo.Branch__r.Flosum__Branch_Name__c}.</p>
+                <p>The commit log can be seen here:</p>
+                <c:NotificationComponent recordId="{!relatedTo.Id}"/>
+                <c:FlosumLogo />
+            </body>
+        </html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

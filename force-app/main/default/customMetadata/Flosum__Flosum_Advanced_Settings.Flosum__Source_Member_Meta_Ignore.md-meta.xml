@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <label>Source_Member_Meta_Ignore</label>
+    <protected>false</protected>
+    <values>
+        <field>Flosum__Value_Text_1__c</field>
+        <value xsi:type="xsd:string">Profile,CustomObjectTranslation,Translations</value>
+    </values>
+</CustomMetadata>
