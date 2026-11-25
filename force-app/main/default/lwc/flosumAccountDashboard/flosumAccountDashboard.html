@@ -1,0 +1,259 @@
+<template>
+    <div class="dashboard">
+
+        <!-- Account selector (standalone mode only — hidden on record pages) -->
+        <template if:true={isStandaloneMode}>
+        <div class="panel selector-panel">
+            <div class="panel-title">
+                <span>&#9776;</span> Select Organization
+            </div>
+            <div class="alpha-filter">
+                <button class={allLetterClass} data-letter="" onclick={handleLetterSelect}>All</button>
+                <template for:each={alphaLetters} for:item="al">
+                    <button key={al.letter} class={al.cssClass} data-letter={al.letter} onclick={handleLetterSelect}>{al.letter}</button>
+                </template>
+            </div>
+            <div class="field-wrap" onfocusout={handleFocusOut}>
+                <label class="field-label">* Organizations</label>
+                <div class="combo-wrap">
+                    <input
+                        type="text"
+                        class="combo-input"
+                        placeholder={accountPlaceholder}
+                        value={searchInput}
+                        oninput={handleSearchInput}
+                        onfocus={handleFocus}
+                        autocomplete="off"
+                    />
+                    <template if:true={showDropdown}>
+                        <div class="combo-dropdown">
+                            <template for:each={filteredAccounts} for:item="acct">
+                                <div key={acct} class="combo-item" data-name={acct} onmousedown={handleAccountSelect}>{acct}</div>
+                            </template>
+                            <template if:true={noResults}>
+                                <div class="combo-item combo-empty">No accounts found</div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+        </template>
+
+        <!-- Product tabs — appear after account is selected, one per available product -->
+        <template if:true={showProductTabs}>
+            <div class="product-tabs">
+                <template for:each={productButtons} for:item="p">
+                    <button key={p.key} class={p.cssClass} data-key={p.key} onclick={handleProductSelect}>{p.label}</button>
+                </template>
+            </div>
+        </template>
+
+        <!-- Org selector (native_apps with multiple orgs) -->
+        <template if:true={showOrgSelector}>
+            <div class="org-selector">
+                <span class="org-selector-label">Org</span>
+                <div class="org-btn-group">
+                    <template for:each={orgSelectorButtons} for:item="o">
+                        <button key={o.orgId} class={o.cssClass} data-orgid={o.orgId} onclick={handleOrgSelect}>
+                            {o.label}
+                            <template if:true={o.licTotal}>
+                                <span class="org-lic-badge">{o.licUsed}/{o.licTotal}</span>
+                            </template>
+                        </button>
+                    </template>
+                </div>
+            </div>
+        </template>
+
+        <!-- Error -->
+        <template if:true={error}>
+            <div class="error-box">{error}</div>
+        </template>
+
+        <!-- Detecting products -->
+        <template if:true={isLoadingProducts}>
+            <div class="loading-box">
+                <div class="spinner"></div>
+                <span>Detecting available products&hellip;</span>
+            </div>
+        </template>
+
+        <!-- Loading detail -->
+        <template if:true={isLoadingDetail}>
+            <div class="loading-box">
+                <div class="spinner"></div>
+                <span>Loading account data&hellip;</span>
+            </div>
+        </template>
+
+        <!-- Content -->
+        <template if:true={hasData}>
+
+            <!-- Current Status -->
+            <div class="panel">
+                <div class="panel-title">
+                    <span>&#9646;&#9646;&#9646;</span> Current Status
+                </div>
+                <div class="cards-grid">
+                    <template for:each={statusCards} for:item="card">
+                        <div key={card.label} class="stat-card">
+                            <div class="stat-value">{card.value}</div>
+                            <div class="stat-label">{card.label}</div>
+                            <div class="stat-accent"></div>
+                        </div>
+                    </template>
+                </div>
+                <template if:true={selectedOrgInfo}>
+                    <div class="org-counts-bar org-selected-bar">
+                        <span class="org-counts-icon">&#9679;</span>
+                        <strong>{selectedOrgInfo.orgName}</strong>
+                        <template if:true={selectedOrgInfo.pkgVersion}>
+                            &nbsp;&middot;&nbsp; {selectedOrgInfo.pkgVersion}
+                        </template>
+                        &nbsp;&middot;&nbsp; Licenses: {selectedOrgInfo.licUsed}&thinsp;/&thinsp;{selectedOrgInfo.licTotal}
+                    </div>
+                </template>
+                <template if:true={showOrgCounts}>
+                    <div class="org-counts-bar">
+                        <span class="org-counts-icon">&#9679;</span>
+                        Connected Orgs: <strong>{orgCountsDisplay}</strong>
+                    </div>
+                </template>
+            </div>
+
+            <!-- Last X Days table -->
+            <div class="panel">
+                <div class="panel-title">
+                    <span>&#9776;</span> Last X Days
+                </div>
+                <div class="table-wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th class="col-name">Field Name</th>
+                                <th class="col-num">30</th>
+                                <th class="col-num">90</th>
+                                <th class="col-num">180</th>
+                                <th class="col-num">365</th>
+                                <th class="col-num col-avg">30D Avg</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={tableRows} for:item="row">
+                                <tr key={row.label} class={row.rowClass}>
+                                    <td class="col-name">
+                                        {row.label}
+                                        <template if:true={row.trendUp}>
+                                            <span class="trend-up">&#9650;</span>
+                                        </template>
+                                        <template if:true={row.trendDown}>
+                                            <span class="trend-down">&#9660;</span>
+                                        </template>
+                                    </td>
+                                    <td class={row.d30Class}>{row.d30}</td>
+                                    <td class="col-num">{row.d90}</td>
+                                    <td class="col-num">{row.d180}</td>
+                                    <td class="col-num">{row.d365}</td>
+                                    <td class="col-num col-avg">{row.avg}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Connected Orgs (backup_archive only) -->
+            <template if:true={showBackupOrgs}>
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>&#9776;</span> Connected Orgs
+                    </div>
+                    <div class="table-wrap">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th class="col-name">Org</th>
+                                    <th>Type</th>
+                                    <th>Region</th>
+                                    <th class="col-num">Backup GB</th>
+                                    <th class="col-num">Archive GB</th>
+                                    <th class="col-num">DB Storage MB</th>
+                                    <th class="col-num">Weekly Job Hrs</th>
+                                    <th class="col-num">Completed</th>
+                                    <th class="col-num">Exceptions</th>
+                                    <th class="col-date">Last Metric</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={backupOrgRows} for:item="row">
+                                    <tr key={row.orgName} class={row.rowClass}>
+                                        <td class="col-name">
+                                            <template if:true={row.hasAlert}>
+                                                <span class="alert-dot" title="Exceptions in last 30 days">&#9679;</span>
+                                            </template>
+                                            {row.orgName}
+                                        </td>
+                                        <td>
+                                            <template if:true={row.isProd}>
+                                                <span class="org-type-badge org-type-prod">Prod</span>
+                                            </template>
+                                            <template if:false={row.isProd}>
+                                                <span class="org-type-badge org-type-sandbox">Sandbox</span>
+                                            </template>
+                                        </td>
+                                        <td class="col-region">{row.region}</td>
+                                        <td class="col-num">{row.backupGb}</td>
+                                        <td class="col-num">{row.archiveGb}</td>
+                                        <td class="col-num">{row.dbMb}</td>
+                                        <td class="col-num">{row.weeklyHrs}</td>
+                                        <td class="col-num">{row.completed}</td>
+                                        <td class="col-num exceptions-cell">{row.exceptions}</td>
+                                        <td class="col-date">{row.lastSeen}</td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </template>
+
+            <!-- Trend charts (native & cloud devops only) -->
+            <template if:true={showTrends}>
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>&#9650;</span> {deployTrendTitle}
+                    </div>
+                    <div class="chart-wrap">
+                        <canvas class="deploy-trend-canvas" width="760" height="180"></canvas>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-title">
+                        <span>&#9650;</span> Feature Usage Trends — Top 5 by Volume · weekly
+                    </div>
+                    <div class="chart-wrap">
+                        <canvas class="feature-trend-canvas" width="760" height="180"></canvas>
+                    </div>
+                </div>
+            </template>
+
+            <!-- Daily activity heartbeat -->
+            <div class="panel">
+                <div class="panel-title">
+                    <span>&#9650;</span> {chartTitle}
+                </div>
+                <div class="chart-wrap">
+                    <template if:true={heartbeatEmpty}>
+                        <div class="no-data">No activity data in the past 365 days</div>
+                    </template>
+                    <template if:false={heartbeatEmpty}>
+                        <canvas class="heartbeat-canvas" width="760" height="200"></canvas>
+                    </template>
+                </div>
+            </div>
+
+        </template>
+
+    </div>
+</template>
