@@ -1,0 +1,13 @@
+<messaging:emailTemplate subject="Potential conflict amongst components committed on branch {!relatedTo.Flosum__Branch_Name__c}" recipientType="User" relatedToType="Flosum__Branch__c">
+    <messaging:htmlEmailBody >
+            <html>
+                <body>
+                    <p>Dear {!recipient.FirstName},</p>
+                    <p></p>
+                    <p>New components have been committed to the branch {!relatedTo.Branch_Name__c}. This could cause a potential conflict with the components present on the following branches:</p>
+                    <c:NotificationComponent recordId="{!relatedTo.Id}"/>
+                    <c:FlosumLogo />
+                </body>
+            </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

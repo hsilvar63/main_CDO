@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrustCenter__Remediation__c-en_US</fullName>
+    <layouts>
+        <layout>Custom Application</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Values --></label>
+            <section>Values</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Field</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Values --></label>
+            <section>Values</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Object</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Values --></label>
+            <section>Values</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Setting</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Values --></label>
+            <section>Values</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Remediation in custom applications --></description>
+        <label><!-- Custom Application --></label>
+        <name>TrustCenter__CustomApplication</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Remediation in field --></description>
+        <label><!-- Field --></label>
+        <name>TrustCenter__Field</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Remediation in object --></description>
+        <label><!-- Object --></label>
+        <name>TrustCenter__Object</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Remediation in setting --></description>
+        <label><!-- Setting --></label>
+        <name>TrustCenter__Setting</name>
+    </recordTypes>
+</CustomObjectTranslation>

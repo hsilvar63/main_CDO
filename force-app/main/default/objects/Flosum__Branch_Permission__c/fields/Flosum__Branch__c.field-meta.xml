@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Branch__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Branch</label>
+    <referenceTo>Flosum__Branch__c</referenceTo>
+    <relationshipLabel>Branch Permissions</relationshipLabel>
+    <relationshipName>Branch_Permissions</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

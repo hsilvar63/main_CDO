@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Logic_AND_validate</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(Flosum__Logic__c, &apos;AND&apos;) &amp;&amp;  (ISPICKVAL(Flosum__Operator__c, &apos;equals&apos;) || ISPICKVAL(Flosum__Operator__c, &apos;starts with&apos;)  || ISPICKVAL(Flosum__Operator__c, &apos;ends with&apos;))</errorConditionFormula>
+    <errorMessage>Invalid operators for logic &apos;AND&apos; : &apos;equals&apos;, &apos;starts with&apos;, &apos;ends with&apos;.</errorMessage>
+</ValidationRule>
