@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>TFS connect</label>
+    <navType>Standard</navType>
+    <tabs>sf_tfs__Admin_Settings</tabs>
+    <tabs>sf_tfs__Project__c</tabs>
+    <tabs>sf_tfs__Work_Item__c</tabs>
+    <tabs>sf_tfs__Field__c</tabs>
+    <tabs>sf_tfs__Work_Item_Field__c</tabs>
+    <tabs>sf_tfs__Organization__c</tabs>
+    <tabs>Flosum__Branch__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>sf_tfs__TFS_connect_UtilityBar</utilityBar>
+</CustomApplication>

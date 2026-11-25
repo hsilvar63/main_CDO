@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Merged_to_Repository__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>- If checked, this branch record has been merged to repository
+- If NOT checked, this branch is not merged yet.</description>
+    <inlineHelpText>- If checked, this branch record has been merged to repository 
+- If NOT checked, this branch is not merged yet.</inlineHelpText>
+    <label>Merged to Repository?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
