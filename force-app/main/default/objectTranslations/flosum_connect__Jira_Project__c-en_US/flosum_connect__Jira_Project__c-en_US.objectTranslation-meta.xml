@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>flosum_connect__Jira_Project__c-en_US</fullName>
+    <layouts>
+        <layout>Jira Project Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Jira Issue --></label>
+        <name>flosum_connect__Create_Jira_Issue</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Jira Issue 2 --></label>
+        <name>flosum_connect__Create_Jira_Issue_2</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Search Jira Issue 2 --></label>
+        <name>flosum_connect__Search_Jira_Issue_2</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Search for Jira ticket --></label>
+        <name>flosum_connect__Search_for_Jira_ticket</name>
+    </quickActions>
+</CustomObjectTranslation>

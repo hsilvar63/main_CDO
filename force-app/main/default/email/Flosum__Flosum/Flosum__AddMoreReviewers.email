@@ -1,0 +1,22 @@
+<messaging:emailTemplate subject="Flosum Peer Review for branch {!relatedTo.Branch__r.Flosum__Branch_Name__c}" recipientType="User" relatedToType="Flosum__Pull_Request__c">
+    <messaging:htmlEmailBody >
+        <html>
+            <body>
+                <p>Dear {!recipient.FirstName},</p>
+                
+                <p>Please add more reviewers to the following peer review:</p>
+                <p>The Peer Review URL is:</p>
+                <c:NotificationComponent recordId="{!relatedTo.Id}"/>
+                
+                <p>Branch Name: {!relatedTo.Branch__r.Flosum__Branch_Name__c}</p>
+                <p>Branch Description: {!relatedTo.Branch__r.Flosum__Branch_Description__c}</p>
+                
+                <p>Peer Review Comment: {!relatedTo.Flosum__Description__c}</p>
+                <c:ReviewersInfo recordId="{!relatedTo.Id}"/>
+                
+                <p>Thanks!</p>
+                <c:FlosumLogo />
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>
